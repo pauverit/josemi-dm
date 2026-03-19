@@ -1,1141 +1,310 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Coste de Impresión — Digital Market</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #f8fafc;
-            --accent: #0088cc;
-            --accent-dark: #0077b6;
-            --text: #0f172a;
-            --muted: #64748b;
-            --border: #e2e8f0;
-            --card: #ffffff;
-            --dark: #0f172a;
-            --green: #10b981;
-            --red: #ef4444;
-            --orange: #f59e0b;
-            --cc: #00b4d8;
-            --cm: #e040fb;
-            --cy: #fbbf24;
-            --ck: #475569;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+<meta charset="UTF-8">
+<title>Calculadora Coste Impresión PRO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            font-family: 'Outfit', sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            min-height: 100vh;
-        }
+<style>
+:root{
+--bg:#f1f5f9;
+--card:#ffffff;
+--primary:#2563eb;
+--green:#16a34a;
+--orange:#f59e0b;
+--red:#dc2626;
+--text:#0f172a;
+--muted:#64748b;
+}
 
-        /* Header */
-        header {
-            background: #fff;
-            border-bottom: 1px solid var(--border);
-            padding: 16px 28px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-        }
-        .logo-img {
-            height: 42px;
-            width: auto;
-            display: block;
-        }
-        .header-title {
-            font-size: 12px; font-weight: 700; color: var(--muted);
-            letter-spacing: 2px; text-transform: uppercase;
-            flex: 1; text-align: center;
-        }
-        .back-link {
-            display: inline-flex; align-items: center; gap: 6px;
-            color: var(--muted); text-decoration: none; font-size: 13px; font-weight: 600; transition: color 0.2s;
-            white-space: nowrap;
-        }
-        .back-link:hover { color: var(--text); }
+body{
+margin:0;
+font-family:system-ui,-apple-system,BlinkMacSystemFont;
+background:var(--bg);
+color:var(--text);
+}
 
-        @media (max-width: 600px) {
-            header { padding: 12px 16px; }
-            .logo-img { height: 32px; }
-            .header-title { display: none; }
-        }
+.wrapper{
+display:grid;
+grid-template-columns: 420px 1fr;
+gap:20px;
+padding:20px;
+}
 
-        /* App layout */
-        .app {
-            display: grid;
-            grid-template-columns: 460px 1fr;
-            min-height: calc(100vh - 62px);
-        }
+.panel{
+background:var(--card);
+padding:20px;
+border-radius:12px;
+box-shadow:0 4px 18px rgba(0,0,0,0.06);
+}
 
-        /* Panel left */
-        .panel {
-            background: var(--card);
-            border-right: 1px solid var(--border);
-            overflow-y: auto;
-            padding: 24px 26px;
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
+h2{
+margin-top:0;
+}
 
-        .panel-section h3 {
-            font-size: 10px;
-            font-weight: 700;
-            color: var(--muted);
-            letter-spacing: 2.5px;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid var(--border);
-        }
+input, select{
+width:100%;
+padding:8px;
+margin-top:4px;
+margin-bottom:12px;
+border-radius:8px;
+border:1px solid #e2e8f0;
+}
 
-        /* Upload */
-        .upload-area {
-            border: 2px dashed var(--border);
-            border-radius: 14px;
-            padding: 26px 16px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.2s;
-            position: relative;
-        }
-        .upload-area:hover, .upload-area.drag-over { border-color: var(--accent); background: rgba(0,136,204,0.04); }
-        .upload-area input[type="file"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
-        .upload-icon { font-size: 30px; margin-bottom: 8px; }
-        .upload-area p { font-size: 13px; color: var(--muted); line-height: 1.5; }
-        .upload-area strong { color: var(--accent); }
+button{
+background:var(--primary);
+color:white;
+border:none;
+padding:10px;
+border-radius:8px;
+cursor:pointer;
+width:100%;
+font-weight:600;
+}
 
-        /* Analysis result box */
-        .analysis-box {
-            display: none;
-            margin-top: 14px;
-            border: 1.5px solid var(--border);
-            border-radius: 14px;
-            overflow: hidden;
-        }
-        .analysis-box.active { display: block; }
+.result-card{
+background:var(--card);
+padding:20px;
+border-radius:12px;
+box-shadow:0 4px 18px rgba(0,0,0,0.06);
+}
 
-        .analysis-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 12px 16px;
-            background: #f8fafc;
-            border-bottom: 1px solid var(--border);
-        }
-        #thumbCanvas {
-            width: 56px; height: 56px;
-            border-radius: 6px;
-            object-fit: cover;
-            display: block;
-            background: #e2e8f0;
-        }
-        .analysis-filename {
-            flex: 1;
-            font-size: 12px;
-            font-weight: 700;
-            color: var(--text);
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        .analysis-filename span { display: block; font-size: 11px; font-weight: 500; color: var(--muted); margin-top: 2px; }
-        .btn-remove-file {
-            background: none; border: none; cursor: pointer; color: var(--muted); font-size: 18px; padding: 4px;
-        }
-        .btn-remove-file:hover { color: var(--red); }
+.bar{
+height:8px;
+background:#e2e8f0;
+border-radius:6px;
+overflow:hidden;
+margin-bottom:6px;
+}
 
-        /* Analyzing spinner */
-        .analyzing-state {
-            display: none;
-            padding: 18px;
-            text-align: center;
-            font-size: 13px;
-            color: var(--muted);
-            gap: 8px;
-            align-items: center;
-            justify-content: center;
-        }
-        .analyzing-state.active { display: flex; }
-        .spinner {
-            width: 16px; height: 16px;
-            border: 2px solid var(--border);
-            border-top-color: var(--accent);
-            border-radius: 50%;
-            animation: spin 0.7s linear infinite;
-        }
-        @keyframes spin { to { transform: rotate(360deg); } }
+.fill{
+height:100%;
+background:var(--primary);
+}
 
-        /* CMYK bars */
-        .cmyk-bars { padding: 14px 16px 6px; }
-        .cmyk-row {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-        .ch-dot {
-            width: 22px; height: 22px;
-            border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 10px; font-weight: 900; color: #fff;
-            flex-shrink: 0;
-        }
-        .ch-dot.C { background: var(--cc); }
-        .ch-dot.M { background: var(--cm); }
-        .ch-dot.Y { background: var(--cy); color: #333; }
-        .ch-dot.K { background: var(--ck); }
-        .bar-track {
-            flex: 1; height: 10px; background: #f1f5f9; border-radius: 99px; overflow: hidden;
-        }
-        .bar-fill { height: 100%; border-radius: 99px; transition: width 0.6s cubic-bezier(0.23,1,0.32,1); width: 0%; }
-        .bar-fill.C { background: var(--cc); }
-        .bar-fill.M { background: var(--cm); }
-        .bar-fill.Y { background: var(--cy); }
-        .bar-fill.K { background: var(--ck); }
-        .ch-pct { font-size: 12px; font-weight: 800; min-width: 36px; text-align: right; color: var(--text); }
+.heatmap{
+margin-top:15px;
+border-radius:8px;
+overflow:hidden;
+}
 
-        .tac-row {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 16px 14px;
-            border-top: 1px solid var(--border);
-            margin-top: 4px;
-        }
-        .tac-label { font-size: 11px; font-weight: 700; color: var(--muted); letter-spacing: 1.5px; text-transform: uppercase; }
-        .tac-value { font-size: 20px; font-weight: 900; color: var(--accent); }
-        .tac-note { font-size: 10px; color: var(--muted); margin-top: 2px; }
+.small{
+font-size:13px;
+color:var(--muted);
+}
 
-        /* Manual coverage (non-image files) */
-        .manual-coverage { padding: 14px 16px; }
-        .manual-coverage p { font-size: 12px; color: var(--muted); margin-bottom: 12px; line-height: 1.5; }
-        .manual-ch-row {
-            display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
-        }
-        .manual-ch-row input[type="range"] { flex: 1; accent-color: var(--accent); }
-        .manual-ch-val { font-size: 13px; font-weight: 800; min-width: 38px; text-align: right; }
+.tac{
+font-weight:700;
+font-size:20px;
+}
 
-        /* Form elements */
-        .form-row { display: flex; gap: 12px; }
-        .form-group { display: flex; flex-direction: column; gap: 5px; flex: 1; }
-        .form-group label {
-            font-size: 11px; font-weight: 700; color: var(--muted);
-            letter-spacing: 0.5px; text-transform: uppercase;
-        }
-        .form-group input, .form-group select {
-            padding: 10px 13px;
-            border: 1.5px solid var(--border);
-            border-radius: 10px;
-            font-size: 15px; font-family: 'Outfit', sans-serif;
-            color: var(--text); background: #fff; transition: border-color 0.2s; width: 100%;
-        }
-        .form-group input:focus, .form-group select:focus { outline: none; border-color: var(--accent); }
-
-        .input-unit { position: relative; }
-        .input-unit input { padding-right: 42px; }
-        .unit-tag {
-            position: absolute; right: 11px; top: 50%; transform: translateY(-50%);
-            font-size: 11px; font-weight: 700; color: var(--muted); pointer-events: none;
-        }
-
-        /* Copies */
-        .copies-row {
-            display: flex; align-items: center; gap: 0;
-            border: 1.5px solid var(--border); border-radius: 10px; overflow: hidden;
-        }
-        .copies-row button {
-            width: 42px; height: 44px; border: none; background: #f8fafc;
-            font-size: 22px; cursor: pointer; color: var(--text); transition: background 0.2s;
-            display: flex; align-items: center; justify-content: center;
-        }
-        .copies-row button:hover { background: #e2e8f0; }
-        .copies-row input {
-            flex: 1; border: none; border-left: 1px solid var(--border); border-right: 1px solid var(--border);
-            text-align: center; font-size: 18px; font-weight: 800; font-family: 'Outfit', sans-serif;
-            padding: 0 8px; height: 44px; color: var(--text);
-        }
-        .copies-row input:focus { outline: none; }
-
-        /* Field hint */
-        .field-hint { font-size: 11px; color: var(--muted); margin-top: 5px; font-style: italic; }
-
-        /* Electricity slider */
-        .slider-row { display: flex; align-items: center; gap: 12px; }
-        .slider-row input[type="range"] { flex: 1; accent-color: var(--accent); }
-        .slider-val { font-size: 16px; font-weight: 800; min-width: 80px; text-align: right; }
-
-        /* Calc button */
-        .btn-calc {
-            width: 100%; padding: 15px;
-            background: var(--accent); color: #fff;
-            border: none; border-radius: 12px;
-            font-size: 16px; font-weight: 800; font-family: 'Outfit', sans-serif;
-            cursor: pointer; transition: all 0.25s; letter-spacing: 0.5px;
-        }
-        .btn-calc:hover { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0,136,204,0.3); }
-
-        /* ── Results panel ── */
-        .results { padding: 32px 36px; overflow-y: auto; }
-
-        .results-empty {
-            display: flex; flex-direction: column; align-items: center; justify-content: center;
-            height: 100%; color: var(--muted); text-align: center; gap: 12px; min-height: 300px;
-        }
-        .results-empty .ei { font-size: 54px; opacity: 0.25; }
-        .results-empty p { font-size: 14px; max-width: 260px; line-height: 1.6; }
-
-        .results-body { display: none; }
-        .results-body.active { display: block; }
-
-        .res-title { font-size: 22px; font-weight: 900; letter-spacing: -0.5px; margin-bottom: 4px; }
-        .res-sub { font-size: 13px; color: var(--muted); margin-bottom: 28px; }
-
-        /* CMYK summary bars in results */
-        .cmyk-summary {
-            background: var(--card);
-            border: 1.5px solid var(--border);
-            border-radius: 16px;
-            padding: 18px 20px;
-            margin-bottom: 20px;
-        }
-        .cmyk-summary h4 { font-size: 10px; font-weight: 700; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; }
-        .cmyk-summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-        .cmyk-cell { text-align: center; }
-        .cmyk-cell .cell-icon {
-            width: 36px; height: 36px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 12px; font-weight: 900; color: #fff;
-            margin: 0 auto 6px;
-        }
-        .cmyk-cell .cell-icon.C { background: var(--cc); }
-        .cmyk-cell .cell-icon.M { background: var(--cm); }
-        .cmyk-cell .cell-icon.Y { background: var(--cy); color: #333; }
-        .cmyk-cell .cell-icon.K { background: var(--ck); }
-        .cmyk-cell .cell-pct { font-size: 18px; font-weight: 900; display: block; }
-        .cmyk-cell .cell-ml { font-size: 11px; color: var(--muted); }
-        .cmyk-cell .cell-eur { font-size: 12px; font-weight: 700; color: var(--text); }
-
-        /* Cost pills */
-        .cost-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 20px; }
-        .cost-card {
-            background: var(--card); border: 1.5px solid var(--border);
-            border-radius: 16px; padding: 18px 16px;
-        }
-        .cost-label { font-size: 10px; font-weight: 700; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
-        .cost-val { font-size: 26px; font-weight: 900; letter-spacing: -0.5px; }
-        .cost-val.hl { color: var(--accent); }
-        .cost-sub { font-size: 11px; color: var(--muted); margin-top: 3px; }
-
-        /* Breakdown */
-        .breakdown-card {
-            background: var(--card); border: 1.5px solid var(--border);
-            border-radius: 16px; padding: 18px 20px; margin-bottom: 20px;
-        }
-        .breakdown-card h4 { font-size: 10px; font-weight: 700; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; }
-        .brow {
-            display: flex; justify-content: space-between; align-items: flex-start;
-            padding: 8px 0; border-bottom: 1px solid var(--border); gap: 10px;
-        }
-        .brow:last-child { border-bottom: none; }
-        .brow-left .blabel { font-size: 14px; font-weight: 600; }
-        .brow-left .bnote { font-size: 11px; color: var(--muted); margin-top: 1px; }
-        .brow-right { font-size: 15px; font-weight: 800; white-space: nowrap; }
-        .brow.total .blabel { font-size: 16px; font-weight: 800; }
-        .brow.total .brow-right { font-size: 18px; color: var(--accent); }
-
-        /* Margin card */
-        .margin-card {
-            background: var(--card); border: 1.5px solid var(--border);
-            border-radius: 16px; padding: 20px;
-        }
-        .margin-card h4 { font-size: 10px; font-weight: 700; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
-        .margin-input-row { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
-        .margin-input-row label { font-size: 14px; font-weight: 600; color: var(--muted); white-space: nowrap; }
-        .margin-input-wrap { position: relative; flex: 1; }
-        .margin-input-wrap input {
-            width: 100%; padding: 11px 38px 11px 14px;
-            border: 1.5px solid var(--border); border-radius: 10px;
-            font-size: 20px; font-weight: 800; font-family: 'Outfit', sans-serif;
-            color: var(--text); transition: border-color 0.2s;
-        }
-        .margin-input-wrap input:focus { outline: none; border-color: var(--accent); }
-        .margin-input-wrap .munit { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-size: 14px; font-weight: 700; color: var(--muted); }
-        .margin-pills { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
-        .mpill { border-radius: 12px; padding: 14px 12px; text-align: center; }
-        .mpill .pl { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.7; margin-bottom: 5px; }
-        .mpill .pv { font-size: 22px; font-weight: 900; }
-        .mpill.profit { background: rgba(16,185,129,0.1); color: var(--green); }
-        .mpill.margin { background: rgba(0,136,204,0.1); color: var(--accent); }
-        .mpill.markup { background: rgba(245,158,11,0.1); color: var(--orange); }
-        .mpill.loss { background: rgba(239,68,68,0.1); color: var(--red); }
-
-        /* Responsive */
-        @media (max-width: 1100px) {
-            .app { grid-template-columns: 380px 1fr; }
-            .cost-grid { grid-template-columns: 1fr 1fr; }
-        }
-        @media (max-width: 860px) {
-            .app {
-                grid-template-columns: 1fr;
-                grid-template-rows: auto auto;
-                min-height: auto;
-            }
-            .panel {
-                border-right: none;
-                border-bottom: 1px solid var(--border);
-                max-height: none;
-                overflow: visible;
-            }
-            .results { padding: 22px 18px; }
-            .cmyk-summary-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 600px) {
-            .panel { padding: 16px 14px; gap: 18px; }
-            .cost-grid { grid-template-columns: 1fr; }
-            .margin-pills { grid-template-columns: 1fr; }
-            .cmyk-summary-grid { grid-template-columns: repeat(2, 1fr); }
-            .form-row { flex-direction: column; gap: 10px; }
-            .copies-row input { font-size: 16px; }
-            .res-title { font-size: 18px; }
-            .margin-input-row { flex-direction: column; align-items: flex-start; gap: 8px; }
-            .margin-input-wrap { width: 100%; }
-            .results { padding: 18px 14px; }
-            .breakdown-card, .margin-card, .cmyk-summary { padding: 14px; }
-        }
-    </style>
+</style>
 </head>
+
 <body>
 
-<header>
-    <img src="logo-dm.png" alt="Digital Market" class="logo-img">
-    <div class="header-title">Calculadora de Coste de Impresión</div>
-    <a href="index.html" class="back-link">← Volver al Hub</a>
-</header>
+<div class="wrapper">
 
-<div class="app">
-
-<!-- ══════════════════ LEFT PANEL ══════════════════ -->
 <div class="panel">
+<h2>Datos de impresión</h2>
 
-    <!-- 1. Archivo -->
-    <div class="panel-section">
-        <h3>Imagen / Archivo</h3>
-        <div class="upload-area" id="uploadArea">
-            <input type="file" id="fileInput" accept="image/*,.pdf,.ai,.eps,.svg">
-            <div class="upload-icon">🖼️</div>
-            <p><strong>Arrastra o haz clic para subir</strong><br>JPG, PNG, TIFF → análisis CMYK automático<br>PDF, AI, EPS → cobertura manual</p>
-        </div>
+<label>Ancho (cm)</label>
+<input type="number" id="w" value="100">
 
-        <div class="analysis-box" id="analysisBox">
-            <!-- Header with thumb + name -->
-            <div class="analysis-header">
-                <canvas id="thumbCanvas" width="56" height="56"></canvas>
-                <div class="analysis-filename">
-                    <span id="fileName">archivo.jpg</span>
-                    <span id="fileInfo">Analizando...</span>
-                </div>
-                <button class="btn-remove-file" id="btnRemove" title="Quitar">✕</button>
-            </div>
+<label>Alto (cm)</label>
+<input type="number" id="h" value="100">
 
-            <!-- Spinner while analyzing -->
-            <div class="analyzing-state" id="analyzingState">
-                <div class="spinner"></div>
-                Analizando canales CMYK…
-            </div>
+<label>Copias</label>
+<input type="number" id="copies" value="1">
 
-            <!-- Auto CMYK bars (images) -->
-            <div id="autoCmyk" style="display:none;">
-                <div class="cmyk-bars">
-                    <div class="cmyk-row">
-                        <div class="ch-dot C">C</div>
-                        <div class="bar-track"><div class="bar-fill C" id="barC"></div></div>
-                        <span class="ch-pct" id="pctC">0%</span>
-                    </div>
-                    <div class="cmyk-row">
-                        <div class="ch-dot M">M</div>
-                        <div class="bar-track"><div class="bar-fill M" id="barM"></div></div>
-                        <span class="ch-pct" id="pctM">0%</span>
-                    </div>
-                    <div class="cmyk-row">
-                        <div class="ch-dot Y">Y</div>
-                        <div class="bar-track"><div class="bar-fill Y" id="barY"></div></div>
-                        <span class="ch-pct" id="pctY">0%</span>
-                    </div>
-                    <div class="cmyk-row">
-                        <div class="ch-dot K">K</div>
-                        <div class="bar-track"><div class="bar-fill K" id="barK"></div></div>
-                        <span class="ch-pct" id="pctK">0%</span>
-                    </div>
-                </div>
-                <div class="tac-row">
-                    <div>
-                        <div class="tac-label">TAC — Cobertura Total de Tinta</div>
-                        <div class="tac-note">Suma C+M+Y+K. Máx. 400%</div>
-                    </div>
-                    <div class="tac-value" id="tacVal">0%</div>
-                </div>
-            </div>
+<label>Precio tinta €/litro</label>
+<input type="number" id="inkPrice" value="55">
 
-            <!-- Manual coverage (non-image) -->
-            <div id="manualCmyk" class="manual-coverage" style="display:none;">
-                <p>El archivo no es una imagen. Introduce la cobertura estimada de cada canal:</p>
-                <div class="manual-ch-row">
-                    <div class="ch-dot C">C</div>
-                    <input type="range" id="manC" min="0" max="100" value="30" oninput="updateManualCmyk('C',this.value)">
-                    <span class="ch-pct manual-ch-val" id="manCVal">30%</span>
-                </div>
-                <div class="manual-ch-row">
-                    <div class="ch-dot M">M</div>
-                    <input type="range" id="manM" min="0" max="100" value="20" oninput="updateManualCmyk('M',this.value)">
-                    <span class="ch-pct manual-ch-val" id="manMVal">20%</span>
-                </div>
-                <div class="manual-ch-row">
-                    <div class="ch-dot Y">Y</div>
-                    <input type="range" id="manY" min="0" max="100" value="25" oninput="updateManualCmyk('Y',this.value)">
-                    <span class="ch-pct manual-ch-val" id="manYVal">25%</span>
-                </div>
-                <div class="manual-ch-row">
-                    <div class="ch-dot K">K</div>
-                    <input type="range" id="manK" min="0" max="100" value="15" oninput="updateManualCmyk('K',this.value)">
-                    <span class="ch-pct manual-ch-val" id="manKVal">15%</span>
-                </div>
-                <div class="tac-row" style="border-top: 1px solid var(--border); margin-top: 8px; padding-top: 10px;">
-                    <div>
-                        <div class="tac-label">TAC estimado</div>
-                    </div>
-                    <div class="tac-value" id="manTacVal">90%</div>
-                </div>
-            </div>
-        </div>
+<label>Precio material €/m²</label>
+<input type="number" id="matPrice" value="1.8">
 
-        <!-- No-file fallback: show manual sliders always -->
-        <div id="noFileCmyk" style="margin-top:12px; border:1.5px solid var(--border); border-radius:14px; overflow:hidden;">
-            <div style="padding:12px 16px; background:#f8fafc; border-bottom:1px solid var(--border); font-size:11px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:2px;">
-                Cobertura CMYK — Sin imagen (manual)
-            </div>
-            <div class="manual-coverage">
-                <div class="manual-ch-row">
-                    <div class="ch-dot C">C</div>
-                    <input type="range" id="noFC" min="0" max="100" value="30" oninput="updateNoFileTac()">
-                    <span class="ch-pct manual-ch-val" id="noFCVal">30%</span>
-                </div>
-                <div class="manual-ch-row">
-                    <div class="ch-dot M">M</div>
-                    <input type="range" id="noFM" min="0" max="100" value="20" oninput="updateNoFileTac()">
-                    <span class="ch-pct manual-ch-val" id="noFMVal">20%</span>
-                </div>
-                <div class="manual-ch-row">
-                    <div class="ch-dot Y">Y</div>
-                    <input type="range" id="noFY" min="0" max="100" value="25" oninput="updateNoFileTac()">
-                    <span class="ch-pct manual-ch-val" id="noFYVal">25%</span>
-                </div>
-                <div class="manual-ch-row">
-                    <div class="ch-dot K">K</div>
-                    <input type="range" id="noFK" min="0" max="100" value="15" oninput="updateNoFileTac()">
-                    <span class="ch-pct manual-ch-val" id="noFKVal">15%</span>
-                </div>
-                <div class="tac-row" style="border-top:1px solid var(--border); margin-top:8px; padding-top:10px;">
-                    <div><div class="tac-label">TAC estimado</div></div>
-                    <div class="tac-value" id="noFTacVal">90%</div>
-                </div>
-            </div>
-        </div>
-    </div>
+<label>Desperdicio tinta (%)</label>
+<input type="number" id="waste" value="8">
 
-    <!-- 2. Dimensiones -->
-    <div class="panel-section">
-        <h3>Dimensiones de impresión</h3>
-        <div class="form-row">
-            <div class="form-group">
-                <label>Ancho</label>
-                <div class="input-unit">
-                    <input type="number" id="dimW" value="100" min="1" step="1">
-                    <span class="unit-tag">cm</span>
-                </div>
-            </div>
-            <div class="form-group">
-                <label>Alto</label>
-                <div class="input-unit">
-                    <input type="number" id="dimH" value="70" min="1" step="1">
-                    <span class="unit-tag">cm</span>
-                </div>
-            </div>
-        </div>
-    </div>
+<label>Impresora</label>
+<select id="printer">
+<option value="1.0">HP Latex 700</option>
+<option value="1.1">HP Latex 800</option>
+<option value="0.9">EcoSolvente</option>
+<option value="0.8">UV</option>
+</select>
 
-    <!-- 3. Copias -->
-    <div class="panel-section">
-        <h3>Número de copias</h3>
-        <div class="copies-row">
-            <button onclick="changeCopies(-1)">−</button>
-            <input type="number" id="copies" value="1" min="1" max="9999">
-            <button onclick="changeCopies(1)">+</button>
-        </div>
-    </div>
+<label>Modo Calidad</label>
+<select id="quality">
+<option value="0.8">Draft</option>
+<option value="1.0" selected>Production</option>
+<option value="1.3">High Quality</option>
+</select>
 
-    <!-- 4. Máquina -->
-    <div class="panel-section">
-        <h3>Máquina de impresión</h3>
-        <div class="form-row">
-            <div class="form-group">
-                <label>ml/canal al 100%</label>
-                <input type="number" id="custMlCh" value="1.0" min="0.1" step="0.05">
-                <div class="field-hint">Valor típico: 0,9 – 1,2 ml/canal según máquina</div>
-            </div>
-            <div class="form-group">
-                <label>Velocidad (m²/h)</label>
-                <input type="number" id="custSpeed" value="20" min="0.1" step="0.5">
-            </div>
-        </div>
-        <div class="form-row" style="margin-top:8px;">
-            <div class="form-group">
-                <label>Potencia (kW)</label>
-                <input type="number" id="custPower" value="1.5" min="0.1" step="0.1">
-            </div>
-        </div>
-    </div>
+<label>Subir imagen</label>
+<input type="file" id="file">
 
-    <!-- 5. Precio de tinta -->
-    <div class="panel-section">
-        <h3>Precio de tinta</h3>
-        <div class="form-group">
-            <label>Precio por litro de tinta</label>
-            <div class="input-unit">
-                <input type="number" id="inkPriceL" value="55" min="0" step="0.5">
-                <span class="unit-tag">€/L</span>
-            </div>
-        </div>
-    </div>
+<button onclick="calc()">Calcular</button>
 
-    <!-- 6. Precio de soporte -->
-    <div class="panel-section">
-        <h3>Precio de soporte / material</h3>
-        <div class="form-group">
-            <label>Precio por m² de soporte</label>
-            <div class="input-unit">
-                <input type="number" id="matPriceM2" value="1.80" min="0" step="0.05">
-                <span class="unit-tag">€/m²</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- 7. Electricidad -->
-    <div class="panel-section">
-        <h3>Precio de la electricidad</h3>
-        <div class="slider-row">
-            <input type="range" id="elecSlider" min="0.05" max="0.50" step="0.01" value="0.18">
-            <div class="slider-val" id="elecVal">0,18 €/kWh</div>
-        </div>
-    </div>
-
-    <!-- 8. Mano de obra + overhead -->
-    <div class="panel-section">
-        <h3>Otros costes</h3>
-        <div class="form-row">
-            <div class="form-group">
-                <label>Mano de obra (€/h)</label>
-                <input type="number" id="laborRate" value="18" min="0" step="1">
-            </div>
-            <div class="form-group">
-                <label>Overhead / otros</label>
-                <div class="input-unit">
-                    <input type="number" id="overhead" value="10" min="0" step="1">
-                    <span class="unit-tag">%</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <button class="btn-calc" onclick="calcCost()">Calcular coste →</button>
 </div>
-<!-- ══════════════════ RIGHT PANEL ══════════════════ -->
-<div class="results">
-    <div class="results-empty" id="resEmpty">
-        <div class="ei">🧮</div>
-        <p>Configura los parámetros a la izquierda y pulsa <strong>Calcular coste</strong>.</p>
-        <p style="font-size:12px;color:#94a3b8;max-width:220px;">Si subes una imagen, el análisis CMYK automático te dará la máxima precisión en el cálculo de tinta.</p>
-    </div>
-    <div class="results-body" id="resBody">
-        <div class="res-title" id="resTitle">—</div>
-        <div class="res-sub" id="resSub">—</div>
 
-        <!-- CMYK detail -->
-        <div class="cmyk-summary">
-            <h4>Cobertura CMYK analizada · Consumo de tinta por canal</h4>
-            <div class="cmyk-summary-grid" id="cmykSummaryGrid"></div>
-        </div>
+<div class="result-card">
+<h2>Resultado</h2>
 
-        <!-- Cost pills -->
-        <div class="cost-grid" id="costGrid"></div>
+<div id="tacDisplay" class="tac">TAC: 0%</div>
 
-        <!-- Breakdown -->
-        <div class="breakdown-card">
-            <h4>Desglose de costes</h4>
-            <div id="breakdownRows"></div>
-        </div>
+<div id="bars"></div>
 
-        <!-- Margin -->
-        <div class="margin-card">
-            <h4>Calculadora de margen de venta</h4>
-            <div class="margin-input-row">
-                <label>Precio de venta:</label>
-                <div class="margin-input-wrap">
-                    <input type="number" id="salePrice" placeholder="0,00" min="0" step="0.01" oninput="updateMargin()">
-                    <span class="munit">€</span>
-                </div>
-            </div>
-            <div class="margin-pills">
-                <div class="mpill profit" id="profitPill">
-                    <div class="pl">Beneficio</div>
-                    <div class="pv" id="profitV">—</div>
-                </div>
-                <div class="mpill margin" id="marginPill">
-                    <div class="pl">Margen</div>
-                    <div class="pv" id="marginV">—</div>
-                </div>
-                <div class="mpill markup" id="markupPill">
-                    <div class="pl">Markup</div>
-                    <div class="pv" id="markupV">—</div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="small">Consumo total tinta</div>
+<div id="inkTotal"></div>
+
+<div class="small">Consumo por m²</div>
+<div id="inkM2"></div>
+
+<div class="small">Coste total</div>
+<div id="totalCost" style="font-size:22px;font-weight:700;"></div>
+
+<canvas id="heatmap" width="400" height="300" class="heatmap"></canvas>
+
 </div>
-</div><!-- end .app -->
+
+</div>
 
 <script>
-let totalCostResult = 0;
-let currentCMYK = { c: 30, m: 20, y: 25, k: 15, source: 'nofile' }; // default
 
-// ══════════════════════════════════════════════
-// ELECTRICITY SLIDER
-// ══════════════════════════════════════════════
-document.getElementById('elecSlider').addEventListener('input', function () {
-    document.getElementById('elecVal').textContent = parseFloat(this.value).toFixed(2).replace('.', ',') + ' €/kWh';
+let currentCMYK={c:30,m:20,y:25,k:15};
+const cache=new Map();
+
+document.getElementById("file").addEventListener("change",e=>{
+const file=e.target.files[0];
+if(!file)return;
+
+if(cache.has(file.name)){
+currentCMYK=cache.get(file.name);
+return;
+}
+
+const img=new Image();
+const url=URL.createObjectURL(file);
+
+img.onload=()=>{
+const canvas=document.createElement("canvas");
+const ctx=canvas.getContext("2d");
+canvas.width=img.width;
+canvas.height=img.height;
+ctx.drawImage(img,0,0);
+
+const data=ctx.getImageData(0,0,canvas.width,canvas.height).data;
+
+let sC=0,sM=0,sY=0,sK=0,n=0;
+
+for(let i=0;i<data.length;i+=16){
+const r=data[i]/255,g=data[i+1]/255,b=data[i+2]/255;
+const k=1-Math.max(r,g,b);
+const inv=1-k;
+sC+=inv?((1-r-k)/inv):0;
+sM+=inv?((1-g-k)/inv):0;
+sY+=inv?((1-b-k)/inv):0;
+sK+=k;
+n++;
+}
+
+currentCMYK={
+c:(sC/n)*100,
+m:(sM/n)*100,
+y:(sY/n)*100,
+k:(sK/n)*100
+};
+
+cache.set(file.name,currentCMYK);
+URL.revokeObjectURL(url);
+drawHeatmap(canvas);
+};
+img.src=url;
 });
 
-// ══════════════════════════════════════════════
-// COPIES
-// ══════════════════════════════════════════════
-function changeCopies(d) {
-    const el = document.getElementById('copies');
-    el.value = Math.max(1, (parseInt(el.value) || 1) + d);
+function drawHeatmap(sourceCanvas){
+const heat=document.getElementById("heatmap");
+const hctx=heat.getContext("2d");
+heat.width=sourceCanvas.width/4;
+heat.height=sourceCanvas.height/4;
+hctx.drawImage(sourceCanvas,0,0,heat.width,heat.height);
+
+const imgData=hctx.getImageData(0,0,heat.width,heat.height);
+const d=imgData.data;
+
+for(let i=0;i<d.length;i+=4){
+const brightness=(d[i]+d[i+1]+d[i+2])/3;
+const intensity=255-brightness;
+d[i]=intensity;
+d[i+1]=0;
+d[i+2]=0;
 }
 
-// ══════════════════════════════════════════════
-// NO-FILE MANUAL CMYK
-// ══════════════════════════════════════════════
-function updateNoFileTac() {
-    const c = +document.getElementById('noFC').value;
-    const m = +document.getElementById('noFM').value;
-    const y = +document.getElementById('noFY').value;
-    const k = +document.getElementById('noFK').value;
-    document.getElementById('noFCVal').textContent = c + '%';
-    document.getElementById('noFMVal').textContent = m + '%';
-    document.getElementById('noFYVal').textContent = y + '%';
-    document.getElementById('noFKVal').textContent = k + '%';
-    document.getElementById('noFTacVal').textContent = (c + m + y + k).toFixed(0) + '%';
-    currentCMYK = { c, m, y, k, source: 'nofile' };
+hctx.putImageData(imgData,0,0);
 }
 
-// ══════════════════════════════════════════════
-// FILE UPLOAD + IMAGE ANALYSIS
-// ══════════════════════════════════════════════
-const uploadArea = document.getElementById('uploadArea');
-const fileInput  = document.getElementById('fileInput');
-const analysisBox = document.getElementById('analysisBox');
-const noFileCmyk  = document.getElementById('noFileCmyk');
+function calc(){
 
-const IMG_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/bmp', 'image/tiff', 'image/gif'];
+const W=document.getElementById("w").value/100;
+const H=document.getElementById("h").value/100;
+const copies=document.getElementById("copies").value;
 
-fileInput.addEventListener('change', () => { if (fileInput.files[0]) handleFile(fileInput.files[0]); });
+const area=W*H*copies;
 
-uploadArea.addEventListener('dragover', e => { e.preventDefault(); uploadArea.classList.add('drag-over'); });
-uploadArea.addEventListener('dragleave', () => uploadArea.classList.remove('drag-over'));
-uploadArea.addEventListener('drop', e => {
-    e.preventDefault();
-    uploadArea.classList.remove('drag-over');
-    if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
-});
+const inkFactor=
+parseFloat(document.getElementById("printer").value)*
+parseFloat(document.getElementById("quality").value);
 
-document.getElementById('btnRemove').addEventListener('click', () => {
-    fileInput.value = '';
-    analysisBox.classList.remove('active');
-    noFileCmyk.style.display = 'block';
-    currentCMYK = getNoFileCMYK();
-});
+const waste=parseFloat(document.getElementById("waste").value)/100;
 
-function getNoFileCMYK() {
-    return {
-        c: +document.getElementById('noFC').value,
-        m: +document.getElementById('noFM').value,
-        y: +document.getElementById('noFY').value,
-        k: +document.getElementById('noFK').value,
-        source: 'nofile'
-    };
+let mlC=area*(currentCMYK.c/100)*inkFactor;
+let mlM=area*(currentCMYK.m/100)*inkFactor;
+let mlY=area*(currentCMYK.y/100)*inkFactor;
+let mlK=area*(currentCMYK.k/100)*inkFactor;
+
+let mlTotal=(mlC+mlM+mlY+mlK)*(1+waste);
+
+const tac=currentCMYK.c+currentCMYK.m+currentCMYK.y+currentCMYK.k;
+
+const tacEl=document.getElementById("tacDisplay");
+tacEl.innerText="TAC: "+tac.toFixed(1)+"%";
+tacEl.style.color=
+tac<200?"var(--green)":
+tac<300?"var(--orange)":
+"var(--red)";
+
+document.getElementById("bars").innerHTML=`
+C ${currentCMYK.c.toFixed(1)}%
+<div class="bar"><div class="fill" style="width:${currentCMYK.c}%"></div></div>
+M ${currentCMYK.m.toFixed(1)}%
+<div class="bar"><div class="fill" style="width:${currentCMYK.m}%"></div></div>
+Y ${currentCMYK.y.toFixed(1)}%
+<div class="bar"><div class="fill" style="width:${currentCMYK.y}%"></div></div>
+K ${currentCMYK.k.toFixed(1)}%
+<div class="bar"><div class="fill" style="width:${currentCMYK.k}%"></div></div>
+`;
+
+document.getElementById("inkTotal").innerText=
+mlTotal.toFixed(2)+" ml";
+
+document.getElementById("inkM2").innerText=
+(mlTotal/area).toFixed(2)+" ml/m²";
+
+const inkPrice=document.getElementById("inkPrice").value;
+const matPrice=document.getElementById("matPrice").value;
+
+const inkCost=(mlTotal/1000)*inkPrice;
+const matCost=area*matPrice;
+
+const total=inkCost+matCost;
+
+document.getElementById("totalCost").innerText=
+total.toFixed(2)+" €";
+
 }
 
-function updateManualCmyk(ch, val) {
-    document.getElementById('man' + ch + 'Val').textContent = val + '%';
-    const c = +document.getElementById('manC').value;
-    const m = +document.getElementById('manM').value;
-    const y = +document.getElementById('manY').value;
-    const k = +document.getElementById('manK').value;
-    document.getElementById('manTacVal').textContent = (c + m + y + k).toFixed(0) + '%';
-    currentCMYK = { c, m, y, k, source: 'manual' };
-}
-
-async function handleFile(file) {
-    // Show box, hide no-file
-    analysisBox.classList.add('active');
-    noFileCmyk.style.display = 'none';
-
-    document.getElementById('fileName').textContent = file.name;
-    document.getElementById('fileInfo').textContent = formatFileSize(file.size);
-
-    const isImage = IMG_TYPES.includes(file.type) || /\.(jpe?g|png|bmp|gif|webp|tiff?)$/i.test(file.name);
-
-    // Draw small thumbnail
-    const thumb = document.getElementById('thumbCanvas');
-    const tctx = thumb.getContext('2d');
-    tctx.clearRect(0, 0, 56, 56);
-
-    if (isImage) {
-        document.getElementById('analyzingState').classList.add('active');
-        document.getElementById('autoCmyk').style.display = 'none';
-        document.getElementById('manualCmyk').style.display = 'none';
-
-        const url = URL.createObjectURL(file);
-        const img = new Image();
-        img.onload = () => {
-            // Draw thumbnail
-            const s = Math.min(56 / img.width, 56 / img.height);
-            const tw = img.width * s, th = img.height * s;
-            tctx.drawImage(img, (56 - tw) / 2, (56 - th) / 2, tw, th);
-
-            // Analyze CMYK on a scaled-down canvas for performance
-            const MAX = 600;
-            const scale = Math.min(1, MAX / Math.max(img.width, img.height));
-            const cw = Math.floor(img.width * scale);
-            const ch = Math.floor(img.height * scale);
-            const offscreen = document.createElement('canvas');
-            offscreen.width = cw; offscreen.height = ch;
-            const octx = offscreen.getContext('2d');
-            octx.drawImage(img, 0, 0, cw, ch);
-
-            const data = octx.getImageData(0, 0, cw, ch).data;
-
-            let sC = 0, sM = 0, sY = 0, sK = 0, n = 0;
-
-            // Sample every pixel (scaled down canvas is small enough)
-            for (let i = 0; i < data.length; i += 4) {
-                const alpha = data[i + 3];
-                if (alpha < 10) continue; // skip transparent
-
-                const r = data[i]     / 255;
-                const g = data[i + 1] / 255;
-                const b = data[i + 2] / 255;
-
-                const k = 1 - Math.max(r, g, b);
-                if (k >= 0.9999) {
-                    // pure black
-                    sK += 1; n++;
-                    continue;
-                }
-                const inv = 1 - k;
-                sC += (1 - r - k) / inv;
-                sM += (1 - g - k) / inv;
-                sY += (1 - b - k) / inv;
-                sK += k;
-                n++;
-            }
-
-            URL.revokeObjectURL(url);
-
-            if (n === 0) {
-                showAutoCmyk(0, 0, 0, 0);
-                return;
-            }
-
-            const avgC = (sC / n) * 100;
-            const avgM = (sM / n) * 100;
-            const avgY = (sY / n) * 100;
-            const avgK = (sK / n) * 100;
-
-            document.getElementById('analyzingState').classList.remove('active');
-            document.getElementById('fileInfo').textContent = formatFileSize(file.size) + ' · ' + img.width + '×' + img.height + 'px';
-            showAutoCmyk(avgC, avgM, avgY, avgK);
-        };
-        img.onerror = () => {
-            URL.revokeObjectURL(url);
-            document.getElementById('analyzingState').classList.remove('active');
-            showManualCmyk();
-        };
-        img.src = url;
-    } else {
-        // Non-image: show thumbnail placeholder + manual sliders
-        tctx.fillStyle = '#e2e8f0';
-        tctx.fillRect(0, 0, 56, 56);
-        tctx.fillStyle = '#94a3b8';
-        tctx.font = '22px serif';
-        tctx.textAlign = 'center';
-        tctx.textBaseline = 'middle';
-        tctx.fillText('📄', 28, 28);
-        document.getElementById('analyzingState').classList.remove('active');
-        showManualCmyk();
-    }
-}
-
-function showAutoCmyk(c, m, y, k) {
-    document.getElementById('autoCmyk').style.display = 'block';
-    document.getElementById('manualCmyk').style.display = 'none';
-
-    setBar('C', c); setBar('M', m); setBar('Y', y); setBar('K', k);
-    const tac = c + m + y + k;
-    document.getElementById('tacVal').textContent = tac.toFixed(1) + '%';
-
-    currentCMYK = { c, m, y, k, source: 'image' };
-}
-
-function setBar(ch, pct) {
-    // Bars show pct relative to 100% (max per channel)
-    document.getElementById('bar' + ch).style.width = Math.min(100, pct) + '%';
-    document.getElementById('pct' + ch).textContent = pct.toFixed(1) + '%';
-}
-
-function showManualCmyk() {
-    document.getElementById('autoCmyk').style.display = 'none';
-    document.getElementById('manualCmyk').style.display = 'block';
-    // init values
-    const c = +document.getElementById('manC').value;
-    const m = +document.getElementById('manM').value;
-    const y = +document.getElementById('manY').value;
-    const k = +document.getElementById('manK').value;
-    document.getElementById('manTacVal').textContent = (c + m + y + k).toFixed(0) + '%';
-    currentCMYK = { c, m, y, k, source: 'manual' };
-}
-
-function formatFileSize(bytes) {
-    if (bytes < 1024) return bytes + ' B';
-    if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(0) + ' KB';
-    return (bytes / 1024 / 1024).toFixed(1) + ' MB';
-}
-
-// ══════════════════════════════════════════════
-// MAIN CALCULATION
-// ══════════════════════════════════════════════
-function calcCost() {
-    const W = parseFloat(document.getElementById('dimW').value) / 100; // metres
-    const H = parseFloat(document.getElementById('dimH').value) / 100;
-    const copies = Math.max(1, parseInt(document.getElementById('copies').value) || 1);
-    const areaOne   = W * H;        // m² per copy
-    const areaTotal = areaOne * copies;
-
-    // --- CMYK from current source ---
-    // If file is loaded use currentCMYK, else use no-file sliders
-    let cmyk;
-    if (analysisBox.classList.contains('active')) {
-        if (currentCMYK.source === 'manual') {
-            cmyk = {
-                c: +document.getElementById('manC').value,
-                m: +document.getElementById('manM').value,
-                y: +document.getElementById('manY').value,
-                k: +document.getElementById('manK').value,
-            };
-        } else {
-            cmyk = { c: currentCMYK.c, m: currentCMYK.m, y: currentCMYK.y, k: currentCMYK.k };
-        }
-    } else {
-        cmyk = {
-            c: +document.getElementById('noFC').value,
-            m: +document.getElementById('noFM').value,
-            y: +document.getElementById('noFY').value,
-            k: +document.getElementById('noFK').value,
-        };
-    }
-
-    // --- Machine ---
-    const speedM2h   = parseFloat(document.getElementById('custSpeed').value) || 20;
-    const mlPerCh100 = parseFloat(document.getElementById('custMlCh').value) || 1.0;
-    const powerKW    = parseFloat(document.getElementById('custPower').value) || 1.5;
-
-    // --- Prices ---
-    const inkPriceL  = parseFloat(document.getElementById('inkPriceL').value)  || 55;
-    const matPriceM2 = parseFloat(document.getElementById('matPriceM2').value) || 1.8;
-    const elecKWh    = parseFloat(document.getElementById('elecSlider').value);
-    const laborRate  = parseFloat(document.getElementById('laborRate').value)  || 18;
-    const overheadPct = parseFloat(document.getElementById('overhead').value) || 0;
-
-    // ═══ CMYK Ink consumption ═══
-    // Each channel: ml = (coverage% / 100) * mlPerCh100 * area
-    const mlC = (cmyk.c / 100) * mlPerCh100 * areaTotal;
-    const mlM = (cmyk.m / 100) * mlPerCh100 * areaTotal;
-    const mlY = (cmyk.y / 100) * mlPerCh100 * areaTotal;
-    const mlK = (cmyk.k / 100) * mlPerCh100 * areaTotal;
-    const mlTotal = mlC + mlM + mlY + mlK;
-
-    const inkCostEur = (mlTotal / 1000) * inkPriceL; // ml → L → €
-
-    // ═══ Material ═══
-    const matCost = areaTotal * matPriceM2;
-
-    // ═══ Electricity ═══
-    const printTimeH = areaTotal / speedM2h;
-    const elecCost   = printTimeH * powerKW * elecKWh;
-
-    // ═══ Labor ═══
-    const laborCost = printTimeH * laborRate;
-
-    // ═══ Overhead ═══
-    const subTotal    = inkCostEur + matCost + elecCost + laborCost;
-    const overheadCost = subTotal * (overheadPct / 100);
-    const totalCost   = subTotal + overheadCost;
-
-    totalCostResult = totalCost;
-
-    // ═══ Per unit ═══
-    const perUnit = totalCost / copies;
-    const perM2   = totalCost / areaTotal;
-    const tac     = cmyk.c + cmyk.m + cmyk.y + cmyk.k;
-
-    // ══════════════════════════════════════
-    // RENDER RESULTS
-    // ══════════════════════════════════════
-    document.getElementById('resEmpty').style.display = 'none';
-    const rb = document.getElementById('resBody');
-    rb.classList.add('active');
-
-    const sourceLabel = { image: '📷 Análisis CMYK automático', manual: '✏️ Cobertura manual', nofile: '🎛️ Cobertura estimada' }[currentCMYK.source] || '';
-
-    document.getElementById('resTitle').textContent = `${copies} ${copies === 1 ? 'copia' : 'copias'} · ${(W * 100).toFixed(0)}×${(H * 100).toFixed(0)} cm`;
-    document.getElementById('resSub').textContent   = `${mlPerCh100} ml/canal · TAC ${tac.toFixed(1)}% · ${sourceLabel}`;
-
-    // CMYK summary grid
-    const chDef = [
-        { ch: 'C', label: 'Cyan',    ml: mlC, pct: cmyk.c },
-        { ch: 'M', label: 'Magenta', ml: mlM, pct: cmyk.m },
-        { ch: 'Y', label: 'Yellow',  ml: mlY, pct: cmyk.y },
-        { ch: 'K', label: 'Black',   ml: mlK, pct: cmyk.k },
-    ];
-    document.getElementById('cmykSummaryGrid').innerHTML = chDef.map(d => {
-        const eur = (d.ml / 1000) * inkPriceL;
-        return `
-            <div class="cmyk-cell">
-                <div class="cell-icon ${d.ch}">${d.ch}</div>
-                <span class="cell-pct">${d.pct.toFixed(1)}%</span>
-                <div class="cell-ml">${d.ml.toFixed(1)} ml</div>
-                <div class="cell-eur">${fmt(eur)}</div>
-            </div>
-        `;
-    }).join('');
-
-    // Cost pills
-    document.getElementById('costGrid').innerHTML = `
-        <div class="cost-card">
-            <div class="cost-label">Coste total</div>
-            <div class="cost-val hl">${fmt(totalCost)}</div>
-            <div class="cost-sub">sin IVA</div>
-        </div>
-        <div class="cost-card">
-            <div class="cost-label">Por copia</div>
-            <div class="cost-val">${fmt(perUnit)}</div>
-            <div class="cost-sub">por unidad</div>
-        </div>
-        <div class="cost-card">
-            <div class="cost-label">Por m²</div>
-            <div class="cost-val">${fmt(perM2)}</div>
-            <div class="cost-sub">coste producción</div>
-        </div>
-    `;
-
-    // Breakdown rows
-    const rows = [
-        {
-            label: 'Tinta CMYK',
-            note: `${mlTotal.toFixed(1)} ml totales · TAC ${tac.toFixed(1)}% · ${inkPriceL} €/L`,
-            val: inkCostEur,
-        },
-        {
-            label: 'Material / Soporte',
-            note: `${areaTotal.toFixed(3)} m² × ${matPriceM2} €/m²`,
-            val: matCost,
-        },
-        {
-            label: 'Electricidad',
-            note: `${printTimeH.toFixed(2)} h × ${powerKW} kW × ${elecKWh.toFixed(2)} €/kWh`,
-            val: elecCost,
-        },
-        {
-            label: 'Mano de obra',
-            note: `${printTimeH.toFixed(2)} h × ${laborRate} €/h`,
-            val: laborCost,
-        },
-    ];
-    if (overheadPct > 0) {
-        rows.push({ label: `Overhead (${overheadPct}%)`, note: 'sobre subtotal', val: overheadCost });
-    }
-
-    document.getElementById('breakdownRows').innerHTML =
-        rows.map(r => `
-            <div class="brow">
-                <div class="brow-left">
-                    <div class="blabel">${r.label}</div>
-                    <div class="bnote">${r.note}</div>
-                </div>
-                <div class="brow-right">${fmt(r.val)}</div>
-            </div>
-        `).join('') +
-        `<div class="brow total">
-            <div class="brow-left"><div class="blabel">Total</div></div>
-            <div class="brow-right">${fmt(totalCost)}</div>
-        </div>`;
-
-    // Reset margin
-    document.getElementById('salePrice').value = '';
-    resetMargin();
-}
-
-function fmt(n) {
-    return n.toFixed(2).replace('.', ',') + ' €';
-}
-
-// ══════════════════════════════════════════════
-// MARGIN CALCULATOR
-// ══════════════════════════════════════════════
-function updateMargin() {
-    const sale = parseFloat(document.getElementById('salePrice').value);
-    if (!totalCostResult || isNaN(sale) || sale === 0) { resetMargin(); return; }
-
-    const profit    = sale - totalCostResult;
-    const marginPct = (profit / sale) * 100;
-    const markupPct = (profit / totalCostResult) * 100;
-    const isLoss    = profit < 0;
-
-    const pp = document.getElementById('profitPill');
-    pp.className = 'mpill ' + (isLoss ? 'loss' : 'profit');
-
-    document.getElementById('profitV').textContent = fmt(profit);
-    document.getElementById('marginV').textContent = marginPct.toFixed(1) + '%';
-    document.getElementById('markupV').textContent = markupPct.toFixed(1) + '%';
-}
-
-function resetMargin() {
-    document.getElementById('profitV').textContent = '—';
-    document.getElementById('marginV').textContent = '—';
-    document.getElementById('markupV').textContent = '—';
-    document.getElementById('profitPill').className = 'mpill profit';
-}
-
-// ══════════════════════════════════════════════
-// INIT
-// ══════════════════════════════════════════════
-updateNoFileTac();
 </script>
+
 </body>
 </html>
