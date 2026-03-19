@@ -11,3 +11,5 @@ build/
 temp_clone/
 *.log
 .DS_Store
+# Exclude large files (GitHub limit 100MB)
+"DIGITAL MARKET TARIFA --IMPRESION.pdf"
