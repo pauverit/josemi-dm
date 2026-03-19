@@ -1,0 +1,806 @@
+﻿
+============================================================
+SHEET: FLEXIBLES
+============================================================
+Row 5 >>CATEGORY<<: {1: 'VINILOS MONOM╔RICOS'}
+Row 7 : {1: 'BRILLO adhesivo PERMANENTE T/blanca y negra, en 105,137,160', 3: 1.4}
+Row 9 : {1: 'BRILLO adhesivo REMOVIBLE T/blanca y negra, en 105,137,160', 3: 1.4}
+Row 11 : {1: 'MATE adhesivo PERMANENTE T/blanca y gris, en 105,137,160', 3: 1.4}
+Row 13 : {1: 'MATE adhesivo REMOVIBLE T/blanca y gris, en 105,137,160', 3: 1.4}
+Row 19 >>CATEGORY<<: {1: 'VINILOS MONOM╔RICOS'}
+Row 21 : {1: 'BRILLO adhesivo PERMANENTE T/Blanca y gris, en 105,137,152', 3: 1.2}
+Row 23 : {1: 'BRILLO adhesivo REMOVIBLE T/Blanca y gris, en 105,137,152', 3: 1.2}
+Row 25 : {1: 'MATE adhesivo PERMANENTE T/Blanca y gris, en 105,137,152', 3: 1.2}
+Row 27 : {1: 'MATE adhesivo REMOVIBLE T/Blanca y gris, en 105,137,152', 3: 1.2}
+Row 32 >>CATEGORY<<: {1: 'LAMINADOS MONOM╔RICOS'}
+Row 34 : {1: 'TMK'}
+Row 36 : {1: '80Á BRILLO adhesivo acrÝlico base agua'}
+Row 37 : {1: 'Laminado brillo ', 2: '1,05m x 50m', 3: 1.6}
+Row 38 : {1: 'Laminado brillo ', 2: '1,40m x 50m ', 3: 1.6}
+Row 39 : {1: 'Laminado brillo ', 2: '1,52m x 50m', 3: 1.6}
+Row 40 : {1: '80Á MATE adhesivo acrÝlico base agua'}
+Row 41 : {1: 'Laminado mate', 2: '1,05m x 50m', 3: 1.6}
+Row 42 : {1: 'Laminado mate', 2: '1,40m x 50m ', 3: 1.6}
+Row 43 : {1: 'Laminado mate', 2: '1,55m x 50m', 3: 1.6}
+Row 45 : {1: 'RITRAMA'}
+Row 47 : {1: '70Á BRILLO adhesivo acrÝlico base agua'}
+Row 48 : {1: 'Laminado brillo ', 2: '1,05m x 50m', 3: 1.9}
+Row 49 : {1: 'Laminado brillo ', 2: '1,40m x 50m ', 3: 1.9}
+Row 50 : {1: 'Laminado brillo ', 2: '1,55m x 50m', 3: 1.9}
+Row 51 : {1: '70Á MATE adhesivo acrÝlico base agua'}
+Row 52 : {1: 'Laminado mate', 2: '1,05m x 50m', 3: 1.9}
+Row 53 : {1: 'Laminado mate', 2: '1,40m x 50m ', 3: 1.9}
+Row 54 : {1: 'Laminado mate', 2: '1,55m x 50m', 3: 1.9}
+Row 55 : {1: '70Á BRILLO adhesivo acrÝlico protecci¾n UV'}
+Row 56 : {1: 'Laminado brillo ', 2: '1,05m x 50m', 3: 2.4}
+Row 57 : {1: 'Laminado brillo ', 2: '1,40m x 50m ', 3: 2.4}
+Row 58 : {1: 'Laminado brillo ', 2: '1,55m x 50m', 3: 2.4}
+Row 59 : {1: 'Laminado 70Á MATE adhesivo acrÝlico protecci¾n UV'}
+Row 60 : {1: 'Laminado mate', 2: '1,05m x 50m', 3: 2.4}
+Row 61 : {1: 'Laminado mate', 2: '1,40m x 50m ', 3: 2.4}
+Row 62 : {1: 'Laminado mate', 2: '1,55m x 50m', 3: 2.4}
+Row 64 : {1: 'ATP'}
+Row 66 : {1: '70Á BRILLO adhesivo acrÝlico base agua'}
+Row 67 : {1: 'Laminado brillo ', 2: '1,05m x 50m', 3: 2.7}
+Row 68 : {1: 'Laminado brillo ', 2: '1,40m x 50m ', 3: 2.7}
+Row 69 : {1: 'Laminado brillo ', 2: '1,55m x 50m', 3: 2.7}
+Row 70 : {1: '70Á MATE adhesivo acrÝlico base agua'}
+Row 71 : {1: 'Laminado mate', 2: '1,05m x 50m', 3: 2.7}
+Row 72 : {1: 'Laminado mate', 2: '1,40m x 50m ', 3: 2.7}
+Row 73 : {1: 'Laminado mate', 2: '1,55m x 50m', 3: 2.7}
+Row 74 : {1: '70Á SATIN adhesivo acrÝlico base agua'}
+Row 75 : {1: 'Laminado satÝn', 2: '1,05m x 50m', 3: 2.7}
+Row 76 : {1: 'Laminado satÝn', 2: '1,40m x 50m ', 3: 2.7}
+Row 77 : {1: 'Laminado satÝn', 2: '1,55m x 50m', 3: 2.7}
+Row 78 >>CATEGORY<<: {1: 'VINILOS POLIMERICOS'}
+Row 79 : {1: 'ATP'}
+Row 80 : {1: 'VALIDO PARA UV LATEX SOLV Y ECO SOLV'}
+Row 82 : {1: '7 a±os 80Á BRILLO ADHESIVO PERMANENTE '}
+Row 83 : {1: 'Vinilo ATP 80 trasera blanca', 2: '1,05m x 50m', 3: 4.5}
+Row 84 : {1: 'Vinilo ATP 80 trasera blanca', 2: '1,37m x 50m', 3: 4.5}
+Row 85 : {1: 'Vinilo ATP 80 trasera blanca', 2: '1,55m x 50m', 3: 4.5}
+Row 86 : {1: 'Vinilo ATP 80 trasera gris', 2: '1,05m x 50m', 3: 4.5}
+Row 87 : {1: 'Vinilo ATP 80 trasera gris', 2: '1,37m x 50m', 3: 4.5}
+Row 88 : {1: 'Vinilo ATP 80 trasera gris', 2: '1,55m x 50m', 3: 4.5}
+Row 89 : {1: 'Vinilo ATP 70 transparente', 2: '1,05m x 50m', 3: 4.9}
+Row 90 : {1: 'Vinilo ATP 70 transparente', 2: '1,37m x 50m', 3: 4.9}
+Row 91 : {1: 'Vinilo ATP 70 transparente', 2: '1,55m x 50m', 3: 4.9}
+Row 92 : {1: '7 a±os 80Á BRILLO ADHESIVO PERMANENTE LIBRE DE BURBUJA'}
+Row 93 : {1: 'Vinilo ATP 80 trasera blanca libre burbuja', 2: '1,05m x 50m', 3: 5.9}
+Row 94 : {1: 'Vinilo ATP 80 trasera blanca libre burbuja', 2: '1,37m x 50m', 3: 5.9}
+Row 95 : {1: 'Vinilo ATP 80 trasera gris libre burbuja', 2: '1,05m x 50m', 3: 5.9}
+Row 96 : {1: 'Vinilo ATP 80 trasera gris libre burbuja', 2: '1,37m x 50m', 3: 5.9}
+Row 97 : {1: 'Vinilo ATP 80 trasera gris libre burbuja', 2: '1,55m x 50m', 3: 5.9}
+Row 99 : {1: 'RITRAMA'}
+Row 100 : {1: 'VALIDO PARA UV LATEX SOLV Y ECO SOLV'}
+Row 102 : {1: '7 a±os 75Á BRILLO ADHESIVO PERMANENTE BASE SOLVENTE '}
+Row 103 : {1: 'Vinilo RITRAMA 75 trasera blanca', 2: '1,37m x 50m', 3: 4.5}
+Row 104 : {1: 'Vinilo RITRAMA 75 trasera blanca', 2: '1,55m x 50m', 3: 4.5}
+Row 105 : {1: 'Vinilo RITRAMA 75 trasera gris', 2: '1,37m x 50m', 3: 4.5}
+Row 106 : {1: 'Vinilo RITRAMA 75 trasera gris', 2: '1,55m x 50m', 3: 4.5}
+Row 107 : {1: 'Vinilo RITRAMA 75 transparente', 2: '1,37m x 50m', 3: 4.5}
+Row 108 : {1: 'Vinilo RITRAMA 75 transparente', 2: '1,55m x 50m', 3: 4.5}
+Row 109 : {1: '7 a±os 75Á MATE ADHESIVO PERMANENTE BASE SOLVENTE '}
+Row 110 : {1: 'Vinilo RITRAMA 75 MATE trasera blanca', 2: '1,37m x 50m', 3: 4.5}
+Row 111 : {1: 'Vinilo RITRAMA 75 MATE trasera blanca', 2: '1,55m x 50m', 3: 4.5}
+Row 112 : {1: 'Vinilo RITRAMA 75 MATE trasera gris', 2: '1,37m x 50m', 3: 4.5}
+Row 113 : {1: 'Vinilo RITRAMA 75 MATE trasera gris', 2: '1,55m x 50m', 3: 4.5}
+Row 114 : {1: ' 7 a±os 75Á BRILLO ADHESIVO PERMANENTE BASE AGUA'}
+Row 115 : {1: 'Vinilo RITRAMA 75 OPTIMA trasera blanca', 2: '1,05m x 50m', 3: 3.7}
+Row 116 : {1: 'Vinilo RITRAMA 75 OPTIMA trasera blanca', 2: '1,37m x 50m', 3: 3.7}
+Row 117 : {1: 'Vinilo RITRAMA 75 OPTIMA trasera blanca', 2: '1,55m x 50m', 3: 3.7}
+Row 118 : {1: 'Vinilo RITRAMA 75 OPTIMA trasera gris', 2: '1,05m x 50m', 3: 3.7}
+Row 119 : {1: 'Vinilo RITRAMA 75 OPTIMA trasera gris', 2: '1,37m x 50m', 3: 3.7}
+Row 120 : {1: 'Vinilo RITRAMA 75 OPTIMA trasera gris', 2: '1,55m x 50m', 3: 3.7}
+Row 121 : {1: 'Vinilo RITRAMA 75 OPTIMA trasera gris LIBRE BURBUJA', 2: '1,05m x 50m', 3: 4.3}
+Row 122 : {1: 'Vinilo RITRAMA 75 OPTIMA trasera gris LIBRE BURBUJA', 2: '1,37m x 50m', 3: 4.3}
+Row 123 : {1: 'Vinilo RITRAMA 75 OPTIMA trasera gris LIBRE BURBUJA', 2: '1,55m x 50m', 3: 4.3}
+Row 124 >>CATEGORY<<: {1: 'VINILO FUNDICION'}
+Row 126 : {1: 'RITRAMA'}
+Row 128 : {1: 'ESPECIAL VEH═CULOS'}
+Row 129 : {1: 'CAST 50 TRASERA GRIS REPOSICIONABLE BUBBLE FREE'}
+Row 131 : {1: 'Vinilo Cast 50 brillo', 2: '1,37m x 50m', 3: 11.5}
+Row 132 : {1: 'Vinilo Cast 50 brillo', 2: '1,52m x 50m', 3: 11.5}
+Row 134 : {1: 'CAST 50 TRASERA GRIS REPOSICIONABLE BUBBLE FREE SLIDE AND TACK'}
+Row 135 : {1: '.'}
+Row 136 : {1: 'Vinilo Cast 50 brillo', 2: '1,37m x 50m', 3: 12.5}
+Row 137 : {1: 'Vinilo Cast 50 brillo', 2: '1,52m x 50m', 3: 12.5}
+Row 139 >>CATEGORY<<: {1: 'ESPECIALES'}
+Row 141 : {1: 'VINILO EFECTO ┴CIDO RITRAMA PTA POLIM╔RICO', 2: '1,22m x 50m', 3: 7.5}
+Row 142 : {1: 'VINILO EFECTO ┴CIDO RITRAMA PTA POLIM╔RICO', 2: '1,52m x 50m', 3: 7.5}
+Row 143 : {1: 'VINILO EFECTO ┴CIDO RITRAMA PTA POLIM╔RICO L.B.', 2: '1,22m x 50m', 3: 9.0}
+Row 144 : {1: 'VINILO EFECTO ┴CIDO RITRAMA PTA POLIM╔RICO L.B.', 2: '1,52m x 50m', 3: 9.0}
+Row 145 : {1: 'VINILO EFECTO ┴CIDO RITRAMA PTF POLIM╔RICO', 2: '1,22m x 50m', 3: 6.0}
+Row 146 : {1: 'VINILO EFECTO ┴CIDO RITRAMA PTF POLIM╔RICO', 2: '1,52m x 50m', 3: 6.0}
+Row 147 : {1: 'VINILO EFECTO ┴CIDO RITRAMA PTF POLIM╔RICO L.B.', 2: '1,22m x 50m', 3: 7.5}
+Row 148 : {1: 'VINILO EFECTO ┴CIDO RITRAMA PTF POLIM╔RICO L.B.', 2: '1,52m x 50m', 3: 7.5}
+Row 150 : {1: 'VINILOS ALTA ADHERENCIA / SUPERFICIES APOLARES'}
+Row 151 : {1: 'VINILO ATP ALTA ADHERENCIA MONOMERICO BRILLO ', 2: '1,37m x 50m', 3: 3.5}
+Row 152 : {1: 'VINILO ATP ALTA ADHERENCIA MONOMERICO MATE ', 2: '1,37m x 50m', 3: 3.5}
+Row 154 : {1: 'VINILO ATP ALTA ADHERENCIA POLIMERICO BRILLO ', 2: '1,37m x 50m', 3: 6.0}
+Row 155 : {1: 'VINILO ATP ALTA ADHERENCIA POLIMERICO MATE ', 2: '1,37m x 50m', 3: 6.0}
+Row 157 : {1: 'VINILOS ADHESIVO VENTOSA ULTRA REMOVIBLE'}
+Row 158 : {1: 'VINILO ADHESIVO VENTOSA BRILLO ', 2: '1,37m x 50m', 3: 3.6}
+Row 159 : {1: 'VINILO ADHESIVO VENTOSA MATE', 2: '1,37m x 50m', 3: 3.6}
+Row 160 : {1: 'VINILO ADHESIVO VENTOSA TRANSPARENTE BRILLO ', 2: '1,37m x 50m', 3: 3.6}
+Row 161 : {1: 'VINILO ADHESIVO VENTOSA TRANSPARENTE MATE', 2: '1,37m x 50m', 3: 3.6}
+Row 163 : {1: 'VINILO ULTRACRISTALINO POLIMERICO', 2: '1,37m x 50m', 3: 10.0}
+Row 165 : {1: 'ADHESIVO DOBLE CARA 70Á ATP', 2: '1,04m x 50m', 3: 3.2}
+Row 166 : {1: 'ADHESIVO DOBLE CARA 70Á ATP', 2: '1,40m x 50m', 3: 3.2}
+Row 167 : {1: 'ADHESIVO DOBLE CARA 70Á ATP', 2: '1,55m x 50m', 3: 3.2}
+Row 169 : {1: 'VINILO TRASLUCIDO', 2: '1,37m x 50m', 3: 6.3}
+Row 172 >>CATEGORY<<: {1: 'VINILO WINDOW'}
+Row 174 : {1: 'WINDOW solv ecosolv, Lßtex y UV Blanco/negro', 2: '0,98m x 50m', 3: 4.0}
+Row 175 : {1: 'WINDOW solv ecosolv, Lßtex y UV Blanco/negro', 2: '1,37m x 50m', 3: 4.0}
+Row 176 : {1: 'WINDOW solv ecosolv, Lßtex y UV Blanco/negro', 2: '1,52m x 50m', 3: 4.0}
+Row 178 : {1: 'WINDOW solv ecosolv, Lßtex y UV blanco/blanco', 2: '1,37m x 50m', 3: 7.5}
+Row 180 : {1: 'WINDOW solv ecosolv, Lßtex y UV transparente', 2: '1,37m x 50m', 3: 7.5}
+Row 185 >>CATEGORY<<: {1: 'POLIPROPILENO'}
+Row 187 : {1: 'TMK'}
+Row 189 : {1: 'ESPECIAL ROLL UPS'}
+Row 190 : {1: 'POLIPROPILENO TRASERA BLANCA 190Á', 2: '91,4m x 50m', 3: 4.0}
+Row 191 : {1: 'POLIPROPILENO TRASERA BLANCA 190Á', 2: '1,06m x 50m', 3: 4.0}
+Row 193 : {1: 'PET TRASERA GRIS 230Á especial roll ups', 2: '91,4m x 50m', 3: 4.0}
+Row 194 : {1: 'PET TRASERA GRIS 230Á especial roll ups', 2: '1,06m x 50m', 3: 4.0}
+Row 195 : {1: 'PET TRASERA GRIS 230Á especial roll ups', 2: '1,37m x 50m', 3: 4.0}
+Row 196 : {1: 'PET TRASERA GRIS 230Á especial roll ups', 2: '1,52m x 50m', 3: 4.0}
+Row 198 : {1: 'HP BACKLIT POLYESTER FILM 290Á', 2: '1,06m x 50m', 3: 5.7}
+Row 199 : {1: 'HP BACKLIT POLYESTER FILM 290Á', 2: '1,37m x 50m', 3: 5.7}
+Row 200 : {1: 'HP BACKLIT POLYESTER FILM 290Á', 2: '1,52m x 50m', 3: 5.7}
+Row 202 : {1: 'HP POLIPROPILENO MATE 120G/M2', 2: '91,4m x 61m', 3: 2.28}
+Row 203 : {1: 'HP POLIPROPILENO MATE 120G/M2', 2: '1,06m x 61m', 3: 2.28}
+Row 204 : {1: 'HP POLIPROPILENO MATE 120G/M2', 2: '1,37m x 61m', 3: 2.28}
+Row 205 : {1: 'HP POLIPROPILENO MATE 120G/M2', 2: '1,52m x 61m', 3: 2.28}
+Row 216 >>CATEGORY<<: {1: 'LAMINADOS POLIM╔RICOS'}
+Row 218 : {1: 'ATP'}
+Row 220 : {1: '70Á BRILLO adhesivo acrÝlico base agua'}
+Row 221 : {1: 'Laminado brillo ', 2: '1,05m x 50m', 3: 2.8}
+Row 222 : {1: 'Laminado brillo ', 2: '1,40m x 50m ', 3: 2.8}
+Row 223 : {1: 'Laminado brillo ', 2: '1,55m x 50m', 3: 2.8}
+Row 225 : {1: '70Á MATE adhesivo acrÝlico base agua'}
+Row 226 : {1: 'Laminado mate', 2: '1,05m x 50m', 3: 2.8}
+Row 227 : {1: 'Laminado mate', 2: '1,40m x 50m ', 3: 2.8}
+Row 228 : {1: 'Laminado mate', 2: '1,55m x 50m', 3: 2.8}
+Row 230 : {1: 'RITRAMA'}
+Row 232 : {1: '70Á BRILLO adhesivo acrÝlico base solvente'}
+Row 233 : {1: 'Laminado brillo RI-JET 75 ', 2: '1,05m x 50m', 3: 2.8}
+Row 234 : {1: 'Laminado brillo RI-JET 75 ', 2: '1,40m x 50m ', 3: 2.8}
+Row 235 : {1: 'Laminado brillo RI-JET 75 ', 2: '1,55m x 50m', 3: 2.8}
+Row 238 : {1: '70Á MATE adhesivo acrÝlico base solvente'}
+Row 239 : {1: 'Laminado mate RI-JET 75', 2: '1,05m x 50m', 3: 2.8}
+Row 240 : {1: 'Laminado mate RI-JET 75', 2: '1,40m x 50m ', 3: 2.8}
+Row 241 : {1: 'Laminado mate RI-JET 75', 2: '1,55m x 50m', 3: 2.8}
+Row 262 >>CATEGORY<<: {1: 'LAMINADO FUNDICIËN'}
+Row 264 : {1: 'RITRAMA'}
+Row 265 : {1: 'LAMINADO RITRAMA CAST '}
+Row 266 : {1: 'Laminado Cast 30 brillo', 2: '1,37m x 50m', 3: 11.5}
+Row 267 : {1: 'Laminado Cast 30 brillo', 2: '1,52m x 50m', 3: 11.5}
+Row 268 : {1: 'Laminado Cast 50 brillo', 2: '1,37m x 50m', 3: 11.5}
+Row 269 : {1: 'Laminado Cast 30 mate', 2: '1,37m x 50m', 3: 11.5}
+Row 271 : {1: 'ESPECIALES'}
+Row 273 : {1: 'LAMINADO SUELO 120Á R9 alta transparencia Kemica'}
+Row 274 : {1: 'Laminado suelo R9', 2: '1,05m x 50m', 3: 3.8}
+Row 275 : {1: 'Laminado suelo R9', 2: '1,40m x 50m ', 3: 3.8}
+Row 276 : {1: 'Laminado suelo R9', 2: '1,55m x 50m', 3: 3.8}
+Row 278 : {1: 'LAMINADO SUELO 200Á R10 alta transparencia Ritrama'}
+Row 279 : {1: 'Laminado suelo R10', 2: '1,05m x 50m', 3: 5.5}
+Row 280 : {1: 'Laminado suelo R10', 2: '1,37m x 50m', 3: 5.5}
+Row 282 : {1: 'LAMINADO ANTIGRAFFITI UV SCREEN PROTECTED'}
+Row 283 : {1: 'LAMINADO ANTIGRAFFITI UV ', 2: '1,05m x 50m', 3: 3.8}
+Row 284 : {1: 'LAMINADO ANTIGRAFFITI UV ', 2: '1,40m x 50m', 3: 3.8}
+Row 311 >>CATEGORY<<: {1: 'LONAS FUNDIDAS'}
+Row 313 : {1: 'LONA FUNDIDA FRONTLIT 510Gr 20x20 1000x1000'}
+Row 315 : {1: 'Lona 510Gr FRONTLIT Fundida', 2: '1,06m x 50m', 3: 2.3}
+Row 316 : {1: 'Lona 510Gr FRONTLIT Fundida', 2: '1,37m x 50m', 3: 2.3}
+Row 317 : {1: 'Lona 510Gr FRONTLIT Fundida', 2: '1,60m x 50m', 3: 2.3}
+Row 318 : {1: 'Lona 510Gr FRONTLIT Fundida', 2: '1,83m x 50m', 3: 2.3}
+Row 319 : {1: 'Lona 510Gr FRONTLIT Fundida', 2: '2,20m x 50m', 3: 2.3}
+Row 320 : {1: 'Lona 510Gr FRONTLIT Fundida', 2: '2,50m x 50m', 3: 2.3}
+Row 321 : {1: 'Lona 510Gr FRONTLIT Fundida', 2: '2,64m x 50m', 3: 2.3}
+Row 322 : {1: 'Lona 510Gr FRONTLIT Fundida', 2: '3,20m x 50m', 3: 2.3}
+Row 323 : {1: 'Lona 510Gr FRONTLIT Fundida', 2: '5,00m x 50m', 3: 2.5}
+Row 326 : {1: 'LONA FUNDIDA BACKLIT 510Gr 20X20 1000X1000'}
+Row 328 : {1: 'Lona 510Gr BACKLIT Fundida', 2: '1,06m x 50m', 3: 3.5}
+Row 329 : {1: 'Lona 510Gr BACKLIT Fundida', 2: '1,37m x 50m', 3: 3.5}
+Row 330 : {1: 'Lona 510Gr BACKLIT Fundida', 2: '1,60m x 50m', 3: 3.5}
+Row 331 : {1: 'Lona 510Gr BACKLIT Fundida', 2: '2,20m x 50m', 3: 3.5}
+Row 332 : {1: 'Lona 510Gr BACKLIT Fundida', 2: '3,20m x 50m', 3: 3.5}
+Row 334 : {1: 'LONA FUNDIDA BLOCKOUT DOBLE CARA 510Gr'}
+Row 336 : {1: 'Lona 510Gr DOBLE CARA Fundida', 2: '1,06m x 50m', 3: 3.5}
+Row 337 : {1: 'Lona 510Gr DOBLE CARA Fundida', 2: '1,37m x 50m', 3: 3.5}
+Row 338 : {1: 'Lona 510Gr DOBLE CARA Fundida', 2: '1,60m x 50m', 3: 3.5}
+Row 339 : {1: 'Lona 510Gr DOBLE CARA Fundida', 2: '2,20m x 50m', 3: 3.5}
+Row 340 : {1: 'Lona 510Gr DOBLE CARA Fundida', 2: '3,20m x 50m', 3: 3.5}
+Row 343 : {1: 'LONA FUNDIDA BLOCKOUT DOBLE CARA 610Gr'}
+Row 345 : {1: 'Lona 610Gr DOBLE CARA Fundida', 2: '1,06m x 50m', 3: 4.0}
+Row 346 : {1: 'Lona 610Gr DOBLE CARA Fundida', 2: '1,37m x 50m', 3: 4.0}
+Row 347 : {1: 'Lona 610Gr DOBLE CARA Fundida', 2: '1,60m x 50m', 3: 4.0}
+Row 348 : {1: 'Lona 610Gr DOBLE CARA Fundida', 2: '2,20m x 50m', 3: 4.0}
+Row 349 : {1: 'Lona 610Gr DOBLE CARA Fundida', 2: '3,20m x 50m', 3: 4.0}
+Row 357 >>CATEGORY<<: {1: 'LONA MESH '}
+Row 359 : {1: 'LONA MESH SIN TRASERA 270Gr', 2: '1,06m x 50m', 3: 2.5}
+Row 360 : {1: 'LONA MESH SIN TRASERA 270Gr', 2: '1,60m x 50m', 3: 2.5}
+Row 361 : {1: 'LONA MESH SIN TRASERA 270Gr', 2: '2,20m x 50m', 3: 2.5}
+Row 362 : {1: 'LONA MESH SIN TRASERA 270Gr', 2: '3,20m x 50m', 3: 2.5}
+Row 363 : {1: 'LONA MESH SIN TRASERA 270Gr', 2: '5,00m x 50m', 3: 2.8}
+Row 365 : {1: 'LONA MESH CON TRASERA 370Gr', 2: '1,06m x 50m', 3: 2.7}
+Row 366 : {1: 'LONA MESH CON TRASERA 370Gr', 2: '1,60m x 50m', 3: 2.7}
+Row 367 : {1: 'LONA MESH CON TRASERA 370Gr', 2: '2,20m x 50m', 3: 2.7}
+Row 368 : {1: 'LONA MESH CON TRASERA 370Gr', 2: '3,20m x 50m', 3: 2.7}
+Row 370 >>CATEGORY<<: {1: 'LONAS LAMINADAS'}
+Row 372 : {1: 'LONA LAMINADA FRONTLIT 440Gr 10X10 500X500'}
+Row 374 : {1: 'Lona 440Gr FRONTLIT Laminada', 2: '1,06x50', 3: 2.0}
+Row 375 : {1: 'Lona 440Gr FRONTLIT Laminada', 2: '1,37x50', 3: 2.0}
+Row 376 : {1: 'Lona 440Gr FRONTLIT Laminada', 2: '1,60x50', 3: 2.0}
+Row 377 : {1: 'Lona 440Gr FRONTLIT Laminada', 2: '2,20x50', 3: 2.0}
+Row 378 : {1: 'Lona 440Gr FRONTLIT Laminada', 2: '2,50x50', 3: 2.0}
+Row 379 : {1: 'Lona 440Gr FRONTLIT Laminada', 2: '3,20x50', 3: 2.0}
+Row 381 : {1: 'LONA LAMINADA BLOCKOUT DOBLE CARA 510Gr'}
+Row 383 : {1: 'Lona 510Gr DOBLE CARA Laminada', 2: '1,06m x 50m', 3: 3.3}
+Row 384 : {1: 'Lona 510Gr DOBLE CARA Laminada', 2: '1,37m x 50m', 3: 3.3}
+Row 385 : {1: 'Lona 510Gr DOBLE CARA Laminada', 2: '1,60m x 50m', 3: 3.3}
+Row 386 : {1: 'Lona 510Gr DOBLE CARA Laminada', 2: '2,20m x 50m', 3: 3.3}
+Row 387 : {1: 'Lona 510Gr DOBLE CARA Laminada', 2: '3,20m x 50m', 3: 3.3}
+Row 389 : {1: 'LONA LAMINADA BLOCKOUT DOBLE CARA 560Gr'}
+Row 391 : {1: 'Lona 560Gr DOBLE CARA Laminada', 2: '1,06m x 50m', 3: 3.6}
+Row 392 : {1: 'Lona 560Gr DOBLE CARA Laminada', 2: '1,37m x 50m', 3: 3.6}
+Row 393 : {1: 'Lona 560Gr DOBLE CARA Laminada', 2: '1,60m x 50m', 3: 3.6}
+Row 394 : {1: 'Lona 560Gr DOBLE CARA Laminada', 2: '2,20m x 50m', 3: 3.6}
+Row 395 : {1: 'Lona 560Gr DOBLE CARA Laminada', 2: '3,20m x 50m', 3: 3.6}
+Row 399 >>CATEGORY<<: {1: 'PAPELES '}
+Row 401 : {1: 'PAPEL WHITEBACK 150Gr VILASECA'}
+Row 402 : {1: 'PAPEL MUPY 150Gr ESTUCADO', 2: '1,27m x 100m', 3: 0.95}
+Row 403 : {1: 'PAPEL MUPY 150Gr ESTUCADO', 2: '1,27m x 300m', 3: 0.85}
+Row 404 : {1: 'PAPEL MUPY 150Gr ESTUCADO', 2: '1,40m x 100m', 3: 0.95}
+Row 405 : {1: 'PAPEL MUPY 150Gr ESTUCADO', 2: '1,60m x 100m', 3: 0.95}
+Row 407 : {1: 'PAPEL WHITEBACK 140Gr TMK '}
+Row 408 : {1: 'PAPEL MUPY 150Gr LATEX/UV', 2: '1,27m x 100m', 3: 0.85}
+Row 409 : {1: 'PAPEL MUPY 150Gr LATEX/UV', 2: '1,40m x 100m', 3: 0.85}
+Row 410 : {1: 'PAPEL MUPY 150Gr LATEX/UV', 2: '1,60m x 100m', 3: 0.85}
+Row 412 : {1: 'PAPEL BLUEBACK 120Gr'}
+Row 413 : {1: 'PAPEL VALLA AZUL 120Gr', 2: '1,60m x 100m', 3: 0.8}
+Row 414 : {1: 'PAPEL VALLA AZUL 120Gr', 2: '1,60m x 300m', 3: 0.8}
+Row 416 : {1: 'PAPEL FOTOGR┴FICO SATIN 200Gr '}
+Row 417 : {1: 'PAPEL FOTOGR┴FICO ', 2: '1,06m x 50m', 3: 2.2}
+Row 418 : {1: 'PAPEL FOTOGR┴FICO ', 2: '1,37m x 50m', 3: 2.2}
+Row 419 : {1: 'PAPEL FOTOGR┴FICO ', 2: '1,60m x 50m', 3: 2.2}
+Row 421 : {1: 'HP PHOTO REALISTIC PAPER 205Gr', 2: '914mm x 61m', 3: 1.84}
+Row 422 : {1: 'HP PHOTO REALISTIC PAPER 205Gr', 2: '1372mm x 61m', 3: 1.85}
+Row 423 : {1: 'HP PHOTO REALISTIC PAPER 205Gr', 2: '1524mm x 61m', 3: 1.88}
+Row 425 : {1: 'HP PREMIUM POSTER PAPER 216Gr', 2: '914mm x 61m', 3: 2.68}
+Row 426 : {1: 'HP PREMIUM POSTER PAPER 216Gr', 2: '1372mm x 61m', 3: 2.52}
+Row 427 : {1: 'HP PREMIUM POSTER PAPER 216Gr', 2: '1524mm x 61m', 3: 2.53}
+Row 429 >>CATEGORY<<: {1: 'PAPEL SUBLIMACION'}
+Row 431 : {1: 'PAPEL SUBLIMACION 50gr', 2: '1620mm x 400m', 3: 0.28}
+Row 432 : {1: 'PAPEL SUBLIMACION 50gr', 2: '1820mm x 400m', 3: 0.28}
+Row 434 : {1: 'PAPEL SUBLIMACION 73gr', 2: '1118mm x 120m', 3: 0.47}
+Row 435 : {1: 'PAPEL SUBLIMACION 73gr', 2: '1118mm x 200m', 3: 0.47}
+Row 436 : {1: 'PAPEL SUBLIMACION 73gr', 2: '1620mm x 120m', 3: 0.47}
+Row 437 : {1: 'PAPEL SUBLIMACION 73gr', 2: '1620mm x 200m', 3: 0.47}
+Row 439 : {1: 'PAPEL SUBLIMACION 95gr', 2: '1118mm x 100m', 3: 0.65}
+Row 440 : {1: 'PAPEL SUBLIMACION 95gr', 2: '1620mm x 150m', 3: 0.65}
+Row 442 : {1: 'PAPEL SUBLIMACION 105GR con ADHESIVO', 2: '1118mm x 100m', 3: 0.7}
+Row 443 : {1: 'PAPEL SUBLIMACION 105GR con ADHESIVO', 2: '1620mm x 120m', 3: 0.7}
+Row 445 >>CATEGORY<<: {1: 'LAMINAS PROTECCION SOLAR'}
+Row 447 >>CATEGORY<<: {1: 'LAMINAS DE CONTROL SOLAR PARA    INTERIOR'}
+Row 448 >>CATEGORY<<: {1: 'Bobina de 152.4cm x 30.5m ( 122cm Consultar )'}
+Row 450 : {1: 'PL 80 PSi Plata', 2: '30m', 3: 8.0}
+Row 451 : {1: 'PL 70 PSi Plata Medio', 2: '30m', 3: 8.0}
+Row 452 : {1: 'PL 50 PSi Plata Claro', 2: '30m', 3: 8.0}
+Row 453 : {1: 'OR 80 PSi - Oro', 2: '30m', 3: 12.0}
+Row 454 : {1: 'ST 65 PSi Neutral', 2: '30m', 3: 11.0}
+Row 455 : {1: 'ST 50 PSi Neutral', 2: '30m', 3: 11.0}
+Row 456 : {1: 'Cobre 80 PSi Cobre', 2: '30m', 3: 14.0}
+Row 457 : {1: 'Cobre 50 PSi Cobre Claro', 2: '30m', 3: 24.5}
+Row 458 : {1: 'SP 40 PSi Champagne Claro', 2: '30m', 3: 14.0}
+Row 459 : {1: 'ESPECIAL 66 PSi Champagne', 2: '30m', 3: 19.0}
+Row 461 : {1: 'CONTROL UV - ESCAPARATE    INTERIOR'}
+Row 462 : {1: 'Bobina de 152.4cm x 30.5m ( 122cm Consultar )'}
+Row 464 : {1: 'Control UV Transparente', 2: '30m', 3: 9.5}
+Row 465 : {1: 'Neutral 50 PSi - Neutral Clara', 2: '30m', 3: 10.5}
+Row 492 >>CATEGORY<<: {1: 'Junkers & Muellers'}
+Row 494 : {1: 'MEDIATEX EASYBOX Fr 100% PES 175gr', 2: '310cm x 50m', 3: 6.3}
+Row 495 : {1: 'B1 Frontlit y backlit LATEX UV SOLVENTE', 2: '250cm x 30m', 3: 6.3}
+Row 496 : {2: '162cm x 30m', 3: 6.3}
+Row 498 : {1: 'MEDIATEX GALLERY Fr 100% PES 220gr UPCYCLING', 2: '310cm x 50m', 3: 8.0}
+Row 499 : {1: 'B1 Canvas 100% poliester reciclado ', 2: '162cm x 30m', 3: 8.0}
+Row 500 : {1: 'LATEX UV SOLVENTE', 2: '137cm x 30m', 3: 8.0}
+Row 501 : {2: '103cm x 30m', 3: 8.0}
+Row 503 : {1: 'MEDIATEX J&M AIR Fr 100% PES 230gr', 2: '310cm x 50m', 3: 8.0}
+Row 504 : {1: 'B1 M1 Policanvas extra blanco', 2: '250cm x 30m', 3: 8.0}
+Row 505 : {1: 'Wall cover, estores, roll ups, bastidor,pinturas', 2: '162cm x 30m', 3: 8.0}
+Row 506 : {1: 'LATEX UV SOLVENTE', 2: '137cm x 30m', 3: 8.0}
+Row 508 : {1: 'MEDIATEX COVERTEX UPCYCLING Fr 100% PES 240gr', 2: '310cm x 50m', 3: 7.2}
+Row 509 : {1: 'B1 Policanvas trasera gris 100% reciclado', 2: '152cm x 30m', 3: 8.0}
+Row 510 : {1: 'LATEX UV SOLVENTE', 2: '103cm x 30m', 3: 8.0}
+Row 512 : {1: 'MEDIATEX GRANDFLEX 100%PES 200gr', 2: '310cm x 50m', 3: 9.3}
+Row 513 : {1: 'POLICANVAS ', 2: '162cm x 30m', 3: 9.3}
+Row 514 : {1: 'ROLL UP, BANNER, ESTORES, PINTURAS', 2: '137cm x 30m', 3: 9.3}
+Row 515 : {1: 'LATEX UV SOLVENTE', 2: '103cm x 30m', 3: 9.3}
+Row 517 : {1: 'MEDIATEX VENTO Fr 100%PES 220gr', 2: '310cm x 70m', 3: 10.0}
+Row 518 : {1: 'M1 MARCOS Y SISTEMAS DE TENSION SUAVE ESTIRABLE', 2: '250cm x 70m', 3: 10.0}
+Row 519 : {1: 'LATEX Y SUBLIMACION', 2: '152cm x 70m', 3: 10.0}
+Row 521 : {1: 'MEDIATEX NERO Fr 100%PES 220gr', 2: '310cm x 70m', 3: 6.2}
+Row 522 : {1: 'B1 TRASERA OPACA, SUAVE Y FLEXIBLE ESTIRABLE', 2: '250cm x 50m', 3: 6.2}
+Row 523 : {1: 'LATEX SUBLIMACION Y UV', 2: '152cm x 50m', 3: 6.2}
+Row 525 : {1: 'PARA ESTORES'}
+Row 527 : {1: 'MEDIATEX CARINA TRANSPARENTE 100%PES 185gr', 2: '310cm x 50m', 3: 4.75}
+Row 528 : {1: 'TELA TRASLUCIDA, ESTABLE, CORTE FRIO', 2: '240cm x 40m', 3: 4.75}
+Row 529 : {1: 'LATEX UV SOLVENTE', 2: '200cm x40m', 3: 4.75}
+Row 531 : {1: 'MEDIATEX CARINA BLACKOUT 100%PES 320gr', 2: '305cm x 32m', 3: 9.5}
+Row 532 : {1: 'TELA OPACA, CORTE EN FRIO', 2: '240cm x 32m ', 3: 9.5}
+Row 533 : {1: 'LATEX UV SOLVENTE', 2: '200cm x 32m', 3: 9.5}
+Row 535 : {1: 'PARA EXTERIOR'}
+Row 537 : {1: 'JM Garden 100%PES 200gr', 2: '240cm x 60m', 3: 11.0}
+Row 538 : {1: 'PARA TOLDOS. POLIESTER DE ALTA RESISTENCIA. ', 2: '120cm x 60m', 3: 11.0}
+Row 539 : {1: 'IMPERMEABILIDAD TOTAL, ANTIFUNGICO, ANTI SUCIEDAD '}
+Row 540 : {1: 'Y RESISTENCIA A LA SALINIDAD TOTAL'}
+Row 541 : {1: 'LATEX'}
+Row 543 : {1: 'JM GARDEN SUN 100%PES 240gr', 2: '170cm x 50m', 3: 10.5}
+Row 544 : {1: 'PARA SOMBRILLAS O COJINES, POLIESTER FLEXIBLE'}
+Row 545 : {1: '┤NO SE ARRUGA, IMPERMEABILIDAD TOTAL, ANTIFUNGICO'}
+Row 546 : {1: 'Y RESISTENCIA A LA SALINIDAD TOTAL'}
+Row 548 : {1: 'MEDIATEX SIESTA 100%PES', 2: '310cm x 50m', 3: 8.0}
+Row 549 : {1: 'TELA EXTERIOR, IMPERMEABLE Y REPELENTE A LA', 2: '155cm x 30m', 3: 8.0}
+Row 550 : {1: 'SUCIEDAD. SOMBRILLAS, COJINES, BANNERS, CAJA LUZ'}
+Row 551 : {1: 'LATEX UV SOLVENTE'}
+Row 553 : {1: 'SOLUCIONES ACUSTICAS'}
+Row 555 : {1: 'NOVO ACUSTIC FR 100%PES 155gr', 2: '240cm x 42m', 3: 15.5}
+Row 556 : {1: 'B1 M1 TELA ACUSTICA'}
+Row 557 : {1: 'PARA ESTORES, PANELES O PERFIL ALUMINIO'}
+Row 558 : {1: 'LATEX'}
+Row 560 : {1: 'TECNO FR 100%PES 255GR', 2: '305cm x 42m', 3: 13.0}
+Row 561 : {1: 'B1 M1 TELA ACUSTICA', 2: '240cm x 42m', 3: 13.0}
+Row 562 : {1: 'PARA ESTORES, PANELES O PERFIL ALUMINIO'}
+Row 563 : {1: 'LATEX'}
+Row 565 : {1: 'TEJIDOS ADHESIVOS'}
+Row 567 : {1: 'MEDIATEX SELF-Adhesive Fr 100%PES 360gr', 2: '152cm x 30m', 3: 20.0}
+Row 568 : {1: 'B1 TEXTIL ADHESIVO REMOVIBLE IGNIFUGO', 2: '137cm x 30m', 3: 20.0}
+Row 569 : {1: 'CORTE CON CUTTER, NO DESHILACHA', 2: '100cm x 30m', 3: 20.0}
+Row 570 : {1: 'LATEX UV SOLVENTE'}
+Row 572 : {1: 'MEDIATEX WALL COVER TEXTILE 100%PES 360gr', 2: '100cm x 30m', 3: 15.8}
+Row 573 : {1: 'TEXTIL ADHESIVO PERMANENTE CORTE CUTTER'}
+Row 574 : {1: 'LATEX UV SOLVENTE'}
+Row 576 : {1: 'MEDIATEX WALL COVER EFECT GLOSS 100%PES 360gr', 2: '100cm x 30m', 3: 21.0}
+Row 577 : {1: 'TEXTIL ADHESIVO PERMANENTE CORTE CUTTER'}
+Row 578 : {1: 'LATEX UV SOLVENTE'}
+Row 580 : {1: 'MEDIATEX MAGIC COVER 100%PES 320gr', 2: '100cm x 30m', 3: 21.0}
+Row 581 : {1: 'TEXTIL ADHESIVO PERMANENTE OPACO'}
+Row 582 : {1: 'CORTE CON CUTTER'}
+Row 583 : {1: 'LATEX UV SOLVENTE '}
+Row 589 : {1: 'ESPECIALIDADES EN CANVAS '}
+Row 593 : {1: 'INK JET CANVAS DUBLIN', 2: '25m', 3: 9.0}
+Row 594 : {1: 'Medidas  061 - 091 - 106 - 112 - 127 - 152'}
+Row 596 : {1: 'INK JET CANVAS LONDON', 2: '25m', 3: 7.2}
+Row 597 : {1: 'Medidas  061 - 091 - 106 - 112 - 152'}
+Row 599 : {1: 'INK JET CANVAS BARCELONA', 2: '25m', 3: 6.85}
+Row 600 : {1: 'Medidas  061 - 091 - 106 - 112 - 152'}
+Row 602 : {1: 'INK JET CANVAS BARCELONA SATIN', 2: '25m', 3: 10.95}
+Row 603 : {1: 'Medidas  061 - 112'}
+Row 605 : {1: 'INK JET CANVAS MONACO', 2: '25m', 3: 5.0}
+Row 606 : {1: 'Medidas  061 - 091 - 106 - 112 - 152'}
+Row 608 : {1: 'ECO CANVAS ROMA', 2: '25m', 3: 7.4}
+Row 609 : {1: 'Medidas  076 - 106 - 137 - 152 - 160 - 210 - 260 - 310'}
+Row 611 : {1: 'ECO CANVAS ROMA GLOSSY', 2: '25m', 3: 7.4}
+Row 612 : {1: 'Medidas  106 - 137 - 152'}
+Row 614 : {1: 'ECO CANVAS ROMA SILVER', 2: '25m', 3: 7.4}
+Row 615 : {1: 'Medidas  137'}
+Row 617 : {1: 'RAW CANVAS', 2: '50m', 3: 4.2}
+Row 618 : {1: 'Medidas  150 - 300'}
+Row 620 : {1: 'ECO CANVAS PARIS', 2: '25m', 3: 5.4}
+Row 621 : {1: 'Medidas  076 - 106 - 137 - 152 - 260 - 310'}
+Row 623 : {1: 'ECO CANVAS VIENA', 2: '30m', 3: 3.9}
+Row 624 : {1: 'Medidas  076 - 106 - 137 - 152 - 260 - 310'}
+Row 626 : {1: 'WALL DECO CANVAS', 2: '18m', 3: 10.8}
+Row 627 : {1: 'Medida 137'}
+Row 629 : {1: 'CANVAS NEW LISBOA', 2: '25m', 3: 5.4}
+Row 630 : {1: 'Medidas 106 - 137 - 160 - 210 - 260 - 310'}
+Row 632 : {1: 'WALL DECO TEXTIL', 2: '20m', 3: 7.0}
+Row 633 : {1: 'Medida 102 - 137 - 152'}
+Row 638 >>CATEGORY<<: {1: 'PAPELES HP - BMG'}
+Row 641 : {1: 'BANNER AND SIGN MATERIALS'}
+Row 643 : {1: 'Description', 2: 'MEDIDAS', 3: 'PRECIO M2'}
+Row 644 : {1: 'HP Everyday Matte Polypropylene, 3-in Core', 2: '914 mm x 61 m', 3: 2.28}
+Row 645 : {1: 'HP Everyday Matte Polypropylene, 3-in Core', 2: '1067 mm x 61 m', 3: 2.28}
+Row 646 : {1: 'HP Everyday Matte Polypropylene, 3-in Core', 2: '1270 mm x 61 m', 3: 2.28}
+Row 647 : {1: 'HP Everyday Matte Polypropylene, 3-in Core', 2: '1524 mm x 61m', 3: 2.28}
+Row 649 : {1: 'CANVAS MATERIALS'}
+Row 652 : {1: 'Description', 2: 'MEDIDAS', 3: 'PRECIO M2'}
+Row 653 : {1: 'HP Premium Satin Canvas', 2: '762 mm x 22,9m', 3: 10.55}
+Row 654 : {1: 'HP Premium Satin Canvas', 2: '914 mm x 22,9m', 3: 10.55}
+Row 655 : {1: 'HP Premium Satin Canvas', 2: '1372 mm x 22,9m', 3: 10.55}
+Row 656 : {1: 'HP Premium Satin Canvas', 2: '1524 mm x 22,9m', 3: 10.55}
+Row 657 : {1: 'HP Recycled Satin Canvas, 3-in Core', 2: '1372 mm x 45,7 m', 3: 7.71}
+Row 658 : {1: 'HP Recycled Satin Canvas, 3-in Core', 2: '1524 mm x 45,7 m', 3: 7.65}
+Row 661 : {1: 'FABRICS'}
+Row 663 : {1: 'Description', 2: 'MEDIDAS', 3: 'PRECIO M2'}
+Row 664 : {1: 'HP Light Fabric', 2: '1067 mm x 45,7 m', 3: 5.11}
+Row 665 : {1: 'HP Light Fabric', 2: '1372 mm x 45,7 m', 3: 5.08}
+Row 666 : {1: 'HP Light Fabric', 2: '1524 mm x 45,7 m', 3: 5.08}
+Row 668 : {1: 'FILMS'}
+Row 670 : {1: 'Description', 2: 'MEDIDAS', 3: 'PRECIO M2'}
+Row 671 : {1: 'HP Backlit Polyester Film, 3-in Core', 2: '914 mm x 30,5 m', 3: 6.71}
+Row 672 : {1: 'HP Backlit Polyester Film, 3-in Core', 2: '1067 mm x 30,5 m', 3: 6.71}
+Row 673 : {1: 'HP Backlit Polyester Film, 3-in Core', 2: '1372 mm x 30,5 m', 3: 6.71}
+Row 674 : {1: 'HP Backlit Polyester Film, 3-in Core', 2: '1524 mm x 30,5 m', 3: 6.71}
+Row 676 : {1: 'FILM ART PRINTING MATERIALS'}
+Row 678 : {1: 'Description', 2: 'MEDIDAS', 3: 'PRECIO M2'}
+Row 679 : {1: 'HP Matte Litho-realistic Paper, 3-in Core', 2: '914 mm x 30,5 m', 3: 5.44}
+Row 680 : {1: 'HP Matte Litho-realistic Paper, 3-in Core', 2: '1118 mm x 30,5 m', 3: 5.44}
+Row 681 : {1: 'HP Matte Litho-realistic Paper, 3-in Core', 2: '1524 mm x 30,5 m', 3: 5.46}
+Row 685 : {1: 'PAPERS/PHOTOGRAPHIC PAPERS'}
+Row 687 : {1: 'Description', 2: 'MEDIDAS', 3: 'PRECIO M2'}
+Row 688 : {1: 'HP Everyday Satin Photo Paper', 2: '914 mm x 30,5 m', 3: 3.05}
+Row 689 : {1: 'HP Everyday Satin Photo Paper', 2: '1067 mm x 30,5 m', 3: 3.05}
+Row 690 : {1: 'HP Everyday Satin Photo Paper', 2: '1372 mm x 30,5 m', 3: 3.05}
+Row 691 : {1: 'HP Everyday Satin Photo Paper', 2: '1524 mm x 30,5 m', 3: 3.05}
+Row 692 : {1: 'HP Professional Gloss Photo Paper', 2: '914 mm x 30,5 m', 3: 3.72}
+Row 693 : {1: 'HP Professional Gloss Photo Paper', 2: ' 1067 mm x 30,5 m', 3: 3.92}
+Row 694 : {1: 'HP Professional Gloss Photo Paper', 2: '1372 mm x 30,5 m', 3: 3.65}
+Row 695 : {1: 'HP Professional Gloss Photo Paper', 2: '1524 mm x 30,5 m', 3: 3.73}
+Row 696 : {1: 'HP Professional Satin Photo Paper', 2: '914 mm x 30,5 m', 3: 3.7}
+Row 697 : {1: 'HP Professional Satin Photo Paper', 2: '1067 mm x 30,5 m', 3: 3.9}
+Row 698 : {1: 'HP Professional Satin Photo Paper', 2: '1372 mm x 30,5 m', 3: 3.63}
+Row 699 : {1: 'HP Professional Satin Photo Paper', 2: '1524 mm x 30,5 m', 3: 3.71}
+Row 700 : {1: 'HP Photo-realistic Poster Paper', 2: '914 mm x 61 m', 3: 1.84}
+Row 701 : {1: 'HP Photo-realistic Poster Paper', 2: '1372 mm x 61 m', 3: 1.85}
+Row 702 : {1: 'HP Photo-realistic Poster Paper', 2: '1524 mm x 61 m', 3: 1.88}
+Row 703 : {1: 'HP Premium Poster Paper, 3-in Core', 2: '914 mm x 61 m', 3: 2.68}
+Row 704 : {1: 'HP Premium Poster Paper, 3-in Core', 2: '1372 mm x 61 m', 3: 2.52}
+Row 705 : {1: 'HP Premium Poster Paper, 3-in Core', 2: '1524 mm x 61 m', 3: 2.53}
+Row 706 : {1: 'HP White Satin Poster Paper', 2: '1067 mm x 61 m', 3: 1.72}
+Row 707 : {1: 'HP White Satin Poster Paper', 2: '1372 mm x 61 m', 3: 1.72}
+Row 708 : {1: 'HP White Satin Poster Paper', 2: '1524 mm x 61 m', 3: 1.72}
+Row 709 : {1: 'HP Satin Wrapping Paper, 3-in Core', 2: '914 mm x 45.72 m', 3: 2.4}
+Row 711 : {1: 'SELF-ADHESIVE MATERIALS'}
+Row 713 : {1: 'Description', 2: 'MEDIDAS', 3: 'PRECIO M2'}
+Row 714 : {1: 'HP Removable Adhesive Fabric, 3-in Core', 2: '610 mm x 30,5 m', 3: 8.02}
+Row 715 : {1: 'HP Removable Adhesive Fabric, 3-in Core', 2: '1067 mm x 30,5 m', 3: 8.02}
+Row 716 : {1: 'HP Removable Adhesive Fabric, 3-in Core', 2: '1524 mm x 30,5 m', 3: 8.01}
+Row 717 : {1: 'HP Permanent Gloss Adhesive Vinyl', 2: '914 mm x 45,7 m', 3: 3.37}
+Row 718 : {1: 'HP Permanent Gloss Adhesive Vinyl', 2: '1067 mm x 45,7 m', 3: 3.06}
+Row 719 : {1: 'HP Permanent Gloss Adhesive Vinyl', 2: '1372 mm x 45,7 m', 3: 2.92}
+Row 720 : {1: 'HP Permanent Gloss Adhesive Vinyl', 2: '1524 mm x 45,7 m', 3: 2.87}
+Row 721 : {1: 'HP Permanent Matte Adhesive Vinyl', 2: '914 mm x 45,7 m', 3: 3.37}
+Row 722 : {1: 'HP Permanent Matte Adhesive Vinyl', 2: '1067 mm x 45,7 m', 3: 3.06}
+Row 723 : {1: 'HP Permanent Matte Adhesive Vinyl', 2: '1372 mm x 45,7 m', 3: 2.92}
+Row 724 : {1: 'HP Permanent Matte Adhesive Vinyl', 2: '1524 mm x 45,7 m', 3: 2.87}
+Row 725 : {1: 'HP Everyday Adhesive Matte Polypropylene, 3-in Core', 2: '914 mm x 30,5 m', 3: 3.97}
+Row 726 : {1: 'HP Everyday Adhesive Matte Polypropylene, 3-in Core', 2: '1067 mm x 30,5 m', 3: 3.97}
+Row 727 : {1: 'HP Everyday Adhesive Matte Polypropylene, 3-in Core', 2: '1270 mm x 30,5 m', 3: 4.29}
+Row 729 : {1: 'WALL COVERINGS'}
+Row 731 : {1: 'Description', 2: 'MEDIDAS', 3: 'PRECIO M2'}
+Row 732 : {1: 'HP PVC-free Wall Paper', 2: '1067 mm x 30,5 m', 3: 4.26}
+Row 733 : {1: 'HP PVC-free Wall Paper', 2: '1372 mm x 30,5 m', 3: 4.26}
+Row 734 : {1: 'HP PVC-free Wall Paper', 2: '1372 mm x 91,4 m', 3: 4.26}
+Row 735 : {1: 'HP Non woven Durable Linen Wall Paper', 2: '1372 mm x 45 m', 3: 3.79}
+Row 736 : {1: 'HP Non woven Durable Linen Wall Paper', 2: '1372 mm x 120 m', 3: 3.68}
+Row 737 : {1: 'HP Non woven Durable Suede Wall Paper', 2: '1372 mm x 45 m', 3: 3.79}
+Row 738 : {1: 'HP Non woven Durable Suede Wall Paper', 2: '1372 mm x 120 m', 3: 3.68}
+Row 739 : {1: 'HP PVC-free Durable Smooth Wall Paper', 2: '1067 mm x 30,5 m', 3: 10.33}
+Row 740 : {1: 'HP PVC-free Durable Smooth Wall Paper', 2: '1372 mm x 30,5 m', 3: 10.33}
+Row 741 : {1: 'HP PVC-free Durable Smooth Wall Paper', 2: '1372 mm x 91,4 m', 3: 10.33}
+Row 746 : {1: 'TINTAS'}
+Row 749 : {1: 'TINTAS ORIGINALES HP'}
+Row 752 : {1: 'HP LATEX L110-115 HP N║821'}
+Row 753 : {1: 'TINTA NEGRA 400ml', 2: 'G0Y86A', 3: 89.0}
+Row 754 : {1: 'TINTA CIAN 400ml', 2: 'G0Y87A', 3: 89.0}
+Row 755 : {1: 'TINTA MAGENTA 400ml', 2: 'G0Y88A', 3: 89.0}
+Row 756 : {1: 'TINTA AMARILLA 400ml', 2: 'G0Y89A', 3: 89.0}
+Row 757 : {1: 'TINTA LIGHT CIAN 400ml', 2: 'G0Y90A', 3: 89.0}
+Row 758 : {1: 'TINTA LIGHT MAGENTA 400ml', 2: 'G0Y91A', 3: 89.0}
+Row 759 : {1: 'TINTA OPTIMIZADOR 400ml', 2: 'G0Y92A', 3: 89.0}
+Row 760 : {1: 'CABEZAL CIAN/NEGRO', 2: 'CZ677A', 3: 100.0}
+Row 761 : {1: 'CABEZAL MAGENTA/AMARILLO', 2: 'CZ678A', 3: 100.0}
+Row 762 : {1: 'CABEZAL L.MAGENTA/ L.CIAN', 2: 'CZ679A', 3: 100.0}
+Row 763 : {1: 'CABEZAL OPTIMIZADOR', 2: 'CZ680A', 3: 100.0}
+Row 764 : {1: 'KIT MANTENIMIENTO', 2: 'CZ681A', 3: 145.0}
+Row 767 : {1: 'HP LATEX L310 L315 L330 L335 L360 L365 L560 N║831'}
+Row 768 : {1: 'TINTA NEGRA 775ml', 2: 'CZ694A', 3: 120.0}
+Row 769 : {1: 'TINTA CIAN 775ml', 2: 'CZ695A', 3: 120.0}
+Row 770 : {1: 'TINTA MAGENTA 775ml', 2: 'CZ696A', 3: 120.0}
+Row 771 : {1: 'TINTA AMARILLA 775ml', 2: 'CZ697A', 3: 120.0}
+Row 772 : {1: 'TINTA LIGHT CIAN 775ml', 2: 'CZ698A', 3: 120.0}
+Row 773 : {1: 'TINTA LIGHT MAGENTA 775ml', 2: 'CZ699A', 3: 120.0}
+Row 774 : {1: 'TINTA OPTIMIZADOR 775ml', 2: 'CZ706A', 3: 120.0}
+Row 775 : {1: 'CABEZAL CIAN/NEGRO', 2: 'CZ677A', 3: 100.0}
+Row 776 : {1: 'CABEZAL MAGENTA/AMARILLO', 2: 'CZ678A', 3: 100.0}
+Row 777 : {1: 'CABEZAL L.MAGENTA/ L.CIAN', 2: 'CZ679A', 3: 100.0}
+Row 778 : {1: 'CABEZAL OPTIMIZADOR', 2: 'CZ680A', 3: 100.0}
+Row 779 : {1: 'KIT MANTENIMIENTO', 2: 'CZ681A', 3: 145.0}
+Row 782 : {1: 'L370 Y L570 N║831'}
+Row 783 : {1: 'TINTA NEGRA 3L', 2: 'G0Y79C', 3: 359.0}
+Row 784 : {1: 'TINTA CIAN 3L', 2: 'G0Y80C', 3: 359.0}
+Row 785 : {1: 'TINTA MAGENTA 3L', 2: 'G0Y81C', 3: 359.0}
+Row 786 : {1: 'TINTA AMARILLA 3L', 2: 'G0Y82C', 3: 359.0}
+Row 787 : {1: 'TINTA LIGHT CIAN 3L', 2: 'G0Y83C', 3: 359.0}
+Row 788 : {1: 'TINTA LIGHT MAGENTA 3L', 2: 'G0Y84C', 3: 359.0}
+Row 789 : {1: 'TINTA OPTIMIZADOR 3L', 2: 'G0Y85A', 3: 359.0}
+Row 790 : {1: 'CABEZAL CIAN/NEGRO', 2: 'CZ677A', 3: 100.0}
+Row 791 : {1: 'CABEZAL MAGENTA/AMARILLO', 2: 'CZ678A', 3: 100.0}
+Row 792 : {1: 'CABEZAL L.MAGENTA/ L.CIAN', 2: 'CZ679A', 3: 100.0}
+Row 793 : {1: 'CABEZAL OPTIMIZADOR', 2: 'CZ680A', 3: 100.0}
+Row 794 : {1: 'KIT MANTENIMIENTO', 2: 'CZ681A', 3: 145.0}
+Row 797 : {1: 'HP LATEX L700 L700W N║832'}
+Row 799 : {1: 'TINTA NEGRA 1L', 2: '4UV75A', 3: 114.0}
+Row 800 : {1: 'TINTA CIAN 1L', 2: '4UV76A', 3: 114.0}
+Row 801 : {1: 'TINTA MAGENTA 1L', 2: '4UV77A', 3: 114.0}
+Row 802 : {1: 'TINTA AMARILLA 1L', 2: '4UV78A', 3: 114.0}
+Row 803 : {1: 'TINTA LIGHT CIAN 1L', 2: '4UV79A', 3: 114.0}
+Row 804 : {1: 'TINTA LIGHT MAGENTA 1L', 2: '4UV80A', 3: 114.0}
+Row 805 : {1: 'TINTA OPTIMIZADOR 1L', 2: '4UV81A', 3: 114.0}
+Row 806 : {1: 'TINTA OVERCOAT 1L', 2: '4UV82A', 3: 114.0}
+Row 807 : {1: 'TINTA BLANCA 1L', 2: '4UV29A', 3: 114.0}
+Row 808 : {1: 'CABEZAL CIAN/NEGRO', 2: '4UV95A', 3: 140.0}
+Row 809 : {1: 'CABEZAL MAGENTA/AMARILLO', 2: '4UV96A', 3: 140.0}
+Row 810 : {1: 'CABEZAL L.MAGENTA/ L.CIAN', 2: '4UV97A', 3: 140.0}
+Row 811 : {1: 'CABEZAL OPTIMIZADOR', 2: '4UU94A', 3: 140.0}
+Row 812 : {1: 'CABEZAL OVERCOAT', 2: '4UV98A', 3: 140.0}
+Row 813 : {1: 'CABEZAL BLANCO', 2: '4UU93A', 3: 140.0}
+Row 814 : {1: 'CARTUCHO DE MANTENIMIENTO', 2: '4UU96A', 3: 145.0}
+Row 815 : {1: 'CONTENEDOR DE TINTA', 2: '4UV83A', 3: 44.0}
+Row 818 : {1: 'HP LATEX L800 L800W N║836'}
+Row 820 : {1: 'TINTA NEGRA 3L', 2: '4UV84A', 3: 252.0}
+Row 821 : {1: 'TINTA CIAN 3L', 2: '4UV85A', 3: 252.0}
+Row 822 : {1: 'TINTA MAGENTA 3L', 2: '4UV86A', 3: 252.0}
+Row 823 : {1: 'TINTA AMARILLA 3L', 2: '4UV87A', 3: 252.0}
+Row 824 : {1: 'TINTA LIGHT CIAN 3L', 2: '4UV88A', 3: 252.0}
+Row 825 : {1: 'TINTA LIGHT MAGENTA 3L', 2: '4UV89A', 3: 252.0}
+Row 826 : {1: 'TINTA OPTIMIZADOR 3L', 2: '4UV90A', 3: 252.0}
+Row 827 : {1: 'TINTA OVERCOAT 3L', 2: '4UV91A', 3: 252.0}
+Row 828 : {1: 'TINTA BLANCA 3L', 2: '4UV62A', 3: 252.0}
+Row 829 : {1: 'CABEZAL CIAN/NEGRO', 2: '4UV95A', 3: 140.0}
+Row 830 : {1: 'CABEZAL MAGENTA/AMARILLO', 2: '4UV96A', 3: 140.0}
+Row 831 : {1: 'CABEZAL L.MAGENTA/ L.CIAN', 2: '4UV97A', 3: 140.0}
+Row 832 : {1: 'CABEZAL OPTIMIZADOR', 2: '4UU94A', 3: 140.0}
+Row 833 : {1: 'CABEZAL OVERCOAT', 2: '4UV98A', 3: 140.0}
+Row 834 : {1: 'CABEZAL BLANCO', 2: '4UU93A', 3: 140.0}
+Row 835 : {1: 'CARTUCHO DE MANTENIMIENTO', 2: '4UU96A', 3: 145.0}
+Row 836 : {1: 'CONTENEDOR DE TINTA', 2: '4UV83A', 3: 44.0}
+Row 838 : {1: 'HP LATEX L1500 N║881'}
+Row 839 : {1: 'TINTA NEGRA 5L', 2: 'CR331A', 3: 430.0}
+Row 840 : {1: 'TINTA CIAN 5L', 2: 'CR332A', 3: 430.0}
+Row 841 : {1: 'TINTA MAGENTA 5L', 2: 'CR333A', 3: 430.0}
+Row 842 : {1: 'TINTA AMARILLA 5L', 2: 'CR334A', 3: 430.0}
+Row 843 : {1: 'TINTA LIGHT CIAN 5L', 2: 'CR335A', 3: 430.0}
+Row 844 : {1: 'TINTA LIGHT MAGENTA 5L', 2: 'CR336A', 3: 430.0}
+Row 845 : {1: 'TINTA OPTIMIZADOR 5L', 2: 'CR337A', 3: 430.0}
+Row 846 : {1: 'CABEZAL CIAN/NEGRO', 2: 'CR327A', 3: 390.0}
+Row 847 : {1: 'CABEZAL MAGENTA/AMARILLO', 2: 'CR328A', 3: 390.0}
+Row 848 : {1: 'CABEZAL L.MAGENTA/ L.CIAN', 2: 'CR329A', 3: 390.0}
+Row 849 : {1: 'CABEZAL OPTIMIZADOR', 2: 'CR330A', 3: 390.0}
+Row 850 : {1: 'KIT MANTENIMIENTO', 2: 'G0Y99A', 3: 315.0}
+Row 852 : {1: 'HP LATEX L2700 L2700W N║883'}
+Row 854 : {1: 'TINTA CIAN 5L', 2: 'G0Z28A', 3: 320.0}
+Row 855 : {1: 'TINTA MAGENTA 5L', 2: 'G0Z29A', 3: 320.0}
+Row 856 : {1: 'TINTA AMARILLO 5L', 2: 'G0Z30A', 3: 320.0}
+Row 857 : {1: 'TINTA NEGRO 5L', 2: 'G0Z31A', 3: 320.0}
+Row 858 : {1: 'TINTA LIGHT CIAN 5L', 2: 'G0Z32A', 3: 320.0}
+Row 859 : {1: 'TINTA LIGHT MAGENTA 5L', 2: 'G0Z33A', 3: 320.0}
+Row 860 : {1: 'TINTA OPTIMIZADOR 5L', 2: 'G0Z34A', 3: 320.0}
+Row 861 : {1: 'TINTA OVERCOAT 5L', 2: 'G0Z35A', 3: 320.0}
+Row 862 : {1: 'TINTA BLANCA 3L', 2: 'G0Z44A', 3: 320.0}
+Row 863 : {1: 'CABEZAL BLANCO', 2: 'G0Z21A', 3: 412.0}
+Row 864 : {1: 'CABEZAL OPTIMIZADOR', 2: 'G0Z22A', 3: 412.0}
+Row 865 : {1: 'CABEZAL IMPRESION N/C A/M LM/LC OVERCOAT', 2: 'G0Z24A', 3: 412.0}
+Row 866 : {1: 'CARTUCHO DE MANTENIMIENTO', 2: 'G0Z45A', 3: '- Ç'}
+Row 869 : {1: 'HP LATEX L3100 L3200 L3600 N║891'}
+Row 871 : {1: 'TINTA NEGRA 10L', 2: 'G0Y72C', 3: 560.0}
+Row 872 : {1: 'TINTA CIAN 10L', 2: 'G0Y73C', 3: 560.0}
+Row 873 : {1: 'TINTA MAGENTA 10L', 2: 'G0Y74C', 3: 560.0}
+Row 874 : {1: 'TINTA AMARILLA 10L', 2: 'G0Y75C', 3: 560.0}
+Row 875 : {1: 'TINTA LIGHT CIAN 10L', 2: 'G0Y76C', 3: 560.0}
+Row 876 : {1: 'TINTA LIGHT MAGENTA 10L', 2: 'G0Y77C', 3: 560.0}
+Row 877 : {1: 'TINTA OPTIMIZADOR 10L', 2: 'G0Y78C', 3: 560.0}
+Row 878 : {1: 'CABEZAL CIAN/NEGRO', 2: 'CR327A', 3: 390.0}
+Row 879 : {1: 'CABEZAL MAGENTA/AMARILLO', 2: 'CR328A', 3: 390.0}
+Row 880 : {1: 'CABEZAL L.MAGENTA/ L.CIAN', 2: 'CR329A', 3: 390.0}
+Row 881 : {1: 'CABEZAL OPTIMIZADOR', 2: 'CR330A', 3: 390.0}
+Row 882 : {1: 'KIT MANTENIMIENTO', 2: 'CR339B', 3: 390.0}
+Row 885 : {1: 'FB500-700 FB550-750 N║831'}
+Row 887 : {1: 'TINTA NEGRA 3L', 2: 'CH216A', 3: 509.0}
+Row 888 : {1: 'TINTA CIAN 3L', 2: 'CH217A', 3: 509.0}
+Row 889 : {1: 'TINTA MAGENTA 3L', 2: 'CH218A', 3: 509.0}
+Row 890 : {1: 'TINTA AMARILLA 3L', 2: 'CH219A', 3: 509.0}
+Row 891 : {1: 'TINTA LIGHT CIAN 3L', 2: 'CH220A', 3: 509.0}
+Row 892 : {1: 'TINTA LIGHT MAGENTA 3L', 2: 'CH221A', 3: 509.0}
+Row 893 : {1: 'TINTA BLANCA 2l', 2: 'CQ123A', 3: 357.0}
+Row 895 : {1: 'HP LATEX R1000 N║872'}
+Row 897 : {1: 'TINTA CIAN 3L', 2: 'G0Z01A', 3: 252.0}
+Row 898 : {1: 'TINTA MAGENTA 3L', 2: 'G0Z02A', 3: 252.0}
+Row 899 : {1: 'TINTA AMARILLO 3L', 2: 'G0Z03A', 3: 252.0}
+Row 900 : {1: 'TINTA NEGRO 3L', 2: 'G0Z04A', 3: 252.0}
+Row 901 : {1: 'TINTA LIGHT CIAN 3L', 2: 'G0Z05A', 3: 252.0}
+Row 902 : {1: 'TINTA LIGHT MAGENTA 3L', 2: 'G0Z06A', 3: 252.0}
+Row 903 : {1: 'TINTA OPTIMIZADOR 3L', 2: 'G0Z07A', 3: 252.0}
+Row 904 : {1: 'TINTA OVERCOAT 3L', 2: 'G0Z08A', 3: 252.0}
+Row 905 : {1: 'TINTA BLANCA 3L', 2: 'G0Z09A', 3: 252.0}
+Row 906 : {1: 'CABEZAL BLANCO', 2: 'G0Z21A', 3: 412.0}
+Row 907 : {1: 'CABEZAL OPTIMIZADOR', 2: 'G0Z22A', 3: 412.0}
+Row 908 : {1: 'CABEZAL IMPRESION N/C A/M LM/LC OVERCOAT', 2: 'G0Z24A', 3: 412.0}
+Row 909 : {1: 'CARTUCHO DE MANTENIMIENTO', 2: 'G0Z00A', 3: 341.0}
+Row 911 : {1: 'HP LATEX R2000 N║882'}
+Row 913 : {1: 'TINTA CIAN 5L', 2: 'G0Z10A', 3: 355.0}
+Row 914 : {1: 'TINTA MAGENTA 5L', 2: 'G0Z11A', 3: 355.0}
+Row 915 : {1: 'TINTA AMARILLO 5L', 2: 'G0Z12A', 3: 355.0}
+Row 916 : {1: 'TINTA NEGRO 5L', 2: 'G0Z13A', 3: 355.0}
+Row 917 : {1: 'TINTA LIGHT CIAN 5L', 2: 'G0Z14A', 3: 355.0}
+Row 918 : {1: 'TINTA LIGHT MAGENTA 5L', 2: 'G0Z15A', 3: 355.0}
+Row 919 : {1: 'TINTA OPTIMIZADOR 5L', 2: 'G0Z16A', 3: 355.0}
+Row 920 : {1: 'TINTA OVERCOAT 5L', 2: 'G0Z17A', 3: 355.0}
+Row 921 : {1: 'TINTA BLANCA 3L', 2: 'G0Z09A', 3: 252.0}
+Row 922 : {1: 'CABEZAL BLANCO', 2: 'G0Z21A', 3: 412.0}
+Row 923 : {1: 'CABEZAL OPTIMIZADOR', 2: 'G0Z22A', 3: 412.0}
+Row 924 : {1: 'CABEZAL IMPRESION N/C A/M LM/LC OVERCOAT', 2: 'G0Z24A', 3: 412.0}
+Row 925 : {1: 'CARTUCHO DE MANTENIMIENTO', 2: 'G0Z00A', 3: 341.0}
+Row 929 : {1: 'HP STITCH S300 N║636'}
+Row 931 : {1: 'TINTA NEGRA 775ml', 2: '2LL53A', 3: 55.0}
+Row 932 : {1: 'TINTA CIAN 775ml', 2: '2LL54A', 3: 55.0}
+Row 933 : {1: 'TINTA MAGENTA 775ml', 2: '2LL55A', 3: 55.0}
+Row 934 : {1: 'TINTA AMARILLO 775ml', 2: '2LL56A', 3: 55.0}
+Row 935 : {1: 'KIT DE MANTENIMIENTO', 2: '2LL61A', 3: 141.0}
+Row 936 : {1: 'CABEZAL CIAN/NEGRO', 2: '2LL62A', 3: 141.0}
+Row 937 : {1: 'CABEZAL MAGENTA/AMARILLO', 2: '2LL63A', 3: 141.0}
+Row 939 : {1: 'HP STITCH S500 N║636'}
+Row 941 : {1: 'TINTA NEGRA 3L', 2: '2LL57A', 3: 178.0}
+Row 942 : {1: 'TINTA CIAN 3L', 2: '2LL58A', 3: 178.0}
+Row 943 : {1: 'TINTA MAGENTA 3L', 2: '2LL59A', 3: 178.0}
+Row 944 : {1: 'TINTA AMARILLO 3L', 2: '2LL60A', 3: 178.0}
+Row 945 : {1: 'KIT DE MANTENIMIENTO', 2: '2LL61A', 3: 141.0}
+Row 946 : {1: 'CABEZAL CIAN/NEGRO', 2: '2LL62A', 3: 141.0}
+Row 947 : {1: 'CABEZAL MAGENTA/AMARILLO', 2: '2LL63A', 3: 141.0}
+
+============================================================
+SHEET: RIGIDOS
+============================================================
+Row 1 >>CATEGORY<<: {2: 'Planchas de PVC'}
+Row 2 : {3: 'Disponibles cortadas a medida'}
+Row 4 : {2: 'Julian', 3: '604195873        Malaga / Cadiz'}
+Row 5 : {2: 'Jose Miguel', 3: '657652706       Grx / Jaen / Alm'}
+Row 7 : {1: 'PVC BLANCO (3050x2050)', 2: 'PRECIO'}
+Row 8 : {1: '1mm', 2: 25.9}
+Row 9 : {1: '2mm', 2: 32.5}
+Row 10 : {1: '3mm', 2: 37.15}
+Row 11 : {1: '4mm', 2: 50.15}
+Row 12 : {1: '5mm', 2: 62.5}
+Row 13 : {1: '6mm', 2: 75.5}
+Row 14 : {1: '8mm', 2: 99.9}
+Row 15 : {1: '10mm', 2: 123.9}
+Row 16 : {1: '19mm 3050x1560', 2: 229.0}
+Row 17 : {1: '19mm 3050x1220', 2: 179.0}
+Row 18 : {1: '30mm 3050x1220', 2: 319.0}
+Row 20 : {1: 'PVC NEGRO (3050x2050)', 2: 'PRECIO'}
+Row 21 : {1: '3mm', 2: 47.5}
+Row 22 : {1: '5mm', 2: 85.9}
+Row 23 : {1: '10mm', 2: 157.9}
+Row 24 : {1: '19mm 3050 X 1560', 2: 249.0}
+Row 26 >>CATEGORY<<: {1: 'COLORES:    VERDE, GRIS, AMARILLO, ROJO, AZUL'}
+Row 27 : {1: '3mm', 2: 68.5}
+Row 28 : {1: '5mm', 2: 105.9}
+Row 30 : {1: 'En la medida de 3050 x 1560 mm rogamos consultar disponibilidad.'}
+Row 32 : {1: 'PVC Blanco/Nucleo Negro (3050x1560)', 2: 'PRECIO'}
+Row 33 : {1: '5mm', 2: 0.0}
+Row 34 : {1: '10mm', 2: 139.0}
+Row 41 : {1: 'PVC Efecto Madera 3050 X 1220', 2: 'PRECIO'}
+Row 42 : {1: '10mm', 2: 129.0}
+Row 47 >>CATEGORY<<: {2: 'Policarbonato Celular'}
+Row 48 : {3: 'Disponibles cortadas a medida'}
+Row 50 : {2: 'Julian', 3: '604195873        Malaga / Cadiz'}
+Row 51 : {2: 'Jose Miguel', 3: '657652706       Grx / Jaen / Alm'}
+Row 54 : {1: 'Espesor', 2: 'Placa (6000x2100)', 3: '¢ Placa (3000x2100)'}
+Row 55 : {1: '4MM INCOLORO', 2: 72.0, 3: 36}
+Row 56 : {1: '6MM INCOLORO', 2: 117.0, 3: 58.5}
+Row 57 : {1: '8MM INCOLORO', 2: 135.0, 3: 67.5}
+Row 58 : {1: '10MM INCOLORO', 2: 152.0, 3: 76}
+Row 59 : {1: '16MM INCOLORO', 2: 214.5, 3: 107.25}
+Row 60 : {1: '20MM INCOLORO', 2: 255.0, 3: 127.5}
+Row 61 : {1: '25MM INCOLORO', 2: 295.0, 3: 147.5}
+Row 62 : {1: '32MM INCOLORO', 2: 322.0, 3: 161}
+Row 64 >>CATEGORY<<: {1: 'Blanco Roto + 10% y Hielo + 5%'}
+Row 83 >>CATEGORY<<: {2: 'Metacrilato'}
+Row 84 : {3: 'Disponibles cortadas a medida'}
+Row 86 : {2: 'Julian', 3: '604195873        Malaga / Cadiz'}
+Row 87 : {2: 'Jose Miguel', 3: '657652706       Grx / Jaen / Alm'}
+Row 90 : {1: 'COLADA', 2: 'Placa (3050x2030)', 3: '¢ Placa (1525x2030)'}
+Row 91 : {1: '3mm INCOLORO', 2: 151.0, 3: 75.5}
+Row 92 : {1: '4mm INCOLORO', 2: 201.0, 3: 100.5}
+Row 93 : {1: '5mm INCOLORO', 2: 251.0, 3: 125.5}
+Row 94 : {1: '6mm INCOLORO', 2: 302.0, 3: 151}
+Row 95 : {1: '8mm INCOLORO', 2: 402.0, 3: 201}
+Row 96 : {1: '10mm INCOLORO', 2: 503.0, 3: 251.5}
+Row 97 : {1: '15mm INCOLORO', 2: 755.0, 3: 377.5}
+Row 98 : {1: '20mm INCOLORO', 2: 1005.0, 3: 502.5}
+Row 100 >>CATEGORY<<: {1: 'Blanco y Hielo + 5%                    Colores 25% +'}
+Row 103 : {1: 'EXTRUSION', 2: 'Placa (3050x2050)', 3: '¢ Placa (1525x2050)'}
+Row 104 : {1: '2mm INCOLORO', 2: 85.0, 3: 42.5}
+Row 105 : {1: '3mm INCOLORO', 2: 129.0, 3: 64.5}
+Row 106 : {1: '4mm INCOLORO', 2: 172.0, 3: 86}
+Row 107 : {1: '5mm INCOLORO', 2: 215.0, 3: 107.5}
+Row 108 : {1: '6mm INCOLORO', 2: 256.6, 3: 128.3}
+Row 109 : {1: '8mm INCOLORO', 2: 343.0, 3: 171.5}
+Row 110 : {1: '10mm INCOLORO', 2: 429.0, 3: 214.5}
+Row 112 >>CATEGORY<<: {1: 'Blanco y Hielo + 5%'}
+Row 128 >>CATEGORY<<: {1: 'POLICARBONATO COMPUESTO'}
+Row 130 : {1: 'POLICAR. COMP.', 2: 'Placa (3050x2050)', 3: '¢ Placa (1525x2050)'}
+Row 132 : {1: '2MM INCOLORO', 2: 95.5, 3: 47.75}
+Row 133 : {1: '3MM INCOLORO', 2: 142.0, 3: 71}
+Row 134 : {1: '4MM INCOLORO', 2: 190.0, 3: 95}
+Row 135 : {1: '5MM INCOLORO', 2: 239.0, 3: 119.5}
+Row 136 : {1: '6MM INCOLORO', 2: 285.0, 3: 142.5}
+Row 137 : {1: '8MM INCOLORO', 2: 385.0, 3: 192.5}
+Row 138 : {1: '10MM INCOLORO', 2: 475.0, 3: 237.5}
+Row 140 >>CATEGORY<<: {1: 'Blanco y Hielo + 5%'}
+Row 148 >>CATEGORY<<: {2: 'Composite'}
+Row 149 >>CATEGORY<<: {3: 'Disponibles cortadas a medida'}
+Row 151 >>CATEGORY<<: {3: 'Julian   604195873        Malaga / Cadiz'}
+Row 152 >>CATEGORY<<: {3: 'Jose Miguel  657652706      Grx / Jaen / Alm'}
+Row 155 >>CATEGORY<<: {1: 'PERFIL 0.21mm'}
+Row 156 >>CATEGORY<<: {1: 'MEDIDAS', 2: 'ESPESOR', 3: 'COLORES', 5: 'Ç PLACA'}
+Row 157 >>CATEGORY<<: {1: '3050X1500', 2: '2MM', 3: 'ETALB. BLANCO (BR/MAT)', 5: 76.5}
+Row 158 >>CATEGORY<<: {1: '3050X1500', 2: '3MM', 3: 'PV BL-NEG.SILVER', 5: 87.5}
+Row 159 >>CATEGORY<<: {1: '3050X1500', 2: '3MM', 3: 'ROJO/AZUL - VERDE/AMARILLO', 5: 87.5}
+Row 160 >>CATEGORY<<: {1: '3050X1500', 2: '4MM', 3: 'PV BLANCO (BR/MAT)', 5: 93.15}
+Row 161 >>CATEGORY<<: {1: '3050X2000', 2: '3MM', 3: 'BLANCO PV (BR/MAT)', 5: 126.9}
+Row 162 >>CATEGORY<<: {1: '3050X2000', 2: '3MM', 3: 'BLANCO ELVAL (MATE 2 CARAS)', 5: 128.9}
+Row 164 >>CATEGORY<<: {1: 'PERFIL 0.3mm'}
+Row 165 >>CATEGORY<<: {1: 'MEDIDAS', 2: 'ESPESOR', 3: 'COLORES'}
+Row 166 >>CATEGORY<<: {1: '3050X1500', 2: '3MM', 3: 'BLANCO-PLATA-NEGRO', 5: 103.25}
+Row 167 >>CATEGORY<<: {1: '3050X1500', 2: '3MM', 3: 'AZUL/AZUL - ROJO/ROJO', 5: 103.25}
+Row 168 >>CATEGORY<<: {1: '3050X1500', 2: '3MM', 3: 'ESMERILADO/PLATA', 5: 108.4}
+Row 169 >>CATEGORY<<: {1: '3050X2000', 2: '3MM', 3: 'BLANCO (MATE 2 CARAS)', 5: 151.0}
+Row 170 >>CATEGORY<<: {1: '3050X2000', 2: '3MM', 3: 'BL/NEG (MATE 2 CARAS)', 5: 151.0}
+Row 171 >>CATEGORY<<: {1: '3050X2000', 2: '3MM', 3: 'NEG (BRILLO/MATE)', 5: 151.0}
+Row 172 >>CATEGORY<<: {1: '3050X1500', 2: '3MM', 3: 'ANTRACITA', 5: 103.25}
+Row 173 >>CATEGORY<<: {1: '3050X1220', 2: '3MM', 3: 'ESPEJO', 5: 145.9}
+Row 190 >>CATEGORY<<: {2: 'Panelplast - Pegasus'}
+Row 191 : {3: 'Disponibles cortadas a medida'}
+Row 193 : {2: 'Julian', 3: '604195873        Malaga / Cadiz'}
+Row 194 : {2: 'Jose Miguel', 3: '657652706       Grx / Jaen / Alm'}
+Row 197 : {1: 'MM', 2: 'ESPESOR', 3: 'PRECIO Ç'}
+Row 198 : {1: '3050x2030', 2: '10mm', 3: 85.0}
+Row 199 : {1: '3050x1530', 2: '10mm', 3: 65.0}
+Row 200 : {1: '3050x2030', 2: '19mm', 3: 112.0}
+Row 201 : {1: '3050x2030', 2: '30mm', 3: 153.0}
+Row 203 : {1: 'DISPONIBILIDAD EN COLOR NEGRO. CONSULTAR'}
+Row 204 : {1: 'Panel sßndwich con n·cleo de espuma de poliestireno extruido XPS'}
+Row 205 : {1: 'recubierto de un film de 300mic. de PVC blanco'}
+Row 221 >>CATEGORY<<: {3: 'Carton Pluma'}
+Row 224 >>CATEGORY<<: {2: 'Julian', 3: '604195873        Malaga / Cadiz'}
+Row 225 >>CATEGORY<<: {2: 'Jose Miguel', 3: '657652706       Grx / Jaen / Alm'}
+Row 228 : {1: 'GEOFOAM', 2: 'MEDIDA', 3: 'PLANCHAS CAJA', 4: 'PRECIO'}
+Row 230 : {1: 'S/ADH', 2: '70x100 5mm', 3: 25.0, 4: 4.3}
+Row 231 : {1: 'S/ADH', 2: '100x140 5mm', 3: 25.0, 4: 6.89}
+Row 232 : {1: 'S/ADH', 2: '100x200 5mm', 3: 25.0, 4: 9.05}
+Row 233 : {1: 'S/ADH', 2: '122x244 5mm', 3: 20.0, 4: 14.5}
+Row 235 : {1: 'C/ADH', 2: '70x100 5mm', 3: 25.0, 4: 5.98}
+Row 236 : {1: 'C/ADH', 2: '100x140 5mm', 3: 25.0, 4: 10.4}
+Row 237 : {1: 'C/ADH', 2: '100x200 5mm', 3: 25.0, 4: 14.5}
+Row 238 : {1: 'C/ADH', 2: '122x244 5mm', 3: 20.0, 4: 23.5}
+Row 240 : {1: 'S/ADH', 2: '70x100 10mm', 3: 15.0, 4: 5.8}
+Row 241 : {1: 'S/ADH', 2: '100x140 10mm', 3: 15.0, 4: 10.5}
+Row 242 : {1: 'S/ADH', 2: '100x200 10mm', 3: 10.0, 4: 14.5}
+Row 243 : {1: 'S/ADH', 2: '122x244 10mm', 3: 10.0, 4: 22.5}
+Row 245 : {1: 'C/ADH', 2: '70x100 10mm', 3: 15.0, 4: 8.1}
+Row 246 : {1: 'C/ADH', 2: '100x140 10mm', 3: 15.0, 4: 14.3}
+Row 247 : {1: 'C/ADH', 2: '100x200 10mm', 3: 10.0, 4: 20.5}
+Row 248 : {1: 'C/ADH', 2: '122x244 10mm', 3: 10.0, 4: 34.5}
+Row 251 : {1: 'GEOFOAM plus', 2: 'MEDIDA', 3: 'PLANCHAS CAJA'}
+Row 253 : {1: 'S/ADH', 2: '140x300 5mm', 3: 15.0, 4: 28.9}
+Row 254 : {1: 'S/ADH', 2: '152x305 5mm', 3: 15.0, 4: 32.5}
+Row 256 : {1: 'C/ADH', 2: '140x300 5mm', 3: 15.0, 4: 43.5}
+Row 257 : {1: 'C/ADH', 2: '152x305 5mm', 3: 15.0, 4: 48.5}
+Row 259 : {1: 'S/ADH', 2: '140x300 10mm', 3: 8.0, 4: 42.5}
+Row 260 : {1: 'S/ADH', 2: '152x305 10mm', 3: 8.0, 4: 44.3}
+Row 262 : {1: 'C/ADH', 2: '140x300 10mm', 3: 8.0, 4: 49.0}
+Row 263 : {1: 'C/ADH', 2: '152x305 10mm', 3: 8.0, 4: 52.0}
+Row 266 >>CATEGORY<<: {1: 'POLIPROPULENO ALVEOLAR'}
+Row 267 >>CATEGORY<<: {1: 'NIDO ABEJA'}
+Row 269 : {1: 'ESPESOR', 2: 'DESCRIPCION', 3: 'MEDIDA', 4: 'PESO', 5: 'PRECIO Ç'}
+Row 271 : {1: '2.4mm', 2: 'NORMAL/SMOOTH', 3: '3050x2050', 4: '450 gr', 5: 19.8}
+Row 272 : {1: '2.6mm', 2: 'SMOOTH', 3: '3050x2050', 4: '600 gr', 5: 26.400000000000002}
+Row 273 : {1: '3mm', 2: 'SMOOTH', 3: '3050x2050', 4: '900 gr', 5: 35.2}
+Row 274 : {1: '3mm', 2: 'NORMAL/SMOOTH', 3: '3050x2050', 4: '900 gr', 5: 38.5}
+Row 275 : {1: '5mm', 2: 'SMOOTH', 3: '3050x2050', 4: '1600 gr', 5: 60.50000000000001}
+Row 276 : {1: '5mm', 2: 'NORMAL/SMOOTH', 3: '3050x2050', 4: '1600 gr', 5: 63.800000000000004}
+Row 277 : {1: '5mm', 2: 'NORMAL/SMOOTH', 3: '3050x2050', 4: '1600 gr', 5: 66.0}
+Row 278 : {1: '8mm', 2: 'NORMAL/SMOOTH', 3: '3050x2050', 4: '2000 gr', 5: 77.0}

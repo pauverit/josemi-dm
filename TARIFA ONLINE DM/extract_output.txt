@@ -1,0 +1,139 @@
+﻿
+============================================================
+SHEET: FLEXIBLES (1744 rows x 24 cols)
+============================================================
+
+Merged cells: [<MergedCellRange A429:C429>, <MergedCellRange A448:C448>, <MergedCellRange A447:C447>, <MergedCellRange A139:C139>, <MergedCellRange A185:C185>, <MergedCellRange A5:C5>, <MergedCellRange A32:C32>, <MergedCellRange A262:C262>, <MergedCellRange A311:C311>, <MergedCellRange A445:C445>, <MergedCellRange A19:C19>, <MergedCellRange A357:C357>, <MergedCellRange A638:C638>, <MergedCellRange A216:C216>, <MergedCellRange A430:C430>, <MergedCellRange A492:C492>, <MergedCellRange A399:C399>, <MergedCellRange A124:C124>, <MergedCellRange A78:C78>, <MergedCellRange A370:C370>]
+Row 5: {1: 'VINILOS MONOM╔RICOS'}
+Row 7: {1: 'BRILLO adhesivo PERMANENTE T/blanca y negra, en 105,137,160', 3: 1.4}
+Row 9: {1: 'BRILLO adhesivo REMOVIBLE T/blanca y negra, en 105,137,160', 3: 1.4}
+Row 11: {1: 'MATE adhesivo PERMANENTE T/blanca y gris, en 105,137,160', 3: 1.4}
+Row 13: {1: 'MATE adhesivo REMOVIBLE T/blanca y gris, en 105,137,160', 3: 1.4}
+Row 19: {1: 'VINILOS MONOM╔RICOS'}
+Row 21: {1: 'BRILLO adhesivo PERMANENTE T/Blanca y gris, en 105,137,152', 3: 1.2}
+Row 23: {1: 'BRILLO adhesivo REMOVIBLE T/Blanca y gris, en 105,137,152', 3: 1.2}
+Row 25: {1: 'MATE adhesivo PERMANENTE T/Blanca y gris, en 105,137,152', 3: 1.2}
+Row 27: {1: 'MATE adhesivo REMOVIBLE T/Blanca y gris, en 105,137,152', 3: 1.2}
+Row 32: {1: 'LAMINADOS MONOM╔RICOS'}
+Row 34: {1: 'TMK'}
+Row 36: {1: '80Á BRILLO adhesivo acrÝlico base agua'}
+Row 37: {1: 'Laminado brillo ', 2: '1,05m x 50m', 3: 1.6}
+Row 38: {1: 'Laminado brillo ', 2: '1,40m x 50m ', 3: 1.6}
+Row 39: {1: 'Laminado brillo ', 2: '1,52m x 50m', 3: 1.6}
+Row 40: {1: '80Á MATE adhesivo acrÝlico base agua'}
+Row 41: {1: 'Laminado mate', 2: '1,05m x 50m', 3: 1.6}
+Row 42: {1: 'Laminado mate', 2: '1,40m x 50m ', 3: 1.6}
+Row 43: {1: 'Laminado mate', 2: '1,55m x 50m', 3: 1.6}
+Row 45: {1: 'RITRAMA'}
+Row 47: {1: '70Á BRILLO adhesivo acrÝlico base agua'}
+Row 48: {1: 'Laminado brillo ', 2: '1,05m x 50m', 3: 1.9}
+Row 49: {1: 'Laminado brillo ', 2: '1,40m x 50m ', 3: 1.9}
+Row 50: {1: 'Laminado brillo ', 2: '1,55m x 50m', 3: 1.9}
+Row 51: {1: '70Á MATE adhesivo acrÝlico base agua'}
+Row 52: {1: 'Laminado mate', 2: '1,05m x 50m', 3: 1.9}
+Row 53: {1: 'Laminado mate', 2: '1,40m x 50m ', 3: 1.9}
+Row 54: {1: 'Laminado mate', 2: '1,55m x 50m', 3: 1.9}
+Row 55: {1: '70Á BRILLO adhesivo acrÝlico protecci¾n UV'}
+Row 56: {1: 'Laminado brillo ', 2: '1,05m x 50m', 3: 2.4}
+Row 57: {1: 'Laminado brillo ', 2: '1,40m x 50m ', 3: 2.4}
+Row 58: {1: 'Laminado brillo ', 2: '1,55m x 50m', 3: 2.4}
+Row 59: {1: 'Laminado 70Á MATE adhesivo acrÝlico protecci¾n UV'}
+Row 60: {1: 'Laminado mate', 2: '1,05m x 50m', 3: 2.4}
+Row 61: {1: 'Laminado mate', 2: '1,40m x 50m ', 3: 2.4}
+Row 62: {1: 'Laminado mate', 2: '1,55m x 50m', 3: 2.4}
+Row 64: {1: 'ATP'}
+Row 66: {1: '70Á BRILLO adhesivo acrÝlico base agua'}
+Row 67: {1: 'Laminado brillo ', 2: '1,05m x 50m', 3: 2.7}
+Row 68: {1: 'Laminado brillo ', 2: '1,40m x 50m ', 3: 2.7}
+Row 69: {1: 'Laminado brillo ', 2: '1,55m x 50m', 3: 2.7}
+Row 70: {1: '70Á MATE adhesivo acrÝlico base agua'}
+Row 71: {1: 'Laminado mate', 2: '1,05m x 50m', 3: 2.7}
+Row 72: {1: 'Laminado mate', 2: '1,40m x 50m ', 3: 2.7}
+Row 73: {1: 'Laminado mate', 2: '1,55m x 50m', 3: 2.7}
+Row 74: {1: '70Á SATIN adhesivo acrÝlico base agua'}
+Row 75: {1: 'Laminado satÝn', 2: '1,05m x 50m', 3: 2.7}
+Row 76: {1: 'Laminado satÝn', 2: '1,40m x 50m ', 3: 2.7}
+Row 77: {1: 'Laminado satÝn', 2: '1,55m x 50m', 3: 2.7}
+Row 78: {1: 'VINILOS POLIMERICOS'}
+Row 79: {1: 'ATP'}
+Row 80: {1: 'VALIDO PARA UV LATEX SOLV Y ECO SOLV'}
+Row 82: {1: '7 a±os 80Á BRILLO ADHESIVO PERMANENTE '}
+Row 83: {1: 'Vinilo ATP 80 trasera blanca', 2: '1,05m x 50m', 3: 4.5}
+Row 84: {1: 'Vinilo ATP 80 trasera blanca', 2: '1,37m x 50m', 3: 4.5}
+Row 85: {1: 'Vinilo ATP 80 trasera blanca', 2: '1,55m x 50m', 3: 4.5}
+Row 86: {1: 'Vinilo ATP 80 trasera gris', 2: '1,05m x 50m', 3: 4.5}
+Row 87: {1: 'Vinilo ATP 80 trasera gris', 2: '1,37m x 50m', 3: 4.5}
+Row 88: {1: 'Vinilo ATP 80 trasera gris', 2: '1,55m x 50m', 3: 4.5}
+Row 89: {1: 'Vinilo ATP 70 transparente', 2: '1,05m x 50m', 3: 4.9}
+Row 90: {1: 'Vinilo ATP 70 transparente', 2: '1,37m x 50m', 3: 4.9}
+Row 91: {1: 'Vinilo ATP 70 transparente', 2: '1,55m x 50m', 3: 4.9}
+Row 92: {1: '7 a±os 80Á BRILLO ADHESIVO PERMANENTE LIBRE DE BURBUJA'}
+Row 93: {1: 'Vinilo ATP 80 trasera blanca libre burbuja', 2: '1,05m x 50m', 3: 5.9}
+Row 94: {1: 'Vinilo ATP 80 trasera blanca libre burbuja', 2: '1,37m x 50m', 3: 5.9}
+Row 95: {1: 'Vinilo ATP 80 trasera gris libre burbuja', 2: '1,05m x 50m', 3: 5.9}
+Row 96: {1: 'Vinilo ATP 80 trasera gris libre burbuja', 2: '1,37m x 50m', 3: 5.9}
+Row 97: {1: 'Vinilo ATP 80 trasera gris libre burbuja', 2: '1,55m x 50m', 3: 5.9}
+Row 99: {1: 'RITRAMA'}
+
+============================================================
+SHEET: RIGIDOS (1105 rows x 26 cols)
+============================================================
+
+Merged cells: [<MergedCellRange A99:C99>, <MergedCellRange A128:C128>, <MergedCellRange B47:C47>, <MergedCellRange C157:D157>, <MergedCellRange C166:D166>, <MergedCellRange C160:D160>, <MergedCellRange B190:C190>, <MergedCellRange C156:D156>, <MergedCellRange A267:C267>, <MergedCellRange C225:D225>, <MergedCellRange C172:D172>, <MergedCellRange C162:D162>, <MergedCellRange C171:D171>, <MergedCellRange C221:D221>, <MergedCellRange C168:D168>, <MergedCellRange A100:C100>, <MergedCellRange A164:E164>, <MergedCellRange A140:C140>, <MergedCellRange C173:D173>, <MergedCellRange B1:C1>]
+Row 1: {2: 'Planchas de PVC'}
+Row 2: {3: 'Disponibles cortadas a medida'}
+Row 4: {2: 'Julian', 3: '604195873        Malaga / Cadiz'}
+Row 5: {2: 'Jose Miguel', 3: '657652706       Grx / Jaen / Alm'}
+Row 7: {1: 'PVC BLANCO (3050x2050)', 2: 'PRECIO'}
+Row 8: {1: '1mm', 2: 25.9}
+Row 9: {1: '2mm', 2: 32.5}
+Row 10: {1: '3mm', 2: 37.15}
+Row 11: {1: '4mm', 2: 50.15}
+Row 12: {1: '5mm', 2: 62.5}
+Row 13: {1: '6mm', 2: 75.5}
+Row 14: {1: '8mm', 2: 99.9}
+Row 15: {1: '10mm', 2: 123.9}
+Row 16: {1: '19mm 3050x1560', 2: 229.0}
+Row 17: {1: '19mm 3050x1220', 2: 179.0}
+Row 18: {1: '30mm 3050x1220', 2: 319.0}
+Row 20: {1: 'PVC NEGRO (3050x2050)', 2: 'PRECIO'}
+Row 21: {1: '3mm', 2: 47.5}
+Row 22: {1: '5mm', 2: 85.9}
+Row 23: {1: '10mm', 2: 157.9}
+Row 24: {1: '19mm 3050 X 1560', 2: 249.0}
+Row 26: {1: 'COLORES:    VERDE, GRIS, AMARILLO, ROJO, AZUL'}
+Row 27: {1: '3mm', 2: 68.5}
+Row 28: {1: '5mm', 2: 105.9}
+Row 30: {1: 'En la medida de 3050 x 1560 mm rogamos consultar disponibilidad.'}
+Row 32: {1: 'PVC Blanco/Nucleo Negro (3050x1560)', 2: 'PRECIO'}
+Row 33: {1: '5mm', 2: 0.0}
+Row 34: {1: '10mm', 2: 139.0}
+Row 41: {1: 'PVC Efecto Madera 3050 X 1220', 2: 'PRECIO'}
+Row 42: {1: '10mm', 2: 129.0}
+Row 47: {2: 'Policarbonato Celular'}
+Row 48: {3: 'Disponibles cortadas a medida'}
+Row 50: {2: 'Julian', 3: '604195873        Malaga / Cadiz'}
+Row 51: {2: 'Jose Miguel', 3: '657652706       Grx / Jaen / Alm'}
+Row 54: {1: 'Espesor', 2: 'Placa (6000x2100)', 3: '¢ Placa (3000x2100)'}
+Row 55: {1: '4MM INCOLORO', 2: 72.0, 3: 36}
+Row 56: {1: '6MM INCOLORO', 2: 117.0, 3: 58.5}
+Row 57: {1: '8MM INCOLORO', 2: 135.0, 3: 67.5}
+Row 58: {1: '10MM INCOLORO', 2: 152.0, 3: 76}
+Row 59: {1: '16MM INCOLORO', 2: 214.5, 3: 107.25}
+Row 60: {1: '20MM INCOLORO', 2: 255.0, 3: 127.5}
+Row 61: {1: '25MM INCOLORO', 2: 295.0, 3: 147.5}
+Row 62: {1: '32MM INCOLORO', 2: 322.0, 3: 161}
+Row 64: {1: 'Blanco Roto + 10% y Hielo + 5%'}
+Row 83: {2: 'Metacrilato'}
+Row 84: {3: 'Disponibles cortadas a medida'}
+Row 86: {2: 'Julian', 3: '604195873        Malaga / Cadiz'}
+Row 87: {2: 'Jose Miguel', 3: '657652706       Grx / Jaen / Alm'}
+Row 90: {1: 'COLADA', 2: 'Placa (3050x2030)', 3: '¢ Placa (1525x2030)'}
+Row 91: {1: '3mm INCOLORO', 2: 151.0, 3: 75.5}
+Row 92: {1: '4mm INCOLORO', 2: 201.0, 3: 100.5}
+Row 93: {1: '5mm INCOLORO', 2: 251.0, 3: 125.5}
+Row 94: {1: '6mm INCOLORO', 2: 302.0, 3: 151}
+Row 95: {1: '8mm INCOLORO', 2: 402.0, 3: 201}
+Row 96: {1: '10mm INCOLORO', 2: 503.0, 3: 251.5}
+Row 97: {1: '15mm INCOLORO', 2: 755.0, 3: 377.5}
+Row 98: {1: '20mm INCOLORO', 2: 1005.0, 3: 502.5}

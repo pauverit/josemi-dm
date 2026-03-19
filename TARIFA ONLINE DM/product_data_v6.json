@@ -1,0 +1,3436 @@
+{
+  "flexibles": [
+    {
+      "name": "VINILO M96 FEDRIGONI",
+      "subcategories": [
+        {
+          "name": "Ri-Jet M96 ESPECIAL LATEX MONOMERICO",
+          "products": [
+            {
+              "name": "Ri-Jet M96 Clear Gloss Perm PE",
+              "size": "PVP",
+              "price": 1.37
+            },
+            {
+              "name": "Ri-Jet M96 White Gloss Perm Grey Airflow",
+              "size": "PVP",
+              "price": 1.6
+            },
+            {
+              "name": "Ri-Jet M96 White Gloss Perm Grey PE",
+              "size": "PVP",
+              "price": 1.37
+            },
+            {
+              "name": "Ri-Jet M96 White Gloss Perm PE",
+              "size": "PVP",
+              "price": 1.37
+            },
+            {
+              "name": "Ri-Jet M96 White Gloss Rem Grey Airflow",
+              "size": "PVP",
+              "price": 1.69
+            },
+            {
+              "name": "Ri-Jet M96 White Gloss Rem Grey PE",
+              "size": "PVP",
+              "price": 1.46
+            },
+            {
+              "name": "Ri-Jet M96 White Gloss Rem PE",
+              "size": "PVP",
+              "price": 1.46
+            },
+            {
+              "name": "Ri-Jet M96 White Matt Perm Grey PE",
+              "size": "PVP",
+              "price": 1.4
+            },
+            {
+              "name": "Ri-Jet M96 White Matt Perm PE",
+              "size": "PVP",
+              "price": 1.4
+            },
+            {
+              "name": "Ri-Jet M96 White Matt Rem Grey PE",
+              "size": "PVP",
+              "price": 1.49
+            },
+            {
+              "name": "Ri-Jet M96 White Matt Rem PE",
+              "size": "PVP",
+              "price": 1.49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VINILO MONO",
+      "subcategories": [
+        {
+          "name": "VINILOS MONOMÉRICOS",
+          "products": [
+            {
+              "name": "BRILLO adhesivo PERMANENTE T/blanca y negra, en 105,137,160",
+              "size": "",
+              "price": 1.4
+            },
+            {
+              "name": "BRILLO adhesivo REMOVIBLE T/blanca y negra, en 105,137,160",
+              "size": "",
+              "price": 1.4
+            },
+            {
+              "name": "MATE adhesivo PERMANENTE T/blanca y gris, en 105,137,160",
+              "size": "",
+              "price": 1.4
+            },
+            {
+              "name": "MATE adhesivo REMOVIBLE T/blanca y gris, en 105,137,160",
+              "size": "",
+              "price": 1.4
+            }
+          ]
+        },
+        {
+          "name": "VINILOS MONOMÉRICOS",
+          "products": [
+            {
+              "name": "BRILLO adhesivo PERMANENTE T/Blanca y gris, en 105,137,152",
+              "size": "",
+              "price": 1.2
+            },
+            {
+              "name": "BRILLO adhesivo REMOVIBLE T/Blanca y gris, en 105,137,152",
+              "size": "",
+              "price": 1.2
+            },
+            {
+              "name": "MATE adhesivo PERMANENTE T/Blanca y gris, en 105,137,152",
+              "size": "",
+              "price": 1.2
+            },
+            {
+              "name": "MATE adhesivo REMOVIBLE T/Blanca y gris, en 105,137,152",
+              "size": "",
+              "price": 1.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LAMINADO MONO",
+      "subcategories": [
+        {
+          "name": "LAMINADOS MONOMÉRICOS",
+          "products": [
+            {
+              "name": "Laminado brillo",
+              "size": "1,05m x 50m",
+              "price": 1.6
+            },
+            {
+              "name": "Laminado brillo",
+              "size": "1,40m x 50m",
+              "price": 1.6
+            },
+            {
+              "name": "Laminado brillo",
+              "size": "1,52m x 50m",
+              "price": 1.6
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,05m x 50m",
+              "price": 1.6
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,40m x 50m",
+              "price": 1.6
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,55m x 50m",
+              "price": 1.6
+            },
+            {
+              "name": "Laminado brillo",
+              "size": "1,05m x 50m",
+              "price": 1.9
+            },
+            {
+              "name": "Laminado brillo",
+              "size": "1,40m x 50m",
+              "price": 1.9
+            },
+            {
+              "name": "Laminado brillo",
+              "size": "1,55m x 50m",
+              "price": 1.9
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,05m x 50m",
+              "price": 1.9
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,40m x 50m",
+              "price": 1.9
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,55m x 50m",
+              "price": 1.9
+            },
+            {
+              "name": "Laminado brillo",
+              "size": "1,05m x 50m",
+              "price": 2.4
+            },
+            {
+              "name": "Laminado brillo",
+              "size": "1,40m x 50m",
+              "price": 2.4
+            },
+            {
+              "name": "Laminado brillo",
+              "size": "1,55m x 50m",
+              "price": 2.4
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,05m x 50m",
+              "price": 2.4
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,40m x 50m",
+              "price": 2.4
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,55m x 50m",
+              "price": 2.4
+            },
+            {
+              "name": "Laminado brillo",
+              "size": "1,05m x 50m",
+              "price": 2.7
+            },
+            {
+              "name": "Laminado brillo",
+              "size": "1,40m x 50m",
+              "price": 2.7
+            },
+            {
+              "name": "Laminado brillo",
+              "size": "1,55m x 50m",
+              "price": 2.7
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,05m x 50m",
+              "price": 2.7
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,40m x 50m",
+              "price": 2.7
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,55m x 50m",
+              "price": 2.7
+            },
+            {
+              "name": "Laminado satín",
+              "size": "1,05m x 50m",
+              "price": 2.7
+            },
+            {
+              "name": "Laminado satín",
+              "size": "1,40m x 50m",
+              "price": 2.7
+            },
+            {
+              "name": "Laminado satín",
+              "size": "1,55m x 50m",
+              "price": 2.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VINILO POLI",
+      "subcategories": [
+        {
+          "name": "VINILOS POLIMERICOS",
+          "products": [
+            {
+              "name": "Vinilo ATP 80 trasera blanca",
+              "size": "1,05m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo ATP 80 trasera blanca",
+              "size": "1,37m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo ATP 80 trasera blanca",
+              "size": "1,55m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo ATP 80 trasera gris",
+              "size": "1,05m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo ATP 80 trasera gris",
+              "size": "1,37m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo ATP 80 trasera gris",
+              "size": "1,55m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo ATP 70 transparente",
+              "size": "1,05m x 50m",
+              "price": 4.9
+            },
+            {
+              "name": "Vinilo ATP 70 transparente",
+              "size": "1,37m x 50m",
+              "price": 4.9
+            },
+            {
+              "name": "Vinilo ATP 70 transparente",
+              "size": "1,55m x 50m",
+              "price": 4.9
+            },
+            {
+              "name": "Vinilo ATP 80 trasera blanca libre burbuja",
+              "size": "1,05m x 50m",
+              "price": 5.9
+            },
+            {
+              "name": "Vinilo ATP 80 trasera blanca libre burbuja",
+              "size": "1,37m x 50m",
+              "price": 5.9
+            },
+            {
+              "name": "Vinilo ATP 80 trasera gris libre burbuja",
+              "size": "1,05m x 50m",
+              "price": 5.9
+            },
+            {
+              "name": "Vinilo ATP 80 trasera gris libre burbuja",
+              "size": "1,37m x 50m",
+              "price": 5.9
+            },
+            {
+              "name": "Vinilo ATP 80 trasera gris libre burbuja",
+              "size": "1,55m x 50m",
+              "price": 5.9
+            },
+            {
+              "name": "Vinilo RITRAMA 75 trasera blanca",
+              "size": "1,37m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo RITRAMA 75 trasera blanca",
+              "size": "1,55m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo RITRAMA 75 trasera gris",
+              "size": "1,37m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo RITRAMA 75 trasera gris",
+              "size": "1,55m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo RITRAMA 75 transparente",
+              "size": "1,37m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo RITRAMA 75 transparente",
+              "size": "1,55m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo RITRAMA 75 MATE trasera blanca",
+              "size": "1,37m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo RITRAMA 75 MATE trasera blanca",
+              "size": "1,55m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo RITRAMA 75 MATE trasera gris",
+              "size": "1,37m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo RITRAMA 75 MATE trasera gris",
+              "size": "1,55m x 50m",
+              "price": 4.5
+            },
+            {
+              "name": "Vinilo RITRAMA 75 OPTIMA trasera blanca",
+              "size": "1,05m x 50m",
+              "price": 3.7
+            },
+            {
+              "name": "Vinilo RITRAMA 75 OPTIMA trasera blanca",
+              "size": "1,37m x 50m",
+              "price": 3.7
+            },
+            {
+              "name": "Vinilo RITRAMA 75 OPTIMA trasera blanca",
+              "size": "1,55m x 50m",
+              "price": 3.7
+            },
+            {
+              "name": "Vinilo RITRAMA 75 OPTIMA trasera gris",
+              "size": "1,05m x 50m",
+              "price": 3.7
+            },
+            {
+              "name": "Vinilo RITRAMA 75 OPTIMA trasera gris",
+              "size": "1,37m x 50m",
+              "price": 3.7
+            },
+            {
+              "name": "Vinilo RITRAMA 75 OPTIMA trasera gris",
+              "size": "1,55m x 50m",
+              "price": 3.7
+            },
+            {
+              "name": "Vinilo RITRAMA 75 OPTIMA trasera gris LIBRE BURBUJA",
+              "size": "1,05m x 50m",
+              "price": 4.3
+            },
+            {
+              "name": "Vinilo RITRAMA 75 OPTIMA trasera gris LIBRE BURBUJA",
+              "size": "1,37m x 50m",
+              "price": 4.3
+            },
+            {
+              "name": "Vinilo RITRAMA 75 OPTIMA trasera gris LIBRE BURBUJA",
+              "size": "1,55m x 50m",
+              "price": 4.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VINILO CAST",
+      "subcategories": [
+        {
+          "name": "CAST 50 TRASERA GRIS REPOSICIONABLE BUBBLE FREE",
+          "products": [
+            {
+              "name": "Vinilo Cast 50 brillo",
+              "size": "1,37m x 50m",
+              "price": 11.5
+            },
+            {
+              "name": "Vinilo Cast 50 brillo",
+              "size": "1,52m x 50m",
+              "price": 11.5
+            }
+          ]
+        },
+        {
+          "name": "CAST 50 TRASERA GRIS REPOSICIONABLE BUBBLE FREE SLIDE AND TACK",
+          "products": [
+            {
+              "name": "Vinilo Cast 50 brillo",
+              "size": "1,37m x 50m",
+              "price": 12.5
+            },
+            {
+              "name": "Vinilo Cast 50 brillo",
+              "size": "1,52m x 50m",
+              "price": 12.5
+            },
+            {
+              "name": "VINILO EFECTO ACIDO RITRAMA PTA POLIMÉRICO",
+              "size": "1,22m x 50m",
+              "price": 7.5
+            },
+            {
+              "name": "VINILO EFECTO ACIDO RITRAMA PTA POLIMÉRICO",
+              "size": "1,52m x 50m",
+              "price": 7.5
+            },
+            {
+              "name": "VINILO EFECTO ACIDO RITRAMA PTA POLIMÉRICO L.B.",
+              "size": "1,22m x 50m",
+              "price": 9.0
+            },
+            {
+              "name": "VINILO EFECTO ACIDO RITRAMA PTA POLIMÉRICO L.B.",
+              "size": "1,52m x 50m",
+              "price": 9.0
+            },
+            {
+              "name": "VINILO EFECTO ACIDO RITRAMA PTF POLIMÉRICO",
+              "size": "1,22m x 50m",
+              "price": 6.0
+            },
+            {
+              "name": "VINILO EFECTO ACIDO RITRAMA PTF POLIMÉRICO",
+              "size": "1,52m x 50m",
+              "price": 6.0
+            },
+            {
+              "name": "VINILO EFECTO ACIDO RITRAMA PTF POLIMÉRICO L.B.",
+              "size": "1,22m x 50m",
+              "price": 7.5
+            },
+            {
+              "name": "VINILO EFECTO ACIDO RITRAMA PTF POLIMÉRICO L.B.",
+              "size": "1,52m x 50m",
+              "price": 7.5
+            },
+            {
+              "name": "VINILO ATP ALTA ADHERENCIA MONOMERICO BRILLO",
+              "size": "1,37m x 50m",
+              "price": 3.5
+            },
+            {
+              "name": "VINILO ATP ALTA ADHERENCIA MONOMERICO MATE",
+              "size": "1,37m x 50m",
+              "price": 3.5
+            },
+            {
+              "name": "VINILO ATP ALTA ADHERENCIA POLIMERICO BRILLO",
+              "size": "1,37m x 50m",
+              "price": 6.0
+            },
+            {
+              "name": "VINILO ATP ALTA ADHERENCIA POLIMERICO MATE",
+              "size": "1,37m x 50m",
+              "price": 6.0
+            },
+            {
+              "name": "VINILO ADHESIVO VENTOSA BRILLO",
+              "size": "1,37m x 50m",
+              "price": 3.6
+            },
+            {
+              "name": "VINILO ADHESIVO VENTOSA MATE",
+              "size": "1,37m x 50m",
+              "price": 3.6
+            },
+            {
+              "name": "VINILO ADHESIVO VENTOSA TRANSPARENTE BRILLO",
+              "size": "1,37m x 50m",
+              "price": 3.6
+            },
+            {
+              "name": "VINILO ADHESIVO VENTOSA TRANSPARENTE MATE",
+              "size": "1,37m x 50m",
+              "price": 3.6
+            },
+            {
+              "name": "VINILO ULTRACRISTALINO POLIMERICO",
+              "size": "1,37m x 50m",
+              "price": 10.0
+            },
+            {
+              "name": "ADHESIVO DOBLE CARA 70µ ATP",
+              "size": "1,04m x 50m",
+              "price": 3.2
+            },
+            {
+              "name": "ADHESIVO DOBLE CARA 70µ ATP",
+              "size": "1,40m x 50m",
+              "price": 3.2
+            },
+            {
+              "name": "ADHESIVO DOBLE CARA 70µ ATP",
+              "size": "1,55m x 50m",
+              "price": 3.2
+            },
+            {
+              "name": "VINILO TRASLUCIDO",
+              "size": "1,37m x 50m",
+              "price": 6.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VINILO WINDOW",
+      "subcategories": [
+        {
+          "name": "VINILO WINDOW",
+          "products": [
+            {
+              "name": "WINDOW solv ecosolv, Látex y UV Blanco/negro",
+              "size": "0,98m x 50m",
+              "price": 4.0
+            },
+            {
+              "name": "WINDOW solv ecosolv, Látex y UV Blanco/negro",
+              "size": "1,37m x 50m",
+              "price": 4.0
+            },
+            {
+              "name": "WINDOW solv ecosolv, Látex y UV Blanco/negro",
+              "size": "1,52m x 50m",
+              "price": 4.0
+            },
+            {
+              "name": "WINDOW solv ecosolv, Látex y UV blanco/blanco",
+              "size": "1,37m x 50m",
+              "price": 7.5
+            },
+            {
+              "name": "WINDOW solv ecosolv, Látex y UV transparente",
+              "size": "1,37m x 50m",
+              "price": 7.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ESPECIAL ROLL UPS",
+      "subcategories": [
+        {
+          "name": "ESPECIAL ROLL UPS",
+          "products": [
+            {
+              "name": "POLIPROPILENO TRASERA BLANCA 190µ",
+              "size": "91,4m x 50m",
+              "price": 4.0
+            },
+            {
+              "name": "POLIPROPILENO TRASERA BLANCA 190µ",
+              "size": "1,06m x 50m",
+              "price": 4.0
+            },
+            {
+              "name": "PET TRASERA GRIS 230µ especial roll ups",
+              "size": "91,4m x 50m",
+              "price": 4.0
+            },
+            {
+              "name": "PET TRASERA GRIS 230µ especial roll ups",
+              "size": "1,06m x 50m",
+              "price": 4.0
+            },
+            {
+              "name": "PET TRASERA GRIS 230µ especial roll ups",
+              "size": "1,37m x 50m",
+              "price": 4.0
+            },
+            {
+              "name": "PET TRASERA GRIS 230µ especial roll ups",
+              "size": "1,52m x 50m",
+              "price": 4.0
+            },
+            {
+              "name": "HP BACKLIT POLYESTER FILM 290µ",
+              "size": "1,06m x 50m",
+              "price": 5.7
+            },
+            {
+              "name": "HP BACKLIT POLYESTER FILM 290µ",
+              "size": "1,37m x 50m",
+              "price": 5.7
+            },
+            {
+              "name": "HP BACKLIT POLYESTER FILM 290µ",
+              "size": "1,52m x 50m",
+              "price": 5.7
+            },
+            {
+              "name": "HP POLIPROPILENO MATE 120G/M2",
+              "size": "91,4m x 61m",
+              "price": 2.28
+            },
+            {
+              "name": "HP POLIPROPILENO MATE 120G/M2",
+              "size": "1,06m x 61m",
+              "price": 2.28
+            },
+            {
+              "name": "HP POLIPROPILENO MATE 120G/M2",
+              "size": "1,37m x 61m",
+              "price": 2.28
+            },
+            {
+              "name": "HP POLIPROPILENO MATE 120G/M2",
+              "size": "1,52m x 61m",
+              "price": 2.28
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LAMINADO POLI",
+      "subcategories": [
+        {
+          "name": "LAMINADOS POLIMÉRICOS",
+          "products": [
+            {
+              "name": "Laminado brillo",
+              "size": "1,05m x 50m",
+              "price": 2.8
+            },
+            {
+              "name": "Laminado brillo",
+              "size": "1,40m x 50m",
+              "price": 2.8
+            },
+            {
+              "name": "Laminado brillo",
+              "size": "1,55m x 50m",
+              "price": 2.8
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,05m x 50m",
+              "price": 2.8
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,40m x 50m",
+              "price": 2.8
+            },
+            {
+              "name": "Laminado mate",
+              "size": "1,55m x 50m",
+              "price": 2.8
+            },
+            {
+              "name": "Laminado brillo RI-JET 75",
+              "size": "1,05m x 50m",
+              "price": 2.8
+            },
+            {
+              "name": "Laminado brillo RI-JET 75",
+              "size": "1,40m x 50m",
+              "price": 2.8
+            },
+            {
+              "name": "Laminado brillo RI-JET 75",
+              "size": "1,55m x 50m",
+              "price": 2.8
+            },
+            {
+              "name": "Laminado mate RI-JET 75",
+              "size": "1,05m x 50m",
+              "price": 2.8
+            },
+            {
+              "name": "Laminado mate RI-JET 75",
+              "size": "1,40m x 50m",
+              "price": 2.8
+            },
+            {
+              "name": "Laminado mate RI-JET 75",
+              "size": "1,55m x 50m",
+              "price": 2.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LAMINADO CAST",
+      "subcategories": [
+        {
+          "name": "LAMINADO RITRAMA CAST",
+          "products": [
+            {
+              "name": "Laminado Cast 30 brillo",
+              "size": "1,37m x 50m",
+              "price": 11.5
+            },
+            {
+              "name": "Laminado Cast 30 brillo",
+              "size": "1,52m x 50m",
+              "price": 11.5
+            },
+            {
+              "name": "Laminado Cast 50 brillo",
+              "size": "1,37m x 50m",
+              "price": 11.5
+            },
+            {
+              "name": "Laminado Cast 30 mate",
+              "size": "1,37m x 50m",
+              "price": 11.5
+            },
+            {
+              "name": "Laminado suelo R9",
+              "size": "1,05m x 50m",
+              "price": 3.8
+            },
+            {
+              "name": "Laminado suelo R9",
+              "size": "1,40m x 50m",
+              "price": 3.8
+            },
+            {
+              "name": "Laminado suelo R9",
+              "size": "1,55m x 50m",
+              "price": 3.8
+            },
+            {
+              "name": "Laminado suelo R10",
+              "size": "1,05m x 50m",
+              "price": 5.5
+            },
+            {
+              "name": "Laminado suelo R10",
+              "size": "1,37m x 50m",
+              "price": 5.5
+            },
+            {
+              "name": "LAMINADO ANTIGRAFFITI UV",
+              "size": "1,05m x 50m",
+              "price": 3.8
+            },
+            {
+              "name": "LAMINADO ANTIGRAFFITI UV",
+              "size": "1,40m x 50m",
+              "price": 3.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LONAS",
+      "subcategories": [
+        {
+          "name": "LONAS FUNDIDAS",
+          "products": [
+            {
+              "name": "Lona 510Gr FRONTLIT Fundida",
+              "size": "1,06m x 50m",
+              "price": 2.3
+            },
+            {
+              "name": "Lona 510Gr FRONTLIT Fundida",
+              "size": "1,37m x 50m",
+              "price": 2.3
+            },
+            {
+              "name": "Lona 510Gr FRONTLIT Fundida",
+              "size": "1,60m x 50m",
+              "price": 2.3
+            },
+            {
+              "name": "Lona 510Gr FRONTLIT Fundida",
+              "size": "1,83m x 50m",
+              "price": 2.3
+            },
+            {
+              "name": "Lona 510Gr FRONTLIT Fundida",
+              "size": "2,20m x 50m",
+              "price": 2.3
+            },
+            {
+              "name": "Lona 510Gr FRONTLIT Fundida",
+              "size": "2,50m x 50m",
+              "price": 2.3
+            },
+            {
+              "name": "Lona 510Gr FRONTLIT Fundida",
+              "size": "2,64m x 50m",
+              "price": 2.3
+            },
+            {
+              "name": "Lona 510Gr FRONTLIT Fundida",
+              "size": "3,20m x 50m",
+              "price": 2.3
+            },
+            {
+              "name": "Lona 510Gr FRONTLIT Fundida",
+              "size": "5,00m x 50m",
+              "price": 2.5
+            },
+            {
+              "name": "Lona 510Gr BACKLIT Fundida",
+              "size": "1,06m x 50m",
+              "price": 3.5
+            },
+            {
+              "name": "Lona 510Gr BACKLIT Fundida",
+              "size": "1,37m x 50m",
+              "price": 3.5
+            },
+            {
+              "name": "Lona 510Gr BACKLIT Fundida",
+              "size": "1,60m x 50m",
+              "price": 3.5
+            },
+            {
+              "name": "Lona 510Gr BACKLIT Fundida",
+              "size": "2,20m x 50m",
+              "price": 3.5
+            },
+            {
+              "name": "Lona 510Gr BACKLIT Fundida",
+              "size": "3,20m x 50m",
+              "price": 3.5
+            },
+            {
+              "name": "Lona 510Gr DOBLE CARA Fundida",
+              "size": "1,06m x 50m",
+              "price": 3.5
+            },
+            {
+              "name": "Lona 510Gr DOBLE CARA Fundida",
+              "size": "1,37m x 50m",
+              "price": 3.5
+            },
+            {
+              "name": "Lona 510Gr DOBLE CARA Fundida",
+              "size": "1,60m x 50m",
+              "price": 3.5
+            },
+            {
+              "name": "Lona 510Gr DOBLE CARA Fundida",
+              "size": "2,20m x 50m",
+              "price": 3.5
+            },
+            {
+              "name": "Lona 510Gr DOBLE CARA Fundida",
+              "size": "3,20m x 50m",
+              "price": 3.5
+            },
+            {
+              "name": "Lona 610Gr DOBLE CARA Fundida",
+              "size": "1,06m x 50m",
+              "price": 4.0
+            },
+            {
+              "name": "Lona 610Gr DOBLE CARA Fundida",
+              "size": "1,37m x 50m",
+              "price": 4.0
+            },
+            {
+              "name": "Lona 610Gr DOBLE CARA Fundida",
+              "size": "1,60m x 50m",
+              "price": 4.0
+            },
+            {
+              "name": "Lona 610Gr DOBLE CARA Fundida",
+              "size": "2,20m x 50m",
+              "price": 4.0
+            },
+            {
+              "name": "Lona 610Gr DOBLE CARA Fundida",
+              "size": "3,20m x 50m",
+              "price": 4.0
+            }
+          ]
+        },
+        {
+          "name": "LONA MESH",
+          "products": [
+            {
+              "name": "LONA MESH SIN TRASERA 270Gr",
+              "size": "1,06m x 50m",
+              "price": 2.5
+            },
+            {
+              "name": "LONA MESH SIN TRASERA 270Gr",
+              "size": "1,60m x 50m",
+              "price": 2.5
+            },
+            {
+              "name": "LONA MESH SIN TRASERA 270Gr",
+              "size": "2,20m x 50m",
+              "price": 2.5
+            },
+            {
+              "name": "LONA MESH SIN TRASERA 270Gr",
+              "size": "3,20m x 50m",
+              "price": 2.5
+            },
+            {
+              "name": "LONA MESH SIN TRASERA 270Gr",
+              "size": "5,00m x 50m",
+              "price": 2.8
+            },
+            {
+              "name": "LONA MESH CON TRASERA 370Gr",
+              "size": "1,06m x 50m",
+              "price": 2.7
+            },
+            {
+              "name": "LONA MESH CON TRASERA 370Gr",
+              "size": "1,60m x 50m",
+              "price": 2.7
+            },
+            {
+              "name": "LONA MESH CON TRASERA 370Gr",
+              "size": "2,20m x 50m",
+              "price": 2.7
+            },
+            {
+              "name": "LONA MESH CON TRASERA 370Gr",
+              "size": "3,20m x 50m",
+              "price": 2.7
+            }
+          ]
+        },
+        {
+          "name": "LONAS LAMINADAS",
+          "products": [
+            {
+              "name": "Lona 440Gr FRONTLIT Laminada",
+              "size": "1,06x50",
+              "price": 2.0
+            },
+            {
+              "name": "Lona 440Gr FRONTLIT Laminada",
+              "size": "1,37x50",
+              "price": 2.0
+            },
+            {
+              "name": "Lona 440Gr FRONTLIT Laminada",
+              "size": "1,60x50",
+              "price": 2.0
+            },
+            {
+              "name": "Lona 440Gr FRONTLIT Laminada",
+              "size": "2,20x50",
+              "price": 2.0
+            },
+            {
+              "name": "Lona 440Gr FRONTLIT Laminada",
+              "size": "2,50x50",
+              "price": 2.0
+            },
+            {
+              "name": "Lona 440Gr FRONTLIT Laminada",
+              "size": "3,20x50",
+              "price": 2.0
+            },
+            {
+              "name": "Lona 510Gr DOBLE CARA Laminada",
+              "size": "1,06m x 50m",
+              "price": 3.3
+            },
+            {
+              "name": "Lona 510Gr DOBLE CARA Laminada",
+              "size": "1,37m x 50m",
+              "price": 3.3
+            },
+            {
+              "name": "Lona 510Gr DOBLE CARA Laminada",
+              "size": "1,60m x 50m",
+              "price": 3.3
+            },
+            {
+              "name": "Lona 510Gr DOBLE CARA Laminada",
+              "size": "2,20m x 50m",
+              "price": 3.3
+            },
+            {
+              "name": "Lona 510Gr DOBLE CARA Laminada",
+              "size": "3,20m x 50m",
+              "price": 3.3
+            },
+            {
+              "name": "Lona 560Gr DOBLE CARA Laminada",
+              "size": "1,06m x 50m",
+              "price": 3.6
+            },
+            {
+              "name": "Lona 560Gr DOBLE CARA Laminada",
+              "size": "1,37m x 50m",
+              "price": 3.6
+            },
+            {
+              "name": "Lona 560Gr DOBLE CARA Laminada",
+              "size": "1,60m x 50m",
+              "price": 3.6
+            },
+            {
+              "name": "Lona 560Gr DOBLE CARA Laminada",
+              "size": "2,20m x 50m",
+              "price": 3.6
+            },
+            {
+              "name": "Lona 560Gr DOBLE CARA Laminada",
+              "size": "3,20m x 50m",
+              "price": 3.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PAPELES",
+      "subcategories": [
+        {
+          "name": "PAPELES",
+          "products": [
+            {
+              "name": "PAPEL MUPY 150Gr ESTUCADO",
+              "size": "1,27m x 100m",
+              "price": 0.95
+            },
+            {
+              "name": "PAPEL MUPY 150Gr ESTUCADO",
+              "size": "1,27m x 300m",
+              "price": 0.85
+            },
+            {
+              "name": "PAPEL MUPY 150Gr ESTUCADO",
+              "size": "1,40m x 100m",
+              "price": 0.95
+            },
+            {
+              "name": "PAPEL MUPY 150Gr ESTUCADO",
+              "size": "1,60m x 100m",
+              "price": 0.95
+            },
+            {
+              "name": "PAPEL MUPY 150Gr LATEX/UV",
+              "size": "1,27m x 100m",
+              "price": 0.85
+            },
+            {
+              "name": "PAPEL MUPY 150Gr LATEX/UV",
+              "size": "1,40m x 100m",
+              "price": 0.85
+            },
+            {
+              "name": "PAPEL MUPY 150Gr LATEX/UV",
+              "size": "1,60m x 100m",
+              "price": 0.85
+            },
+            {
+              "name": "PAPEL VALLA AZUL 120Gr",
+              "size": "1,60m x 100m",
+              "price": 0.8
+            },
+            {
+              "name": "PAPEL VALLA AZUL 120Gr",
+              "size": "1,60m x 300m",
+              "price": 0.8
+            },
+            {
+              "name": "PAPEL FOTOGRAFICO",
+              "size": "1,06m x 50m",
+              "price": 2.2
+            },
+            {
+              "name": "PAPEL FOTOGRAFICO",
+              "size": "1,37m x 50m",
+              "price": 2.2
+            },
+            {
+              "name": "PAPEL FOTOGRAFICO",
+              "size": "1,60m x 50m",
+              "price": 2.2
+            },
+            {
+              "name": "HP PHOTO REALISTIC PAPER 205Gr",
+              "size": "914mm x 61m",
+              "price": 1.84
+            },
+            {
+              "name": "HP PHOTO REALISTIC PAPER 205Gr",
+              "size": "1372mm x 61m",
+              "price": 1.85
+            },
+            {
+              "name": "HP PHOTO REALISTIC PAPER 205Gr",
+              "size": "1524mm x 61m",
+              "price": 1.88
+            },
+            {
+              "name": "HP PREMIUM POSTER PAPER 216Gr",
+              "size": "914mm x 61m",
+              "price": 2.68
+            },
+            {
+              "name": "HP PREMIUM POSTER PAPER 216Gr",
+              "size": "1372mm x 61m",
+              "price": 2.52
+            },
+            {
+              "name": "HP PREMIUM POSTER PAPER 216Gr",
+              "size": "1524mm x 61m",
+              "price": 2.53
+            },
+            {
+              "name": "PAPEL SUBLIMACION 50gr",
+              "size": "1620mm x 400m",
+              "price": 0.28
+            },
+            {
+              "name": "PAPEL SUBLIMACION 50gr",
+              "size": "1820mm x 400m",
+              "price": 0.28
+            },
+            {
+              "name": "PAPEL SUBLIMACION 73gr",
+              "size": "1118mm x 120m",
+              "price": 0.47
+            },
+            {
+              "name": "PAPEL SUBLIMACION 73gr",
+              "size": "1118mm x 200m",
+              "price": 0.47
+            },
+            {
+              "name": "PAPEL SUBLIMACION 73gr",
+              "size": "1620mm x 120m",
+              "price": 0.47
+            },
+            {
+              "name": "PAPEL SUBLIMACION 73gr",
+              "size": "1620mm x 200m",
+              "price": 0.47
+            },
+            {
+              "name": "PAPEL SUBLIMACION 95gr",
+              "size": "1118mm x 100m",
+              "price": 0.65
+            },
+            {
+              "name": "PAPEL SUBLIMACION 95gr",
+              "size": "1620mm x 150m",
+              "price": 0.65
+            },
+            {
+              "name": "PAPEL SUBLIMACION 105GR con ADHESIVO",
+              "size": "1118mm x 100m",
+              "price": 0.7
+            },
+            {
+              "name": "PAPEL SUBLIMACION 105GR con ADHESIVO",
+              "size": "1620mm x 120m",
+              "price": 0.7
+            },
+            {
+              "name": "PL 80 PSi Plata",
+              "size": "30m",
+              "price": 8.0
+            },
+            {
+              "name": "PL 70 PSi Plata Medio",
+              "size": "30m",
+              "price": 8.0
+            },
+            {
+              "name": "PL 50 PSi Plata Claro",
+              "size": "30m",
+              "price": 8.0
+            },
+            {
+              "name": "OR 80 PSi - Oro",
+              "size": "30m",
+              "price": 12.0
+            },
+            {
+              "name": "ST 65 PSi Neutral",
+              "size": "30m",
+              "price": 11.0
+            },
+            {
+              "name": "ST 50 PSi Neutral",
+              "size": "30m",
+              "price": 11.0
+            },
+            {
+              "name": "Cobre 80 PSi Cobre",
+              "size": "30m",
+              "price": 14.0
+            },
+            {
+              "name": "Cobre 50 PSi Cobre Claro",
+              "size": "30m",
+              "price": 24.5
+            },
+            {
+              "name": "SP 40 PSi Champagne Claro",
+              "size": "30m",
+              "price": 14.0
+            },
+            {
+              "name": "ESPECIAL 66 PSi Champagne",
+              "size": "30m",
+              "price": 19.0
+            },
+            {
+              "name": "Control UV Transparente",
+              "size": "30m",
+              "price": 9.5
+            },
+            {
+              "name": "Neutral 50 PSi - Neutral Clara",
+              "size": "30m",
+              "price": 10.5
+            }
+          ]
+        },
+        {
+          "name": "PAPELES HP - BMG",
+          "products": [
+            {
+              "name": "HP Everyday Matte Polypropylene, 3-in Core",
+              "size": "914 mm x 61 m",
+              "price": 2.28
+            },
+            {
+              "name": "HP Everyday Matte Polypropylene, 3-in Core",
+              "size": "1067 mm x 61 m",
+              "price": 2.28
+            },
+            {
+              "name": "HP Everyday Matte Polypropylene, 3-in Core",
+              "size": "1270 mm x 61 m",
+              "price": 2.28
+            },
+            {
+              "name": "HP Everyday Matte Polypropylene, 3-in Core",
+              "size": "1524 mm x 61m",
+              "price": 2.28
+            },
+            {
+              "name": "HP Premium Satin Canvas",
+              "size": "762 mm x 22,9m",
+              "price": 10.55
+            },
+            {
+              "name": "HP Premium Satin Canvas",
+              "size": "914 mm x 22,9m",
+              "price": 10.55
+            },
+            {
+              "name": "HP Premium Satin Canvas",
+              "size": "1372 mm x 22,9m",
+              "price": 10.55
+            },
+            {
+              "name": "HP Premium Satin Canvas",
+              "size": "1524 mm x 22,9m",
+              "price": 10.55
+            },
+            {
+              "name": "HP Recycled Satin Canvas, 3-in Core",
+              "size": "1372 mm x 45,7 m",
+              "price": 7.71
+            },
+            {
+              "name": "HP Recycled Satin Canvas, 3-in Core",
+              "size": "1524 mm x 45,7 m",
+              "price": 7.65
+            },
+            {
+              "name": "HP Light Fabric",
+              "size": "1067 mm x 45,7 m",
+              "price": 5.11
+            },
+            {
+              "name": "HP Light Fabric",
+              "size": "1372 mm x 45,7 m",
+              "price": 5.08
+            },
+            {
+              "name": "HP Light Fabric",
+              "size": "1524 mm x 45,7 m",
+              "price": 5.08
+            },
+            {
+              "name": "HP Backlit Polyester Film, 3-in Core",
+              "size": "914 mm x 30,5 m",
+              "price": 6.71
+            },
+            {
+              "name": "HP Backlit Polyester Film, 3-in Core",
+              "size": "1067 mm x 30,5 m",
+              "price": 6.71
+            },
+            {
+              "name": "HP Backlit Polyester Film, 3-in Core",
+              "size": "1372 mm x 30,5 m",
+              "price": 6.71
+            },
+            {
+              "name": "HP Backlit Polyester Film, 3-in Core",
+              "size": "1524 mm x 30,5 m",
+              "price": 6.71
+            },
+            {
+              "name": "HP Matte Litho-realistic Paper, 3-in Core",
+              "size": "914 mm x 30,5 m",
+              "price": 5.44
+            },
+            {
+              "name": "HP Matte Litho-realistic Paper, 3-in Core",
+              "size": "1118 mm x 30,5 m",
+              "price": 5.44
+            },
+            {
+              "name": "HP Matte Litho-realistic Paper, 3-in Core",
+              "size": "1524 mm x 30,5 m",
+              "price": 5.46
+            },
+            {
+              "name": "HP Everyday Satin Photo Paper",
+              "size": "914 mm x 30,5 m",
+              "price": 3.05
+            },
+            {
+              "name": "HP Everyday Satin Photo Paper",
+              "size": "1067 mm x 30,5 m",
+              "price": 3.05
+            },
+            {
+              "name": "HP Everyday Satin Photo Paper",
+              "size": "1372 mm x 30,5 m",
+              "price": 3.05
+            },
+            {
+              "name": "HP Everyday Satin Photo Paper",
+              "size": "1524 mm x 30,5 m",
+              "price": 3.05
+            },
+            {
+              "name": "HP Professional Gloss Photo Paper",
+              "size": "914 mm x 30,5 m",
+              "price": 3.72
+            },
+            {
+              "name": "HP Professional Gloss Photo Paper",
+              "size": "1067 mm x 30,5 m",
+              "price": 3.92
+            },
+            {
+              "name": "HP Professional Gloss Photo Paper",
+              "size": "1372 mm x 30,5 m",
+              "price": 3.65
+            },
+            {
+              "name": "HP Professional Gloss Photo Paper",
+              "size": "1524 mm x 30,5 m",
+              "price": 3.73
+            },
+            {
+              "name": "HP Professional Satin Photo Paper",
+              "size": "914 mm x 30,5 m",
+              "price": 3.7
+            },
+            {
+              "name": "HP Professional Satin Photo Paper",
+              "size": "1067 mm x 30,5 m",
+              "price": 3.9
+            },
+            {
+              "name": "HP Professional Satin Photo Paper",
+              "size": "1372 mm x 30,5 m",
+              "price": 3.63
+            },
+            {
+              "name": "HP Professional Satin Photo Paper",
+              "size": "1524 mm x 30,5 m",
+              "price": 3.71
+            },
+            {
+              "name": "HP Photo-realistic Poster Paper",
+              "size": "914 mm x 61 m",
+              "price": 1.84
+            },
+            {
+              "name": "HP Photo-realistic Poster Paper",
+              "size": "1372 mm x 61 m",
+              "price": 1.85
+            },
+            {
+              "name": "HP Photo-realistic Poster Paper",
+              "size": "1524 mm x 61 m",
+              "price": 1.88
+            },
+            {
+              "name": "HP Premium Poster Paper, 3-in Core",
+              "size": "914 mm x 61 m",
+              "price": 2.68
+            },
+            {
+              "name": "HP Premium Poster Paper, 3-in Core",
+              "size": "1372 mm x 61 m",
+              "price": 2.52
+            },
+            {
+              "name": "HP Premium Poster Paper, 3-in Core",
+              "size": "1524 mm x 61 m",
+              "price": 2.53
+            },
+            {
+              "name": "HP White Satin Poster Paper",
+              "size": "1067 mm x 61 m",
+              "price": 1.72
+            },
+            {
+              "name": "HP White Satin Poster Paper",
+              "size": "1372 mm x 61 m",
+              "price": 1.72
+            },
+            {
+              "name": "HP White Satin Poster Paper",
+              "size": "1524 mm x 61 m",
+              "price": 1.72
+            },
+            {
+              "name": "HP Satin Wrapping Paper, 3-in Core",
+              "size": "914 mm x 45.72 m",
+              "price": 2.4
+            },
+            {
+              "name": "HP Removable Adhesive Fabric, 3-in Core",
+              "size": "610 mm x 30,5 m",
+              "price": 8.02
+            },
+            {
+              "name": "HP Removable Adhesive Fabric, 3-in Core",
+              "size": "1067 mm x 30,5 m",
+              "price": 8.02
+            },
+            {
+              "name": "HP Removable Adhesive Fabric, 3-in Core",
+              "size": "1524 mm x 30,5 m",
+              "price": 8.01
+            },
+            {
+              "name": "HP Permanent Gloss Adhesive Vinyl",
+              "size": "914 mm x 45,7 m",
+              "price": 3.37
+            },
+            {
+              "name": "HP Permanent Gloss Adhesive Vinyl",
+              "size": "1067 mm x 45,7 m",
+              "price": 3.06
+            },
+            {
+              "name": "HP Permanent Gloss Adhesive Vinyl",
+              "size": "1372 mm x 45,7 m",
+              "price": 2.92
+            },
+            {
+              "name": "HP Permanent Gloss Adhesive Vinyl",
+              "size": "1524 mm x 45,7 m",
+              "price": 2.87
+            },
+            {
+              "name": "HP Permanent Matte Adhesive Vinyl",
+              "size": "914 mm x 45,7 m",
+              "price": 3.37
+            },
+            {
+              "name": "HP Permanent Matte Adhesive Vinyl",
+              "size": "1067 mm x 45,7 m",
+              "price": 3.06
+            },
+            {
+              "name": "HP Permanent Matte Adhesive Vinyl",
+              "size": "1372 mm x 45,7 m",
+              "price": 2.92
+            },
+            {
+              "name": "HP Permanent Matte Adhesive Vinyl",
+              "size": "1524 mm x 45,7 m",
+              "price": 2.87
+            },
+            {
+              "name": "HP Everyday Adhesive Matte Polypropylene, 3-in Core",
+              "size": "914 mm x 30,5 m",
+              "price": 3.97
+            },
+            {
+              "name": "HP Everyday Adhesive Matte Polypropylene, 3-in Core",
+              "size": "1067 mm x 30,5 m",
+              "price": 3.97
+            },
+            {
+              "name": "HP Everyday Adhesive Matte Polypropylene, 3-in Core",
+              "size": "1270 mm x 30,5 m",
+              "price": 4.29
+            },
+            {
+              "name": "HP PVC-free Wall Paper",
+              "size": "1067 mm x 30,5 m",
+              "price": 4.26
+            },
+            {
+              "name": "HP PVC-free Wall Paper",
+              "size": "1372 mm x 30,5 m",
+              "price": 4.26
+            },
+            {
+              "name": "HP PVC-free Wall Paper",
+              "size": "1372 mm x 91,4 m",
+              "price": 4.26
+            },
+            {
+              "name": "HP Non woven Durable Linen Wall Paper",
+              "size": "1372 mm x 45 m",
+              "price": 3.79
+            },
+            {
+              "name": "HP Non woven Durable Linen Wall Paper",
+              "size": "1372 mm x 120 m",
+              "price": 3.68
+            },
+            {
+              "name": "HP Non woven Durable Suede Wall Paper",
+              "size": "1372 mm x 45 m",
+              "price": 3.79
+            },
+            {
+              "name": "HP Non woven Durable Suede Wall Paper",
+              "size": "1372 mm x 120 m",
+              "price": 3.68
+            },
+            {
+              "name": "HP PVC-free Durable Smooth Wall Paper",
+              "size": "1067 mm x 30,5 m",
+              "price": 10.33
+            },
+            {
+              "name": "HP PVC-free Durable Smooth Wall Paper",
+              "size": "1372 mm x 30,5 m",
+              "price": 10.33
+            },
+            {
+              "name": "HP PVC-free Durable Smooth Wall Paper",
+              "size": "1372 mm x 91,4 m",
+              "price": 10.33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TEXTILES",
+      "subcategories": [
+        {
+          "name": "Junkers & Muellers",
+          "products": [
+            {
+              "name": "MEDIATEX EASYBOX Fr 100% PES 175gr",
+              "size": "310cm x 50m",
+              "price": 6.3
+            },
+            {
+              "name": "B1 Frontlit y backlit LATEX UV SOLVENTE",
+              "size": "250cm x 30m",
+              "price": 6.3
+            },
+            {
+              "name": "MEDIATEX GALLERY Fr 100% PES 220gr UPCYCLING",
+              "size": "310cm x 50m",
+              "price": 8.0
+            },
+            {
+              "name": "B1 Canvas 100% poliester reciclado",
+              "size": "162cm x 30m",
+              "price": 8.0
+            },
+            {
+              "name": "LATEX UV SOLVENTE",
+              "size": "137cm x 30m",
+              "price": 8.0
+            },
+            {
+              "name": "MEDIATEX J&M AIR Fr 100% PES 230gr",
+              "size": "310cm x 50m",
+              "price": 8.0
+            },
+            {
+              "name": "B1 M1 Policanvas extra blanco",
+              "size": "250cm x 30m",
+              "price": 8.0
+            },
+            {
+              "name": "Wall cover, estores, roll ups, bastidor,pinturas",
+              "size": "162cm x 30m",
+              "price": 8.0
+            },
+            {
+              "name": "LATEX UV SOLVENTE",
+              "size": "137cm x 30m",
+              "price": 8.0
+            },
+            {
+              "name": "MEDIATEX COVERTEX UPCYCLING Fr 100% PES 240gr",
+              "size": "310cm x 50m",
+              "price": 7.2
+            },
+            {
+              "name": "B1 Policanvas trasera gris 100% reciclado",
+              "size": "152cm x 30m",
+              "price": 8.0
+            },
+            {
+              "name": "LATEX UV SOLVENTE",
+              "size": "103cm x 30m",
+              "price": 8.0
+            },
+            {
+              "name": "MEDIATEX GRANDFLEX 100%PES 200gr",
+              "size": "310cm x 50m",
+              "price": 9.3
+            },
+            {
+              "name": "POLICANVAS",
+              "size": "162cm x 30m",
+              "price": 9.3
+            },
+            {
+              "name": "ROLL UP, BANNER, ESTORES, PINTURAS",
+              "size": "137cm x 30m",
+              "price": 9.3
+            },
+            {
+              "name": "LATEX UV SOLVENTE",
+              "size": "103cm x 30m",
+              "price": 9.3
+            },
+            {
+              "name": "MEDIATEX VENTO Fr 100%PES 220gr",
+              "size": "310cm x 70m",
+              "price": 10.0
+            },
+            {
+              "name": "M1 MARCOS Y SISTEMAS DE TENSION SUAVE ESTIRABLE",
+              "size": "250cm x 70m",
+              "price": 10.0
+            },
+            {
+              "name": "LATEX Y SUBLIMACION",
+              "size": "152cm x 70m",
+              "price": 10.0
+            },
+            {
+              "name": "MEDIATEX NERO Fr 100%PES 220gr",
+              "size": "310cm x 70m",
+              "price": 6.2
+            },
+            {
+              "name": "B1 TRASERA OPACA, SUAVE Y FLEXIBLE ESTIRABLE",
+              "size": "250cm x 50m",
+              "price": 6.2
+            },
+            {
+              "name": "LATEX SUBLIMACION Y UV",
+              "size": "152cm x 50m",
+              "price": 6.2
+            },
+            {
+              "name": "MEDIATEX CARINA TRANSPARENTE 100%PES 185gr",
+              "size": "310cm x 50m",
+              "price": 4.75
+            },
+            {
+              "name": "TELA TRASLUCIDA, ESTABLE, CORTE FRIO",
+              "size": "240cm x 40m",
+              "price": 4.75
+            },
+            {
+              "name": "LATEX UV SOLVENTE",
+              "size": "200cm x40m",
+              "price": 4.75
+            },
+            {
+              "name": "MEDIATEX CARINA BLACKOUT 100%PES 320gr",
+              "size": "305cm x 32m",
+              "price": 9.5
+            },
+            {
+              "name": "TELA OPACA, CORTE EN FRIO",
+              "size": "240cm x 32m",
+              "price": 9.5
+            },
+            {
+              "name": "LATEX UV SOLVENTE",
+              "size": "200cm x 32m",
+              "price": 9.5
+            },
+            {
+              "name": "JM Garden 100%PES 200gr",
+              "size": "240cm x 60m",
+              "price": 11.0
+            },
+            {
+              "name": "PARA TOLDOS. POLIESTER DE ALTA RESISTENCIA.",
+              "size": "120cm x 60m",
+              "price": 11.0
+            },
+            {
+              "name": "JM GARDEN SUN 100%PES 240gr",
+              "size": "170cm x 50m",
+              "price": 10.5
+            },
+            {
+              "name": "MEDIATEX SIESTA 100%PES",
+              "size": "310cm x 50m",
+              "price": 8.0
+            },
+            {
+              "name": "TELA EXTERIOR, IMPERMEABLE Y REPELENTE A LA",
+              "size": "155cm x 30m",
+              "price": 8.0
+            },
+            {
+              "name": "NOVO ACUSTIC FR 100%PES 155gr",
+              "size": "240cm x 42m",
+              "price": 15.5
+            },
+            {
+              "name": "TECNO FR 100%PES 255GR",
+              "size": "305cm x 42m",
+              "price": 13.0
+            },
+            {
+              "name": "B1 M1 TELA ACUSTICA",
+              "size": "240cm x 42m",
+              "price": 13.0
+            },
+            {
+              "name": "MEDIATEX SELF-Adhesive Fr 100%PES 360gr",
+              "size": "152cm x 30m",
+              "price": 20.0
+            },
+            {
+              "name": "B1 TEXTIL ADHESIVO REMOVIBLE IGNIFUGO",
+              "size": "137cm x 30m",
+              "price": 20.0
+            },
+            {
+              "name": "CORTE CON CUTTER, NO DESHILACHA",
+              "size": "100cm x 30m",
+              "price": 20.0
+            },
+            {
+              "name": "MEDIATEX WALL COVER TEXTILE 100%PES 360gr",
+              "size": "100cm x 30m",
+              "price": 15.8
+            },
+            {
+              "name": "MEDIATEX WALL COVER EFECT GLOSS 100%PES 360gr",
+              "size": "100cm x 30m",
+              "price": 21.0
+            },
+            {
+              "name": "MEDIATEX MAGIC COVER 100%PES 320gr",
+              "size": "100cm x 30m",
+              "price": 21.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CANVAS ARPLEN",
+      "subcategories": [
+        {
+          "name": "ESPECIALIDADES EN CANVAS",
+          "products": [
+            {
+              "name": "INK JET CANVAS DUBLIN",
+              "size": "25m",
+              "price": 9.0
+            },
+            {
+              "name": "INK JET CANVAS LONDON",
+              "size": "25m",
+              "price": 7.2
+            },
+            {
+              "name": "INK JET CANVAS BARCELONA",
+              "size": "25m",
+              "price": 6.85
+            },
+            {
+              "name": "INK JET CANVAS BARCELONA SATIN",
+              "size": "25m",
+              "price": 10.95
+            },
+            {
+              "name": "INK JET CANVAS MONACO",
+              "size": "25m",
+              "price": 5.0
+            },
+            {
+              "name": "ECO CANVAS ROMA",
+              "size": "25m",
+              "price": 7.4
+            },
+            {
+              "name": "ECO CANVAS ROMA GLOSSY",
+              "size": "25m",
+              "price": 7.4
+            },
+            {
+              "name": "ECO CANVAS ROMA SILVER",
+              "size": "25m",
+              "price": 7.4
+            },
+            {
+              "name": "RAW CANVAS",
+              "size": "50m",
+              "price": 4.2
+            },
+            {
+              "name": "ECO CANVAS PARIS",
+              "size": "25m",
+              "price": 5.4
+            },
+            {
+              "name": "ECO CANVAS VIENA",
+              "size": "30m",
+              "price": 3.9
+            },
+            {
+              "name": "WALL DECO CANVAS",
+              "size": "18m",
+              "price": 10.8
+            },
+            {
+              "name": "CANVAS NEW LISBOA",
+              "size": "25m",
+              "price": 5.4
+            },
+            {
+              "name": "WALL DECO TEXTIL",
+              "size": "20m",
+              "price": 7.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PROTECCIÓN SOLAR",
+      "subcategories": [
+        {
+          "name": "LAMINAS DE CONTROL SOLAR PARA INTERIOR",
+          "products": [
+            {
+              "name": "PL 80 PSi Plata",
+              "size": "30m",
+              "price": 8.0
+            },
+            {
+              "name": "PL 70 PSi Plata Medio",
+              "size": "30m",
+              "price": 8.0
+            },
+            {
+              "name": "PL 50 PSi Plata Claro",
+              "size": "30m",
+              "price": 8.0
+            },
+            {
+              "name": "OR 80 PSi - Oro",
+              "size": "30m",
+              "price": 12.0
+            },
+            {
+              "name": "ST 65 PSi Neutral",
+              "size": "30m",
+              "price": 11.0
+            },
+            {
+              "name": "ST 50 PSi Neutral",
+              "size": "30m",
+              "price": 11.0
+            },
+            {
+              "name": "Cobre 80 PSi Cobre",
+              "size": "30m",
+              "price": 14.0
+            },
+            {
+              "name": "Cobre 50 PSi Cobre Claro",
+              "size": "30m",
+              "price": 24.5
+            },
+            {
+              "name": "SP 40 PSi Champagne Claro",
+              "size": "30m",
+              "price": 14.0
+            },
+            {
+              "name": "ESPECIAL 66 PSi Champagne",
+              "size": "30m",
+              "price": 19.0
+            }
+          ]
+        },
+        {
+          "name": "CONTROL UV - ESCAPARATE INTERIOR",
+          "products": [
+            {
+              "name": "Control UV Transparente",
+              "size": "30m",
+              "price": 9.5
+            },
+            {
+              "name": "Neutral 50 PSi - Neutral Clara",
+              "size": "30m",
+              "price": 10.5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rigidos": [
+    {
+      "name": "Pegasus (Panelplast)",
+      "subcategories": [
+        {
+          "name": "PANELES PEGASUS - PRECIOS ACTUALIZADOS",
+          "products": [
+            {
+              "name": "3050x2030 10mm (Film PVC Blanco)",
+              "price": 70.15,
+              "price_half": 59.42
+            },
+            {
+              "name": "3050x1530 10mm (Film PVC Blanco)",
+              "price": 53.59,
+              "price_half": 44.75
+            },
+            {
+              "name": "3050x2030 19mm (Film PVC Blanco)",
+              "price": 95.0
+            },
+            {
+              "name": "3050x2030 30mm (Film PVC Blanco)",
+              "price": 162.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Forex Lite",
+      "subcategories": [
+        {
+          "name": "FOREX® LITE - PVC ESPUMADO",
+          "products": [
+            {
+              "name": "3mm 2030x3050",
+              "price": 27.75,
+              "price_half": 23.79
+            },
+            {
+              "name": "5mm 2030x3050",
+              "price": 46.97,
+              "price_half": 40.26
+            },
+            {
+              "name": "10mm 2030x3050",
+              "price": 94.48,
+              "price_half": 81.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Planchas de PVC",
+      "subcategories": [
+        {
+          "name": "PVC BLANCO (3050x2050)",
+          "products": [
+            {
+              "name": "1mm",
+              "price": 25.9,
+              "price_half": null
+            },
+            {
+              "name": "2mm",
+              "price": 32.5,
+              "price_half": null
+            },
+            {
+              "name": "3mm",
+              "price": 37.15,
+              "price_half": null
+            },
+            {
+              "name": "4mm",
+              "price": 50.15,
+              "price_half": null
+            },
+            {
+              "name": "5mm",
+              "price": 62.5,
+              "price_half": null
+            },
+            {
+              "name": "6mm",
+              "price": 75.5,
+              "price_half": null
+            },
+            {
+              "name": "8mm",
+              "price": 99.9,
+              "price_half": null
+            },
+            {
+              "name": "10mm",
+              "price": 123.9,
+              "price_half": null
+            },
+            {
+              "name": "19mm 3050x1560",
+              "price": 229.0,
+              "price_half": null
+            },
+            {
+              "name": "19mm 3050x1220",
+              "price": 179.0,
+              "price_half": null
+            },
+            {
+              "name": "30mm 3050x1220",
+              "price": 319.0,
+              "price_half": null
+            }
+          ]
+        },
+        {
+          "name": "PVC NEGRO (3050x2050)",
+          "products": [
+            {
+              "name": "3mm",
+              "price": 47.5,
+              "price_half": null
+            },
+            {
+              "name": "5mm",
+              "price": 85.9,
+              "price_half": null
+            },
+            {
+              "name": "10mm",
+              "price": 157.9,
+              "price_half": null
+            },
+            {
+              "name": "19mm 3050 X 1560",
+              "price": 249.0,
+              "price_half": null
+            }
+          ]
+        },
+        {
+          "name": "COLORES:    VERDE, GRIS, AMARILLO, ROJO, AZUL",
+          "products": [
+            {
+              "name": "3mm",
+              "price": 68.5,
+              "price_half": null
+            },
+            {
+              "name": "5mm",
+              "price": 105.9,
+              "price_half": null
+            }
+          ]
+        },
+        {
+          "name": "PVC Blanco/Nucleo Negro (3050x1560)",
+          "products": [
+            {
+              "name": "5mm",
+              "price": 0.0,
+              "price_half": null
+            },
+            {
+              "name": "10mm",
+              "price": 139.0,
+              "price_half": null
+            }
+          ]
+        },
+        {
+          "name": "PVC Efecto Madera 3050 X 1220",
+          "products": [
+            {
+              "name": "10mm",
+              "price": 129.0,
+              "price_half": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Policarbonato Celular",
+      "subcategories": [
+        {
+          "name": "General",
+          "products": [
+            {
+              "name": "4MM INCOLORO",
+              "price": 72.0,
+              "price_half": 36
+            },
+            {
+              "name": "6MM INCOLORO",
+              "price": 117.0,
+              "price_half": 58.5
+            },
+            {
+              "name": "8MM INCOLORO",
+              "price": 135.0,
+              "price_half": 67.5
+            },
+            {
+              "name": "10MM INCOLORO",
+              "price": 152.0,
+              "price_half": 76
+            },
+            {
+              "name": "16MM INCOLORO",
+              "price": 214.5,
+              "price_half": 107.25
+            },
+            {
+              "name": "20MM INCOLORO",
+              "price": 255.0,
+              "price_half": 127.5
+            },
+            {
+              "name": "25MM INCOLORO",
+              "price": 295.0,
+              "price_half": 147.5
+            },
+            {
+              "name": "32MM INCOLORO",
+              "price": 322.0,
+              "price_half": 161
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Metacrilato",
+      "subcategories": [
+        {
+          "name": "General",
+          "products": [
+            {
+              "name": "3mm INCOLORO",
+              "price": 151.0,
+              "price_half": 75.5
+            },
+            {
+              "name": "4mm INCOLORO",
+              "price": 201.0,
+              "price_half": 100.5
+            },
+            {
+              "name": "5mm INCOLORO",
+              "price": 251.0,
+              "price_half": 125.5
+            },
+            {
+              "name": "6mm INCOLORO",
+              "price": 302.0,
+              "price_half": 151
+            },
+            {
+              "name": "8mm INCOLORO",
+              "price": 402.0,
+              "price_half": 201
+            },
+            {
+              "name": "10mm INCOLORO",
+              "price": 503.0,
+              "price_half": 251.5
+            },
+            {
+              "name": "15mm INCOLORO",
+              "price": 755.0,
+              "price_half": 377.5
+            },
+            {
+              "name": "20mm INCOLORO",
+              "price": 1005.0,
+              "price_half": 502.5
+            }
+          ]
+        },
+        {
+          "name": "Blanco y Hielo + 5%                    Colores 25% +",
+          "products": [
+            {
+              "name": "2mm INCOLORO",
+              "price": 85.0,
+              "price_half": 42.5
+            },
+            {
+              "name": "3mm INCOLORO",
+              "price": 129.0,
+              "price_half": 64.5
+            },
+            {
+              "name": "4mm INCOLORO",
+              "price": 172.0,
+              "price_half": 86
+            },
+            {
+              "name": "5mm INCOLORO",
+              "price": 215.0,
+              "price_half": 107.5
+            },
+            {
+              "name": "6mm INCOLORO",
+              "price": 256.6,
+              "price_half": 128.3
+            },
+            {
+              "name": "8mm INCOLORO",
+              "price": 343.0,
+              "price_half": 171.5
+            },
+            {
+              "name": "10mm INCOLORO",
+              "price": 429.0,
+              "price_half": 214.5
+            }
+          ]
+        },
+        {
+          "name": "Blanco y Hielo + 5%",
+          "products": [
+            {
+              "name": "2MM INCOLORO",
+              "price": 95.5,
+              "price_half": 47.75
+            },
+            {
+              "name": "3MM INCOLORO",
+              "price": 142.0,
+              "price_half": 71
+            },
+            {
+              "name": "4MM INCOLORO",
+              "price": 190.0,
+              "price_half": 95
+            },
+            {
+              "name": "5MM INCOLORO",
+              "price": 239.0,
+              "price_half": 119.5
+            },
+            {
+              "name": "6MM INCOLORO",
+              "price": 285.0,
+              "price_half": 142.5
+            },
+            {
+              "name": "8MM INCOLORO",
+              "price": 385.0,
+              "price_half": 192.5
+            },
+            {
+              "name": "10MM INCOLORO",
+              "price": 475.0,
+              "price_half": 237.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "subcategories": [
+        {
+          "name": "MEDIDAS",
+          "products": [
+            {
+              "name": "3050X1500 2MM ETALB. BLANCO (BR/MAT)",
+              "price": 76.5,
+              "price_half": null
+            },
+            {
+              "name": "3050X1500 3MM PV BL-NEG.SILVER",
+              "price": 87.5,
+              "price_half": null
+            },
+            {
+              "name": "3050X1500 3MM ROJO/AZUL - VERDE/AMARILLO",
+              "price": 87.5,
+              "price_half": null
+            },
+            {
+              "name": "3050X1500 4MM PV BLANCO (BR/MAT)",
+              "price": 93.15,
+              "price_half": null
+            },
+            {
+              "name": "3050X2000 3MM BLANCO PV (BR/MAT)",
+              "price": 126.9,
+              "price_half": null
+            },
+            {
+              "name": "3050X2000 3MM BLANCO ELVAL (MATE 2 CARAS)",
+              "price": 128.9,
+              "price_half": null
+            }
+          ]
+        },
+        {
+          "name": "MEDIDAS",
+          "products": [
+            {
+              "name": "3050X1500 3MM BLANCO-PLATA-NEGRO",
+              "price": 103.25,
+              "price_half": null
+            },
+            {
+              "name": "3050X1500 3MM AZUL/AZUL - ROJO/ROJO",
+              "price": 103.25,
+              "price_half": null
+            },
+            {
+              "name": "3050X1500 3MM ESMERILADO/PLATA",
+              "price": 108.4,
+              "price_half": null
+            },
+            {
+              "name": "3050X2000 3MM BLANCO (MATE 2 CARAS)",
+              "price": 151.0,
+              "price_half": null
+            },
+            {
+              "name": "3050X2000 3MM BL/NEG (MATE 2 CARAS)",
+              "price": 151.0,
+              "price_half": null
+            },
+            {
+              "name": "3050X2000 3MM NEG (BRILLO/MATE)",
+              "price": 151.0,
+              "price_half": null
+            },
+            {
+              "name": "3050X1500 3MM ANTRACITA",
+              "price": 103.25,
+              "price_half": null
+            },
+            {
+              "name": "3050X1220 3MM ESPEJO",
+              "price": 145.9,
+              "price_half": null
+            },
+            {
+              "name": "S/ADH 100x140 10mm",
+              "price": 15.0,
+              "price_half": 10.5
+            },
+            {
+              "name": "S/ADH 100x200 10mm",
+              "price": 10.0,
+              "price_half": 14.5
+            },
+            {
+              "name": "S/ADH 122x244 10mm",
+              "price": 10.0,
+              "price_half": 22.5
+            },
+            {
+              "name": "C/ADH 70x100 10mm",
+              "price": 15.0,
+              "price_half": 8.1
+            },
+            {
+              "name": "C/ADH 100x140 10mm",
+              "price": 15.0,
+              "price_half": 14.3
+            },
+            {
+              "name": "C/ADH 100x200 10mm",
+              "price": 10.0,
+              "price_half": 20.5
+            },
+            {
+              "name": "C/ADH 122x244 10mm",
+              "price": 10.0,
+              "price_half": 34.5
+            },
+            {
+              "name": "S/ADH 140x300 5mm",
+              "price": 15.0,
+              "price_half": 28.9
+            },
+            {
+              "name": "S/ADH 152x305 5mm",
+              "price": 15.0,
+              "price_half": 32.5
+            },
+            {
+              "name": "C/ADH 140x300 5mm",
+              "price": 15.0,
+              "price_half": 43.5
+            },
+            {
+              "name": "C/ADH 152x305 5mm",
+              "price": 15.0,
+              "price_half": 48.5
+            },
+            {
+              "name": "S/ADH 140x300 10mm",
+              "price": 8.0,
+              "price_half": 42.5
+            },
+            {
+              "name": "S/ADH 152x305 10mm",
+              "price": 8.0,
+              "price_half": 44.3
+            },
+            {
+              "name": "C/ADH 140x300 10mm",
+              "price": 8.0,
+              "price_half": 49.0
+            },
+            {
+              "name": "C/ADH 152x305 10mm",
+              "price": 8.0,
+              "price_half": 52.0
+            },
+            {
+              "name": "2.4mm NORMAL/SMOOTH 3050x2050 450 gr",
+              "price": 19.8,
+              "price_half": null
+            },
+            {
+              "name": "2.6mm SMOOTH 3050x2050 600 gr",
+              "price": 26.400000000000002,
+              "price_half": null
+            },
+            {
+              "name": "3mm SMOOTH 3050x2050 900 gr",
+              "price": 35.2,
+              "price_half": null
+            },
+            {
+              "name": "3mm NORMAL/SMOOTH 3050x2050 900 gr",
+              "price": 38.5,
+              "price_half": null
+            },
+            {
+              "name": "5mm SMOOTH 3050x2050 1600 gr",
+              "price": 60.50000000000001,
+              "price_half": null
+            },
+            {
+              "name": "5mm NORMAL/SMOOTH 3050x2050 1600 gr",
+              "price": 63.800000000000004,
+              "price_half": null
+            },
+            {
+              "name": "5mm NORMAL/SMOOTH 3050x2050 1600 gr",
+              "price": 66.0,
+              "price_half": null
+            },
+            {
+              "name": "8mm NORMAL/SMOOTH 3050x2050 2000 gr",
+              "price": 77.0,
+              "price_half": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tintas": [
+    {
+      "name": "Tintas 400ml",
+      "subcategories": [
+        {
+          "name": "General",
+          "products": [
+            {
+              "name": "TINTA NEGRA 400ml",
+              "size": "G0Y86A",
+              "price": 89.0
+            },
+            {
+              "name": "TINTA CIAN 400ml",
+              "size": "G0Y87A",
+              "price": 89.0
+            },
+            {
+              "name": "TINTA MAGENTA 400ml",
+              "size": "G0Y88A",
+              "price": 89.0
+            },
+            {
+              "name": "TINTA AMARILLA 400ml",
+              "size": "G0Y89A",
+              "price": 89.0
+            },
+            {
+              "name": "TINTA LIGHT CIAN 400ml",
+              "size": "G0Y90A",
+              "price": 89.0
+            },
+            {
+              "name": "TINTA LIGHT MAGENTA 400ml",
+              "size": "G0Y91A",
+              "price": 89.0
+            },
+            {
+              "name": "TINTA OPTIMIZADOR 400ml",
+              "size": "G0Y92A",
+              "price": 89.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tintas 775ml",
+      "subcategories": [
+        {
+          "name": "General",
+          "products": [
+            {
+              "name": "TINTA NEGRA 775ml",
+              "size": "CZ694A",
+              "price": 120.0
+            },
+            {
+              "name": "TINTA CIAN 775ml",
+              "size": "CZ695A",
+              "price": 120.0
+            },
+            {
+              "name": "TINTA MAGENTA 775ml",
+              "size": "CZ696A",
+              "price": 120.0
+            },
+            {
+              "name": "TINTA AMARILLA 775ml",
+              "size": "CZ697A",
+              "price": 120.0
+            },
+            {
+              "name": "TINTA LIGHT CIAN 775ml",
+              "size": "CZ698A",
+              "price": 120.0
+            },
+            {
+              "name": "TINTA LIGHT MAGENTA 775ml",
+              "size": "CZ699A",
+              "price": 120.0
+            },
+            {
+              "name": "TINTA OPTIMIZADOR 775ml",
+              "size": "CZ706A",
+              "price": 120.0
+            },
+            {
+              "name": "TINTA NEGRA 775ml",
+              "size": "2LL53A",
+              "price": 55.0
+            },
+            {
+              "name": "TINTA CIAN 775ml",
+              "size": "2LL54A",
+              "price": 55.0
+            },
+            {
+              "name": "TINTA MAGENTA 775ml",
+              "size": "2LL55A",
+              "price": 55.0
+            },
+            {
+              "name": "TINTA AMARILLO 775ml",
+              "size": "2LL56A",
+              "price": 55.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tintas 1L",
+      "subcategories": [
+        {
+          "name": "General",
+          "products": [
+            {
+              "name": "TINTA NEGRA 1L",
+              "size": "4UV75A",
+              "price": 114.0
+            },
+            {
+              "name": "TINTA CIAN 1L",
+              "size": "4UV76A",
+              "price": 114.0
+            },
+            {
+              "name": "TINTA MAGENTA 1L",
+              "size": "4UV77A",
+              "price": 114.0
+            },
+            {
+              "name": "TINTA AMARILLA 1L",
+              "size": "4UV78A",
+              "price": 114.0
+            },
+            {
+              "name": "TINTA LIGHT CIAN 1L",
+              "size": "4UV79A",
+              "price": 114.0
+            },
+            {
+              "name": "TINTA LIGHT MAGENTA 1L",
+              "size": "4UV80A",
+              "price": 114.0
+            },
+            {
+              "name": "TINTA OPTIMIZADOR 1L",
+              "size": "4UV81A",
+              "price": 114.0
+            },
+            {
+              "name": "TINTA OVERCOAT 1L",
+              "size": "4UV82A",
+              "price": 114.0
+            },
+            {
+              "name": "TINTA BLANCA 1L",
+              "size": "4UV29A",
+              "price": 114.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tintas 3L",
+      "subcategories": [
+        {
+          "name": "General",
+          "products": [
+            {
+              "name": "TINTA NEGRA 3L",
+              "size": "G0Y79C",
+              "price": 359.0
+            },
+            {
+              "name": "TINTA CIAN 3L",
+              "size": "G0Y80C",
+              "price": 359.0
+            },
+            {
+              "name": "TINTA MAGENTA 3L",
+              "size": "G0Y81C",
+              "price": 359.0
+            },
+            {
+              "name": "TINTA AMARILLA 3L",
+              "size": "G0Y82C",
+              "price": 359.0
+            },
+            {
+              "name": "TINTA LIGHT CIAN 3L",
+              "size": "G0Y83C",
+              "price": 359.0
+            },
+            {
+              "name": "TINTA LIGHT MAGENTA 3L",
+              "size": "G0Y84C",
+              "price": 359.0
+            },
+            {
+              "name": "TINTA OPTIMIZADOR 3L",
+              "size": "G0Y85A",
+              "price": 359.0
+            },
+            {
+              "name": "TINTA NEGRA 3L",
+              "size": "4UV84A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA CIAN 3L",
+              "size": "4UV85A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA MAGENTA 3L",
+              "size": "4UV86A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA AMARILLA 3L",
+              "size": "4UV87A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA LIGHT CIAN 3L",
+              "size": "4UV88A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA LIGHT MAGENTA 3L",
+              "size": "4UV89A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA OPTIMIZADOR 3L",
+              "size": "4UV90A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA OVERCOAT 3L",
+              "size": "4UV91A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA BLANCA 3L",
+              "size": "4UV62A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA BLANCA 3L",
+              "size": "G0Z44A",
+              "price": 320.0
+            },
+            {
+              "name": "TINTA NEGRA 3L",
+              "size": "CH216A",
+              "price": 509.0
+            },
+            {
+              "name": "TINTA CIAN 3L",
+              "size": "CH217A",
+              "price": 509.0
+            },
+            {
+              "name": "TINTA MAGENTA 3L",
+              "size": "CH218A",
+              "price": 509.0
+            },
+            {
+              "name": "TINTA AMARILLA 3L",
+              "size": "CH219A",
+              "price": 509.0
+            },
+            {
+              "name": "TINTA LIGHT CIAN 3L",
+              "size": "CH220A",
+              "price": 509.0
+            },
+            {
+              "name": "TINTA LIGHT MAGENTA 3L",
+              "size": "CH221A",
+              "price": 509.0
+            },
+            {
+              "name": "TINTA CIAN 3L",
+              "size": "G0Z01A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA MAGENTA 3L",
+              "size": "G0Z02A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA AMARILLO 3L",
+              "size": "G0Z03A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA NEGRO 3L",
+              "size": "G0Z04A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA LIGHT CIAN 3L",
+              "size": "G0Z05A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA LIGHT MAGENTA 3L",
+              "size": "G0Z06A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA OPTIMIZADOR 3L",
+              "size": "G0Z07A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA OVERCOAT 3L",
+              "size": "G0Z08A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA BLANCA 3L",
+              "size": "G0Z09A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA BLANCA 3L",
+              "size": "G0Z09A",
+              "price": 252.0
+            },
+            {
+              "name": "TINTA NEGRA 3L",
+              "size": "2LL57A",
+              "price": 178.0
+            },
+            {
+              "name": "TINTA CIAN 3L",
+              "size": "2LL58A",
+              "price": 178.0
+            },
+            {
+              "name": "TINTA MAGENTA 3L",
+              "size": "2LL59A",
+              "price": 178.0
+            },
+            {
+              "name": "TINTA AMARILLO 3L",
+              "size": "2LL60A",
+              "price": 178.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tintas 5L",
+      "subcategories": [
+        {
+          "name": "General",
+          "products": [
+            {
+              "name": "TINTA NEGRA 5L",
+              "size": "CR331A",
+              "price": 430.0
+            },
+            {
+              "name": "TINTA CIAN 5L",
+              "size": "CR332A",
+              "price": 430.0
+            },
+            {
+              "name": "TINTA MAGENTA 5L",
+              "size": "CR333A",
+              "price": 430.0
+            },
+            {
+              "name": "TINTA AMARILLA 5L",
+              "size": "CR334A",
+              "price": 430.0
+            },
+            {
+              "name": "TINTA LIGHT CIAN 5L",
+              "size": "CR335A",
+              "price": 430.0
+            },
+            {
+              "name": "TINTA LIGHT MAGENTA 5L",
+              "size": "CR336A",
+              "price": 430.0
+            },
+            {
+              "name": "TINTA OPTIMIZADOR 5L",
+              "size": "CR337A",
+              "price": 430.0
+            },
+            {
+              "name": "TINTA CIAN 5L",
+              "size": "G0Z28A",
+              "price": 320.0
+            },
+            {
+              "name": "TINTA MAGENTA 5L",
+              "size": "G0Z29A",
+              "price": 320.0
+            },
+            {
+              "name": "TINTA AMARILLO 5L",
+              "size": "G0Z30A",
+              "price": 320.0
+            },
+            {
+              "name": "TINTA NEGRO 5L",
+              "size": "G0Z31A",
+              "price": 320.0
+            },
+            {
+              "name": "TINTA LIGHT CIAN 5L",
+              "size": "G0Z32A",
+              "price": 320.0
+            },
+            {
+              "name": "TINTA LIGHT MAGENTA 5L",
+              "size": "G0Z33A",
+              "price": 320.0
+            },
+            {
+              "name": "TINTA OPTIMIZADOR 5L",
+              "size": "G0Z34A",
+              "price": 320.0
+            },
+            {
+              "name": "TINTA OVERCOAT 5L",
+              "size": "G0Z35A",
+              "price": 320.0
+            },
+            {
+              "name": "TINTA CIAN 5L",
+              "size": "G0Z10A",
+              "price": 355.0
+            },
+            {
+              "name": "TINTA MAGENTA 5L",
+              "size": "G0Z11A",
+              "price": 355.0
+            },
+            {
+              "name": "TINTA AMARILLO 5L",
+              "size": "G0Z12A",
+              "price": 355.0
+            },
+            {
+              "name": "TINTA NEGRO 5L",
+              "size": "G0Z13A",
+              "price": 355.0
+            },
+            {
+              "name": "TINTA LIGHT CIAN 5L",
+              "size": "G0Z14A",
+              "price": 355.0
+            },
+            {
+              "name": "TINTA LIGHT MAGENTA 5L",
+              "size": "G0Z15A",
+              "price": 355.0
+            },
+            {
+              "name": "TINTA OPTIMIZADOR 5L",
+              "size": "G0Z16A",
+              "price": 355.0
+            },
+            {
+              "name": "TINTA OVERCOAT 5L",
+              "size": "G0Z17A",
+              "price": 355.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tintas 10L",
+      "subcategories": [
+        {
+          "name": "General",
+          "products": [
+            {
+              "name": "TINTA NEGRA 10L",
+              "size": "G0Y72C",
+              "price": 560.0
+            },
+            {
+              "name": "TINTA CIAN 10L",
+              "size": "G0Y73C",
+              "price": 560.0
+            },
+            {
+              "name": "TINTA MAGENTA 10L",
+              "size": "G0Y74C",
+              "price": 560.0
+            },
+            {
+              "name": "TINTA AMARILLA 10L",
+              "size": "G0Y75C",
+              "price": 560.0
+            },
+            {
+              "name": "TINTA LIGHT CIAN 10L",
+              "size": "G0Y76C",
+              "price": 560.0
+            },
+            {
+              "name": "TINTA LIGHT MAGENTA 10L",
+              "size": "G0Y77C",
+              "price": 560.0
+            },
+            {
+              "name": "TINTA OPTIMIZADOR 10L",
+              "size": "G0Y78C",
+              "price": 560.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cabezales",
+      "subcategories": [
+        {
+          "name": "General",
+          "products": [
+            {
+              "name": "CABEZAL CIAN/NEGRO",
+              "size": "CZ677A",
+              "price": 100.0
+            },
+            {
+              "name": "CABEZAL MAGENTA/AMARILLO",
+              "size": "CZ678A",
+              "price": 100.0
+            },
+            {
+              "name": "CABEZAL L.MAGENTA/ L.CIAN",
+              "size": "CZ679A",
+              "price": 100.0
+            },
+            {
+              "name": "CABEZAL OPTIMIZADOR",
+              "size": "CZ680A",
+              "price": 100.0
+            },
+            {
+              "name": "CABEZAL CIAN/NEGRO",
+              "size": "CZ677A",
+              "price": 100.0
+            },
+            {
+              "name": "CABEZAL MAGENTA/AMARILLO",
+              "size": "CZ678A",
+              "price": 100.0
+            },
+            {
+              "name": "CABEZAL L.MAGENTA/ L.CIAN",
+              "size": "CZ679A",
+              "price": 100.0
+            },
+            {
+              "name": "CABEZAL OPTIMIZADOR",
+              "size": "CZ680A",
+              "price": 100.0
+            },
+            {
+              "name": "CABEZAL CIAN/NEGRO",
+              "size": "CZ677A",
+              "price": 100.0
+            },
+            {
+              "name": "CABEZAL MAGENTA/AMARILLO",
+              "size": "CZ678A",
+              "price": 100.0
+            },
+            {
+              "name": "CABEZAL L.MAGENTA/ L.CIAN",
+              "size": "CZ679A",
+              "price": 100.0
+            },
+            {
+              "name": "CABEZAL OPTIMIZADOR",
+              "size": "CZ680A",
+              "price": 100.0
+            },
+            {
+              "name": "CABEZAL CIAN/NEGRO",
+              "size": "4UV95A",
+              "price": 140.0
+            },
+            {
+              "name": "CABEZAL MAGENTA/AMARILLO",
+              "size": "4UV96A",
+              "price": 140.0
+            },
+            {
+              "name": "CABEZAL L.MAGENTA/ L.CIAN",
+              "size": "4UV97A",
+              "price": 140.0
+            },
+            {
+              "name": "CABEZAL OPTIMIZADOR",
+              "size": "4UU94A",
+              "price": 140.0
+            },
+            {
+              "name": "CABEZAL OVERCOAT",
+              "size": "4UV98A",
+              "price": 140.0
+            },
+            {
+              "name": "CABEZAL BLANCO",
+              "size": "4UU93A",
+              "price": 140.0
+            },
+            {
+              "name": "CABEZAL CIAN/NEGRO",
+              "size": "4UV95A",
+              "price": 140.0
+            },
+            {
+              "name": "CABEZAL MAGENTA/AMARILLO",
+              "size": "4UV96A",
+              "price": 140.0
+            },
+            {
+              "name": "CABEZAL L.MAGENTA/ L.CIAN",
+              "size": "4UV97A",
+              "price": 140.0
+            },
+            {
+              "name": "CABEZAL OPTIMIZADOR",
+              "size": "4UU94A",
+              "price": 140.0
+            },
+            {
+              "name": "CABEZAL OVERCOAT",
+              "size": "4UV98A",
+              "price": 140.0
+            },
+            {
+              "name": "CABEZAL BLANCO",
+              "size": "4UU93A",
+              "price": 140.0
+            },
+            {
+              "name": "CABEZAL CIAN/NEGRO",
+              "size": "CR327A",
+              "price": 390.0
+            },
+            {
+              "name": "CABEZAL MAGENTA/AMARILLO",
+              "size": "CR328A",
+              "price": 390.0
+            },
+            {
+              "name": "CABEZAL L.MAGENTA/ L.CIAN",
+              "size": "CR329A",
+              "price": 390.0
+            },
+            {
+              "name": "CABEZAL OPTIMIZADOR",
+              "size": "CR330A",
+              "price": 390.0
+            },
+            {
+              "name": "CABEZAL BLANCO",
+              "size": "G0Z21A",
+              "price": 412.0
+            },
+            {
+              "name": "CABEZAL OPTIMIZADOR",
+              "size": "G0Z22A",
+              "price": 412.0
+            },
+            {
+              "name": "CABEZAL IMPRESION N/C A/M LM/LC OVERCOAT",
+              "size": "G0Z24A",
+              "price": 412.0
+            },
+            {
+              "name": "CABEZAL CIAN/NEGRO",
+              "size": "CR327A",
+              "price": 390.0
+            },
+            {
+              "name": "CABEZAL MAGENTA/AMARILLO",
+              "size": "CR328A",
+              "price": 390.0
+            },
+            {
+              "name": "CABEZAL L.MAGENTA/ L.CIAN",
+              "size": "CR329A",
+              "price": 390.0
+            },
+            {
+              "name": "CABEZAL OPTIMIZADOR",
+              "size": "CR330A",
+              "price": 390.0
+            },
+            {
+              "name": "CABEZAL BLANCO",
+              "size": "G0Z21A",
+              "price": 412.0
+            },
+            {
+              "name": "CABEZAL OPTIMIZADOR",
+              "size": "G0Z22A",
+              "price": 412.0
+            },
+            {
+              "name": "CABEZAL IMPRESION N/C A/M LM/LC OVERCOAT",
+              "size": "G0Z24A",
+              "price": 412.0
+            },
+            {
+              "name": "CABEZAL BLANCO",
+              "size": "G0Z21A",
+              "price": 412.0
+            },
+            {
+              "name": "CABEZAL OPTIMIZADOR",
+              "size": "G0Z22A",
+              "price": 412.0
+            },
+            {
+              "name": "CABEZAL IMPRESION N/C A/M LM/LC OVERCOAT",
+              "size": "G0Z24A",
+              "price": 412.0
+            },
+            {
+              "name": "CABEZAL CIAN/NEGRO",
+              "size": "2LL62A",
+              "price": 141.0
+            },
+            {
+              "name": "CABEZAL MAGENTA/AMARILLO",
+              "size": "2LL63A",
+              "price": 141.0
+            },
+            {
+              "name": "CABEZAL CIAN/NEGRO",
+              "size": "2LL62A",
+              "price": 141.0
+            },
+            {
+              "name": "CABEZAL MAGENTA/AMARILLO",
+              "size": "2LL63A",
+              "price": 141.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kit Mantenimiento",
+      "subcategories": [
+        {
+          "name": "General",
+          "products": [
+            {
+              "name": "KIT MANTENIMIENTO",
+              "size": "CZ681A",
+              "price": 145.0
+            },
+            {
+              "name": "KIT MANTENIMIENTO",
+              "size": "CZ681A",
+              "price": 145.0
+            },
+            {
+              "name": "KIT MANTENIMIENTO",
+              "size": "CZ681A",
+              "price": 145.0
+            },
+            {
+              "name": "CARTUCHO DE MANTENIMIENTO",
+              "size": "4UU96A",
+              "price": 145.0
+            },
+            {
+              "name": "CARTUCHO DE MANTENIMIENTO",
+              "size": "4UU96A",
+              "price": 145.0
+            },
+            {
+              "name": "KIT MANTENIMIENTO",
+              "size": "G0Y99A",
+              "price": 315.0
+            },
+            {
+              "name": "KIT MANTENIMIENTO",
+              "size": "CR339B",
+              "price": 390.0
+            },
+            {
+              "name": "CARTUCHO DE MANTENIMIENTO",
+              "size": "G0Z00A",
+              "price": 341.0
+            },
+            {
+              "name": "CARTUCHO DE MANTENIMIENTO",
+              "size": "G0Z00A",
+              "price": 341.0
+            },
+            {
+              "name": "KIT DE MANTENIMIENTO",
+              "size": "2LL61A",
+              "price": 141.0
+            },
+            {
+              "name": "KIT DE MANTENIMIENTO",
+              "size": "2LL61A",
+              "price": 141.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Otros Consumibles",
+      "subcategories": [
+        {
+          "name": "General",
+          "products": [
+            {
+              "name": "CONTENEDOR DE TINTA",
+              "size": "4UV83A",
+              "price": 44.0
+            },
+            {
+              "name": "CONTENEDOR DE TINTA",
+              "size": "4UV83A",
+              "price": 44.0
+            },
+            {
+              "name": "TINTA BLANCA 2l",
+              "size": "CQ123A",
+              "price": 357.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Market — Catálogo de Productos</title>
+  <meta name="description" content="Catálogo de materiales para impresión digital: vinilos, rígidos, tintas y plotters de corte. Solicita tu presupuesto por WhatsApp o email.">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* ── Variables ─────────────────────────────── */
+    :root {
+      --blue: #0088cc;
+      --blue-dark: #006699;
+      --blue-light: #e0f2fe;
+      --green: #25D366;
+      --text: #0f172a;
+      --text-2: #334155;
+      --text-3: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+      --white: #ffffff;
+      --portal-bg: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+      --gold: #f59e0b;
+      --radius: 12px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ─────────────────────────────────── */
+    header {
+      position: sticky; top: 0; z-index: 200;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 3px solid var(--blue);
+      box-shadow: 0 2px 20px rgba(0,136,204,0.08);
+    }
+    .header-inner {
+      max-width: 1400px; margin: 0 auto;
+      padding: 0 24px;
+      display: flex; align-items: center; gap: 20px;
+      height: 80px;
+    }
+    .logo img { height: 52px; }
+    .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+    .logo-text strong { font-size: 18px; font-weight: 800; color: var(--blue); }
+    .logo-text span { font-size: 11px; color: var(--text-3); font-weight: 500; letter-spacing: 0.5px; }
+
+    .search-wrap { flex: 1; max-width: 440px; position: relative; }
+    .search-wrap input {
+      width: 100%; padding: 10px 16px 10px 40px;
+      background: var(--bg); border: 2px solid var(--border);
+      border-radius: 10px; font-family: inherit; font-size: 14px;
+      color: var(--text); transition: all .2s;
+    }
+    .search-wrap input:focus { outline: none; border-color: var(--blue); background: #fff; }
+    .search-icon {
+      position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+      color: var(--text-3); pointer-events: none;
+    }
+
+    .header-actions { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+    .btn-wa {
+      display: flex; align-items: center; gap: 7px;
+      background: var(--green); color: #fff;
+      border: none; border-radius: 9px; padding: 9px 16px;
+      font-family: inherit; font-size: 13px; font-weight: 700;
+      cursor: pointer; text-decoration: none; transition: opacity .15s;
+    }
+    .btn-wa:hover { opacity: .88; }
+    .btn-portal {
+      display: flex; align-items: center; gap: 6px;
+      background: var(--blue); color: #fff;
+      border: none; border-radius: 9px; padding: 9px 16px;
+      font-family: inherit; font-size: 13px; font-weight: 700;
+      cursor: pointer; text-decoration: none; transition: all .15s;
+    }
+    .btn-portal:hover { background: var(--blue-dark); }
+    .btn-tel {
+      display: flex; align-items: center; gap: 6px;
+      color: var(--text-2); font-size: 13px; font-weight: 600;
+      text-decoration: none;
+    }
+    .btn-tel:hover { color: var(--blue); }
+
+    /* ── PORTAL BANNER ───────────────────────────── */
+    .portal-banner {
+      background: var(--portal-bg);
+      padding: 14px 24px;
+    }
+    .portal-banner-inner {
+      max-width: 1400px; margin: 0 auto;
+      display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+    }
+    .portal-badge {
+      background: var(--gold); color: #1a1a1a;
+      font-size: 10px; font-weight: 800; letter-spacing: 1px;
+      padding: 4px 10px; border-radius: 20px; text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .portal-text {
+      flex: 1; color: #fff; font-size: 13px; font-weight: 400; line-height: 1.4;
+    }
+    .portal-text strong { font-weight: 700; color: #93c5fd; }
+    .portal-ctas { display: flex; gap: 8px; flex-wrap: wrap; }
+    .portal-cta-btn {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
+      color: #fff; border-radius: 8px; padding: 7px 13px;
+      font-family: inherit; font-size: 12px; font-weight: 600;
+      text-decoration: none; cursor: pointer; transition: all .15s; white-space: nowrap;
+    }
+    .portal-cta-btn:hover { background: rgba(255,255,255,0.22); }
+    .portal-cta-btn.primary {
+      background: var(--blue); border-color: var(--blue);
+    }
+    .portal-cta-btn.primary:hover { background: #0077b3; }
+
+    /* ── HERO ────────────────────────────────────── */
+    .hero {
+      max-width: 1400px; margin: 0 auto;
+      padding: 32px 24px 20px;
+    }
+    .hero h1 { font-size: 28px; font-weight: 800; color: var(--text); }
+    .hero h1 span { color: var(--blue); }
+    .hero p { font-size: 15px; color: var(--text-3); margin-top: 6px; }
+    .hero-stats {
+      display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap;
+    }
+    .stat-chip {
+      display: flex; align-items: center; gap: 7px;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 30px; padding: 7px 14px;
+      font-size: 13px; font-weight: 600; color: var(--text-2);
+    }
+    .stat-chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--blue); }
+
+    /* ── MAIN LAYOUT ─────────────────────────────── */
+    .main-wrap {
+      max-width: 1400px; margin: 0 auto;
+      padding: 0 24px 80px;
+      display: grid; grid-template-columns: 280px 1fr;
+      gap: 28px; align-items: start;
+    }
+
+    /* ── SIDEBAR ─────────────────────────────────── */
+    .sidebar {
+      position: sticky; top: 98px;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+    .sidebar-section {
+      border-bottom: 1px solid var(--border);
+    }
+    .sidebar-section:last-child { border-bottom: none; }
+    .sidebar-tab-btn {
+      width: 100%; display: flex; align-items: center; gap: 12px;
+      padding: 14px 18px; background: transparent; border: none;
+      cursor: pointer; font-family: inherit; text-align: left;
+      transition: background .15s;
+    }
+    .sidebar-tab-btn:hover { background: var(--bg); }
+    .sidebar-tab-btn.active { background: var(--blue-light); }
+    .sidebar-tab-btn .tab-icon { font-size: 20px; width: 28px; text-align: center; }
+    .sidebar-tab-btn .tab-info { flex: 1; }
+    .sidebar-tab-btn .tab-name { font-size: 14px; font-weight: 700; color: var(--text); }
+    .sidebar-tab-btn.active .tab-name { color: var(--blue); }
+    .sidebar-tab-btn .tab-from {
+      font-size: 11px; font-weight: 600; color: var(--text-3); margin-top: 1px;
+    }
+    .sidebar-tab-btn.active .tab-from { color: var(--blue-dark); }
+    .sidebar-tab-btn .tab-count {
+      font-size: 11px; font-weight: 700; background: var(--border);
+      color: var(--text-3); padding: 2px 7px; border-radius: 10px;
+    }
+    .sidebar-tab-btn.active .tab-count {
+      background: var(--blue); color: #fff;
+    }
+
+    /* Subcategory list inside sidebar */
+    .subcat-list {
+      display: none; padding: 4px 0 10px;
+    }
+    .subcat-list.open { display: block; }
+    .subcat-btn {
+      width: 100%; display: flex; align-items: center; justify-content: space-between;
+      padding: 9px 18px 9px 56px; background: transparent; border: none;
+      cursor: pointer; font-family: inherit; font-size: 13px; font-weight: 500;
+      color: var(--text-2); text-align: left; transition: all .15s;
+    }
+    .subcat-btn:hover { background: var(--bg); color: var(--blue); }
+    .subcat-btn.active {
+      background: var(--blue); color: #fff; border-radius: 0;
+    }
+    .subcat-btn .sub-from {
+      font-size: 11px; font-weight: 600; color: inherit; opacity: .7;
+      white-space: nowrap;
+    }
+
+    /* ── CONTENT AREA ────────────────────────────── */
+    .content-area {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 28px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+      min-height: 600px;
+    }
+
+    /* Welcome state */
+    .welcome-state { text-align: center; padding: 60px 20px; }
+    .welcome-state .w-icon { font-size: 56px; margin-bottom: 16px; }
+    .welcome-state h2 { font-size: 22px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+    .welcome-state p { font-size: 14px; color: var(--text-3); max-width: 380px; margin: 0 auto; }
+
+    /* Category header */
+    .cat-header { margin-bottom: 24px; padding-bottom: 16px; border-bottom: 3px solid var(--blue); }
+    .cat-header h2 { font-size: 20px; font-weight: 800; color: var(--text); }
+    .cat-header .cat-meta { font-size: 13px; color: var(--text-3); margin-top: 4px; }
+    .cat-header .cat-desc { font-size: 13px; color: var(--text-2); margin-top: 6px; }
+
+    /* Subcategory block */
+    .subcat-block { margin-bottom: 32px; }
+    .subcat-title {
+      font-size: 13px; font-weight: 700; color: var(--text-3);
+      text-transform: uppercase; letter-spacing: 0.8px;
+      margin-bottom: 12px; padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Product table */
+    .product-table { width: 100%; border-collapse: collapse; }
+    .product-table th {
+      text-align: left; font-size: 11px; font-weight: 700;
+      color: var(--text-3); text-transform: uppercase; letter-spacing: 0.7px;
+      padding: 8px 12px; background: var(--bg); border-bottom: 1px solid var(--border);
+    }
+    .product-table td {
+      padding: 10px 12px; border-bottom: 1px solid #f1f5f9;
+      font-size: 13px; vertical-align: middle;
+    }
+    .product-table tr:last-child td { border-bottom: none; }
+    .product-table tr:hover td { background: #f8fafc; }
+
+    .prod-name { font-weight: 600; color: var(--text); }
+    .prod-ref { font-size: 11px; color: var(--text-3); font-weight: 500; margin-top: 2px; }
+    .price-cell { font-weight: 700; color: var(--blue-dark); white-space: nowrap; }
+    .price-from { font-size: 10px; font-weight: 600; color: var(--text-3); display: block; }
+    .price-note { font-size: 11px; color: var(--text-3); }
+
+    .cta-cell { display: flex; gap: 6px; justify-content: flex-end; flex-wrap: wrap; }
+    .btn-wa-sm {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: #e8fdf1; color: #15803d;
+      border: 1px solid #86efac; border-radius: 7px;
+      padding: 6px 11px; font-family: inherit; font-size: 12px; font-weight: 700;
+      cursor: pointer; text-decoration: none; transition: all .15s; white-space: nowrap;
+    }
+    .btn-wa-sm:hover { background: var(--green); color: #fff; border-color: var(--green); }
+    .btn-email-sm {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: var(--blue-light); color: var(--blue-dark);
+      border: 1px solid #93c5fd; border-radius: 7px;
+      padding: 6px 11px; font-family: inherit; font-size: 12px; font-weight: 700;
+      cursor: pointer; text-decoration: none; transition: all .15s; white-space: nowrap;
+    }
+    .btn-email-sm:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
+
+    /* Search results */
+    .search-result-count {
+      font-size: 12px; color: var(--text-3); margin-bottom: 16px; font-weight: 600;
+    }
+    .search-empty {
+      text-align: center; padding: 40px; color: var(--text-3);
+    }
+    .highlight { background: #fef9c3; border-radius: 2px; font-weight: 700; }
+
+    /* ── FLOATING CONTACT BAR ────────────────────── */
+    .float-bar {
+      position: fixed; bottom: 24px; right: 24px;
+      display: flex; flex-direction: column; gap: 10px; z-index: 300;
+    }
+    .float-btn {
+      display: flex; align-items: center; gap: 9px;
+      padding: 12px 20px; border-radius: 50px; border: none;
+      font-family: inherit; font-size: 14px; font-weight: 700;
+      cursor: pointer; text-decoration: none; box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      transition: all .2s; white-space: nowrap;
+    }
+    .float-btn.wa { background: var(--green); color: #fff; }
+    .float-btn.wa:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(37,211,102,0.4); }
+    .float-btn.email { background: var(--blue); color: #fff; }
+    .float-btn.email:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,136,204,0.4); }
+
+    /* ── FOOTER ──────────────────────────────────── */
+    footer {
+      background: #0f172a; color: rgba(255,255,255,0.8);
+      padding: 32px 24px; font-size: 13px;
+    }
+    .footer-inner {
+      max-width: 1400px; margin: 0 auto;
+      display: flex; gap: 40px; flex-wrap: wrap; align-items: center;
+    }
+    footer a { color: #93c5fd; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .footer-right { margin-left: auto; text-align: right; }
+
+    /* ── RESPONSIVE ──────────────────────────────── */
+    @media (max-width: 900px) {
+      .main-wrap { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .header-inner { flex-wrap: wrap; height: auto; padding: 12px 16px; }
+      .search-wrap { order: 3; width: 100%; max-width: 100%; }
+      .header-actions { gap: 6px; }
+      .btn-tel { display: none; }
+      .hero { padding: 20px 16px 12px; }
+      .hero h1 { font-size: 20px; }
+      .main-wrap { padding: 0 16px 80px; }
+      .float-bar { bottom: 16px; right: 16px; }
+      .float-btn { font-size: 12px; padding: 10px 16px; }
+    }
+    @media (max-width: 600px) {
+      .portal-banner-inner { gap: 10px; }
+      .portal-text { font-size: 12px; }
+      .portal-ctas { gap: 6px; }
+      .cta-cell { flex-direction: column; }
+      .product-table th:nth-child(2), .product-table td:nth-child(2) { display: none; }
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- ═══ HEADER ════════════════════════════════════ -->
+<header>
+  <div class="header-inner">
+    <div class="logo" style="display:flex;align-items:center;gap:12px">
+      <img src="logo-dm.png" alt="Digital Market" onerror="this.style.display='none'">
+      <div class="logo-text">
+        <strong>Digital Market</strong>
+        <span>Materiales para Impresión Digital</span>
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="searchInput" placeholder="Buscar producto, referencia…" autocomplete="off">
+    </div>
+
+    <div class="header-actions">
+      <a href="tel:+34657652706" class="btn-tel">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +34 657 652 706
+      </a>
+      <a href="https://wa.me/34657652706?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20vuestros%20productos." target="_blank" class="btn-wa">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+      <a href="https://portal-pedidos-dm.vercel.app" target="_blank" class="btn-portal">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Área Clientes
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ PORTAL INVITATION BANNER ═══════════════════ -->
+<div class="portal-banner">
+  <div class="portal-banner-inner">
+    <span class="portal-badge">Clientes registrados</span>
+    <p class="portal-text">
+      <strong>Accede a precios exclusivos, descuentos por volumen, puntos de fidelidad y las mejores promociones.</strong>
+      Para activar tu Área de Cliente, contacta con tu comercial asignado o llámanos directamente.
+    </p>
+    <div class="portal-ctas">
+      <a href="tel:+34657652706" class="portal-cta-btn">
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Llamar ahora
+      </a>
+      <a href="https://wa.me/34657652706?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20%C3%81rea%20de%20Cliente%20y%20las%20condiciones%20especiales." target="_blank" class="portal-cta-btn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Consultar condiciones
+      </a>
+      <a href="https://portal-pedidos-dm.vercel.app" target="_blank" class="portal-cta-btn primary">
+        Entrar al Portal →
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ HERO ═══════════════════════════════════════ -->
+<div class="hero">
+  <h1>Catálogo de <span>Materiales e Insumos</span></h1>
+  <p>Vinilos, rígidos, tintas HP y plotters de corte Summa. Precios orientativos — consulta sin compromiso.</p>
+  <div class="hero-stats">
+    <div class="stat-chip"><span class="dot"></span> Materiales Flexibles</div>
+    <div class="stat-chip"><span class="dot"></span> Materiales Rígidos</div>
+    <div class="stat-chip"><span class="dot"></span> Tintas e Insumos</div>
+    <div class="stat-chip"><span class="dot"></span> Equipos de Corte Summa</div>
+  </div>
+</div>
+
+<!-- ═══ MAIN ════════════════════════════════════════ -->
+<div class="main-wrap">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <!-- Dynamically populated -->
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content-area" id="contentArea">
+    <div class="welcome-state">
+      <div class="w-icon">🗂️</div>
+      <h2>Selecciona una categoría</h2>
+      <p>Elige un material o familia de productos en el panel de la izquierda para ver la tarifa completa.</p>
+    </div>
+  </main>
+
+</div>
+
+<!-- ═══ FLOATING BUTTONS ════════════════════════════ -->
+<div class="float-bar">
+  <a href="https://wa.me/34657652706?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20y%20presupuesto." target="_blank" class="float-btn wa">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Pedir por WhatsApp
+  </a>
+  <a href="mailto:info@digitalmarket.es?subject=Solicitud%20de%20presupuesto" class="float-btn email">
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    Solicitar presupuesto
+  </a>
+</div>
+
+<!-- ═══ FOOTER ══════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <strong style="color:#fff">Digital Market</strong><br>
+      Materiales para Impresión Digital
+    </div>
+    <div>
+      <a href="tel:+34657652706">+34 657 652 706</a><br>
+      <a href="mailto:info@digitalmarket.es">info@digitalmarket.es</a>
+    </div>
+    <div class="footer-right">
+      <small>Precios orientativos, sin IVA, sujetos a cambios. Para precio exacto consulta con tu comercial.</small><br>
+      <a href="https://portal-pedidos-dm.vercel.app" target="_blank">Área Clientes →</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ═══════════════════════════════════════════════════════
+//  CONFIG — EDITA AQUÍ TUS DATOS
+// ═══════════════════════════════════════════════════════
+const CONFIG = {
+  whatsapp: '34657652706',           // WhatsApp / móvil Digital Market
+  email:    'info@digitalmarket.es', // ← actualiza con tu email real
+  tel:      '+34 657 652 706',       // Teléfono visible
+  portalUrl:'https://portal-pedidos-dm.vercel.app',
+};
+
+// ═══════════════════════════════════════════════════════
+//  CATEGORÍAS PRINCIPALES
+// ═══════════════════════════════════════════════════════
+const TABS = [
+  { key: 'flexibles', icon: '🎨', label: 'Materiales Flexibles', short: 'Vinilos, lonas, textiles…' },
+  { key: 'rigidos',   icon: '🪨', label: 'Materiales Rígidos',   short: 'PVC, metacrilato, composite…' },
+  { key: 'tintas',    icon: '🖨️', label: 'Tintas e Insumos',     short: 'Tintas HP, cabezales, kits…' },
+  { key: 'equipos',   icon: '✂️', label: 'Equipos de Corte',     short: 'Plotters Summa S One / S Class 3' },
+];
+
+// ═══════════════════════════════════════════════════════
+//  STATE
+// ═══════════════════════════════════════════════════════
+let products = null;
+let activeTab = null;
+let activeSubcat = null;   // {catKey, index}
+let searchMode = false;
+
+// ═══════════════════════════════════════════════════════
+//  HELPERS
+// ═══════════════════════════════════════════════════════
+function fmtPrice(p) {
+  if (!p && p !== 0) return '—';
+  return new Intl.NumberFormat('es-ES', {
+    style: 'currency', currency: 'EUR', maximumFractionDigits: 2
+  }).format(p);
+}
+
+function minPrice(cat) {
+  let min = Infinity;
+  (cat.subcategories || []).forEach(s => {
+    (s.products || []).forEach(p => {
+      if (p.price && p.price < min) min = p.price;
+    });
+  });
+  return min === Infinity ? null : min;
+}
+
+function waLink(productName) {
+  const msg = encodeURIComponent(`Hola, estoy interesado en *${productName}*. ¿Podéis darme más información y precio actualizado?`);
+  return `https://wa.me/${CONFIG.whatsapp}?text=${msg}`;
+}
+
+function emailLink(productName) {
+  const subj = encodeURIComponent(`Consulta: ${productName}`);
+  const body = encodeURIComponent(`Hola,\n\nMe gustaría recibir información y presupuesto sobre:\n\n${productName}\n\nGracias.`);
+  return `mailto:${CONFIG.email}?subject=${subj}&body=${body}`;
+}
+
+function esc(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function highlight(str, term) {
+  if (!term) return esc(str);
+  const re = new RegExp('(' + term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')', 'gi');
+  return esc(str).replace(re, '<mark class="highlight">$1</mark>');
+}
+
+// ═══════════════════════════════════════════════════════
+//  RENDER SIDEBAR
+// ═══════════════════════════════════════════════════════
+function renderSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  if (!products) { sidebar.innerHTML = '<div style="padding:20px;color:#64748b">Cargando…</div>'; return; }
+
+  sidebar.innerHTML = TABS.map(tab => {
+    const cats = products[tab.key] || [];
+    const tabMin = Math.min(...cats.map(c => minPrice(c) || Infinity));
+    const fromStr = isFinite(tabMin) ? `desde ${fmtPrice(tabMin)}` : 'Consultar precio';
+    const isActive = activeTab === tab.key;
+
+    const subcatItems = cats.map((cat, i) => {
+      const cMin = minPrice(cat);
+      const isActiveSub = isActive && activeSubcat && activeSubcat.index === i;
+      return `<button class="subcat-btn${isActiveSub ? ' active' : ''}"
+        onclick="selectSubcat('${tab.key}', ${i})" title="${esc(cat.name)}">
+        <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(cat.name)}</span>
+        <span class="sub-from">${cMin ? fmtPrice(cMin) : '—'}</span>
+      </button>`;
+    }).join('');
+
+    return `<div class="sidebar-section">
+      <button class="sidebar-tab-btn${isActive ? ' active' : ''}" onclick="selectTab('${tab.key}')">
+        <span class="tab-icon">${tab.icon}</span>
+        <div class="tab-info">
+          <div class="tab-name">${tab.label}</div>
+          <div class="tab-from">${fromStr}</div>
+        </div>
+        <span class="tab-count">${cats.length}</span>
+      </button>
+      <div class="subcat-list${isActive ? ' open' : ''}" id="sublist-${tab.key}">
+        ${subcatItems}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════════════
+//  RENDER PRODUCT TABLE
+// ═══════════════════════════════════════════════════════
+function renderProductTable(subcats, searchTerm) {
+  if (!subcats || subcats.length === 0) return '<div class="search-empty">Sin productos en esta categoría.</div>';
+
+  return subcats.map(s => {
+    const rows = (s.products || []).map(p => {
+      const hasRef = p.ref || p.size;
+      const refStr = hasRef ? `<div class="prod-ref">${esc(p.ref || p.size || '')}</div>` : '';
+      const nameTd = `<td><div class="prod-name">${highlight(p.name, searchTerm)}</div>${refStr}</td>`;
+      const priceTd = p.price
+        ? `<td class="price-cell">${fmtPrice(p.price)}<span class="price-from">precio orientativo</span></td>`
+        : `<td class="price-cell price-note">Consultar</td>`;
+      const ctaTd = `<td class="cta-cell">
+        <a href="${waLink(p.name)}" target="_blank" class="btn-wa-sm">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a href="${emailLink(p.name)}" class="btn-email-sm">
+          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email
+        </a>
+      </td>`;
+      return `<tr>${nameTd}${priceTd}${ctaTd}</tr>`;
+    }).join('');
+
+    return `<div class="subcat-block">
+      <div class="subcat-title">${esc(s.name)}</div>
+      <table class="product-table">
+        <thead><tr>
+          <th>Producto</th>
+          <th>Precio orientativo</th>
+          <th style="text-align:right">Contactar</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════════════
+//  RENDER CONTENT
+// ═══════════════════════════════════════════════════════
+function renderContent() {
+  const area = document.getElementById('contentArea');
+  if (!products || !activeTab || !activeSubcat) {
+    area.innerHTML = `<div class="welcome-state">
+      <div class="w-icon">🗂️</div>
+      <h2>Selecciona una categoría</h2>
+      <p>Elige un material o familia de productos en el panel de la izquierda.</p>
+    </div>`;
+    return;
+  }
+
+  const cats = products[activeTab] || [];
+  const cat = cats[activeSubcat.index];
+  if (!cat) return;
+
+  const tabInfo = TABS.find(t => t.key === activeTab);
+  const cMin = minPrice(cat);
+  const catDesc = cat.desc || '';
+
+  area.innerHTML = `
+    <div class="cat-header">
+      <h2>${tabInfo ? tabInfo.icon : ''} ${esc(cat.name)}</h2>
+      <div class="cat-meta">${tabInfo ? esc(tabInfo.label) : ''} · ${cat.subcategories ? cat.subcategories.length : 0} subcategorías · ${cMin ? 'desde ' + fmtPrice(cMin) : 'Consultar precio'}</div>
+      ${catDesc ? `<div class="cat-desc">${esc(catDesc)}</div>` : ''}
+    </div>
+    ${renderProductTable(cat.subcategories || [], null)}
+  `;
+}
+
+// ═══════════════════════════════════════════════════════
+//  ACTIONS
+// ═══════════════════════════════════════════════════════
+function selectTab(key) {
+  document.getElementById('searchInput').value = '';
+  searchMode = false;
+  if (activeTab === key) {
+    // collapse
+    activeTab = null;
+    activeSubcat = null;
+  } else {
+    activeTab = key;
+    activeSubcat = null;
+    // Auto-select first subcategory
+    const cats = (products || {})[key] || [];
+    if (cats.length > 0) {
+      activeSubcat = { catKey: key, index: 0 };
+    }
+  }
+  renderSidebar();
+  renderContent();
+}
+
+function selectSubcat(catKey, index) {
+  document.getElementById('searchInput').value = '';
+  searchMode = false;
+  activeTab = catKey;
+  activeSubcat = { catKey, index };
+  renderSidebar();
+  renderContent();
+  // scroll to top of content
+  document.getElementById('contentArea').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ═══════════════════════════════════════════════════════
+//  SEARCH
+// ═══════════════════════════════════════════════════════
+function doSearch(term) {
+  const area = document.getElementById('contentArea');
+  if (!term || !products) {
+    searchMode = false;
+    renderContent();
+    return;
+  }
+  searchMode = true;
+  const t = term.toLowerCase();
+  let results = [];
+
+  Object.keys(products).forEach(catKey => {
+    const tabInfo = TABS.find(x => x.key === catKey);
+    (products[catKey] || []).forEach(cat => {
+      (cat.subcategories || []).forEach(sub => {
+        const matchProds = (sub.products || []).filter(p =>
+          p.name.toLowerCase().includes(t) ||
+          (p.ref && p.ref.toLowerCase().includes(t)) ||
+          (p.size && p.size.toLowerCase().includes(t)) ||
+          sub.name.toLowerCase().includes(t) ||
+          cat.name.toLowerCase().includes(t)
+        );
+        if (matchProds.length > 0) {
+          results.push({ catKey, catName: cat.name, subName: sub.name, products: matchProds, tabInfo });
+        }
+      });
+    });
+  });
+
+  if (results.length === 0) {
+    area.innerHTML = `<div class="search-empty">
+      <div style="font-size:40px;margin-bottom:12px">🔍</div>
+      <strong>Sin resultados para "${esc(term)}"</strong><br>
+      <small>Prueba con otro término o <a href="${waLink(term)}" target="_blank" style="color:var(--blue)">consúltanos por WhatsApp</a>.</small>
+    </div>`;
+    return;
+  }
+
+  const totalProds = results.reduce((s, r) => s + r.products.length, 0);
+  area.innerHTML = `<div class="search-result-count">
+    Se encontraron <strong>${totalProds}</strong> producto${totalProds !== 1 ? 's' : ''} para "<strong>${esc(term)}</strong>"
+  </div>` + results.map(r => {
+    const rows = r.products.map(p => {
+      const hasRef = p.ref || p.size;
+      return `<tr>
+        <td>
+          <div class="prod-name">${highlight(p.name, term)}</div>
+          ${hasRef ? `<div class="prod-ref">${esc(p.ref || p.size || '')}</div>` : ''}
+          <div style="font-size:11px;color:var(--text-3);margin-top:2px">${esc(r.catName)} · ${esc(r.subName)}</div>
+        </td>
+        <td class="price-cell">${p.price ? fmtPrice(p.price) + '<span class="price-from">orientativo</span>' : 'Consultar'}</td>
+        <td class="cta-cell">
+          <a href="${waLink(p.name)}" target="_blank" class="btn-wa-sm">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="${emailLink(p.name)}" class="btn-email-sm">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </td>
+      </tr>`;
+    }).join('');
+    return `<div class="subcat-block">
+      <div class="subcat-title">${esc(r.catName)} › ${esc(r.subName)}</div>
+      <table class="product-table">
+        <thead><tr><th>Producto</th><th>Precio</th><th style="text-align:right">Contactar</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════════════
+//  APPLY CONFIG (update phone/email/portal in DOM)
+// ═══════════════════════════════════════════════════════
+function applyConfig() {
+  document.querySelectorAll('[href*="34XXXXXXXXX"]').forEach(el => {
+    el.href = el.href.replace(/34XXXXXXXXX/g, CONFIG.whatsapp);
+  });
+  document.querySelectorAll('[href*="info@digitalmarket.es"]').forEach(el => {
+    el.href = el.href.replace('info@digitalmarket.es', CONFIG.email);
+  });
+  document.querySelectorAll('[href*="portal-pedidos-dm.vercel.app"]').forEach(el => {
+    el.href = CONFIG.portalUrl;
+  });
+  document.querySelectorAll('.btn-tel, [href^="tel:"]').forEach(el => {
+    if (el.tagName === 'A') el.href = 'tel:' + CONFIG.whatsapp;
+    if (el.classList.contains('btn-tel')) el.querySelector('span') && (el.querySelector('span').textContent = CONFIG.tel);
+  });
+}
+
+// ═══════════════════════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════════════════════
+async function init() {
+  // Replace config placeholders
+  applyConfig();
+
+  // Update tel display text
+  document.querySelectorAll('.btn-tel').forEach(el => {
+    el.lastChild && (el.lastChild.textContent = ' ' + CONFIG.tel);
+  });
+
+  // Sidebar skeleton
+  renderSidebar();
+
+  // Load products
+  try {
+    const resp = await fetch('./products.json');
+    products = await resp.json();
+  } catch (e) {
+    document.getElementById('sidebar').innerHTML = '<div style="padding:20px;color:#dc2626;font-size:13px">Error cargando productos. Abre el archivo desde un servidor web.</div>';
+    return;
+  }
+
+  renderSidebar();
+
+  // Search input
+  let searchTimer;
+  document.getElementById('searchInput').addEventListener('input', e => {
+    clearTimeout(searchTimer);
+    const v = e.target.value.trim();
+    searchTimer = setTimeout(() => doSearch(v), 250);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>

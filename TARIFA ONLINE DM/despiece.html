@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Despiece de Placas — Digital Market</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #0088cc;
+      --blue-dark: #006699;
+      --blue-light: #e0f2fe;
+      --text: #0f172a;
+      --text-2: #334155;
+      --text-3: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+      --white: #ffffff;
+      --radius: 14px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #fff;
+      border-bottom: 3px solid var(--blue);
+      box-shadow: 0 2px 12px rgba(0,136,204,0.07);
+      padding: 0 24px;
+    }
+    .header-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; gap: 16px;
+      height: 72px;
+    }
+    .back-btn {
+      display: flex; align-items: center; gap: 6px;
+      color: var(--text-3); font-size: 13px; font-weight: 600;
+      text-decoration: none; transition: color .15s;
+    }
+    .back-btn:hover { color: var(--blue); }
+    .header-title {
+      font-size: 18px; font-weight: 800; color: var(--text);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .header-title span { color: var(--blue); }
+    .header-sub {
+      font-size: 12px; color: var(--text-3); margin-left: auto;
+      font-weight: 500;
+    }
+
+    /* ── Layout ── */
+    .page-wrap {
+      max-width: 1200px; margin: 32px auto;
+      padding: 0 24px 80px;
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    @media (max-width: 1000px) {
+      .page-wrap { grid-template-columns: 1fr; padding: 0 16px 60px; }
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 0 14px; }
+      .header-inner { height: 58px; gap: 10px; }
+      .header-title { font-size: 15px; }
+      .header-sub { display: none; }
+      .back-btn { font-size: 12px; }
+
+      .page-wrap { margin: 16px auto; padding: 0 12px 50px; gap: 14px; }
+
+      .card { padding: 16px; }
+      .card-title { font-size: 13px; margin-bottom: 14px; padding-bottom: 10px; }
+
+      /* Piece form: stack inputs vertically */
+      .fm-row { flex-wrap: wrap; }
+      .fm-group { min-width: 80px; }
+
+      /* Result pills wrap */
+      .result-pills { gap: 6px; }
+      .result-pill { font-size: 11px; padding: 4px 10px; }
+      .result-headline { font-size: 18px; }
+
+      /* Plates grid: smaller minimum */
+      .plates-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+
+      /* Export buttons stack */
+      .export-bar { flex-direction: column; gap: 8px; }
+      .btn-export { justify-content: center; }
+
+      .pieces-list { max-height: 200px; }
+    }
+
+    /* ── Cards ── */
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+    .card-title {
+      font-size: 14px; font-weight: 800; color: var(--text);
+      text-transform: uppercase; letter-spacing: 0.6px;
+      margin-bottom: 18px; padding-bottom: 12px;
+      border-bottom: 2px solid var(--blue-light);
+      display: flex; align-items: center; gap: 8px;
+    }
+
+    /* ── Form elements ── */
+    .fm-label {
+      font-size: 11px; font-weight: 700; color: var(--text-3);
+      text-transform: uppercase; letter-spacing: 0.5px;
+      display: block; margin-bottom: 5px;
+    }
+    .fm-input {
+      width: 100%; padding: 11px 14px;
+      border: 2px solid var(--border); border-radius: 8px;
+      font-family: inherit; font-size: 15px; color: var(--text);
+      background: var(--bg); transition: all .2s;
+    }
+    .fm-input:focus { outline: none; border-color: var(--blue); background: #fff; }
+    .fm-input.error { border-color: #ef4444; }
+    .fm-row { display: flex; gap: 8px; align-items: flex-end; }
+    .fm-group { display: flex; flex-direction: column; flex: 1; }
+    .fm-sep { font-size: 20px; font-weight: 700; color: var(--text-3); padding-bottom: 8px; line-height: 1; }
+    .fm-unit { font-size: 12px; color: var(--text-3); padding-bottom: 11px; white-space: nowrap; }
+    .fm-block { margin-bottom: 16px; }
+
+    /* ── Buttons ── */
+    .btn-primary {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      width: 100%; background: var(--blue); color: #fff;
+      border: none; border-radius: 10px; padding: 13px;
+      font-family: inherit; font-size: 15px; font-weight: 700;
+      cursor: pointer; transition: all .15s; margin-top: 4px;
+    }
+    .btn-primary:hover { background: var(--blue-dark); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-add {
+      display: flex; align-items: center; gap: 6px;
+      background: var(--bg); color: var(--text-2);
+      border: 2px solid var(--border); border-radius: 8px;
+      padding: 11px 18px; font-family: inherit; font-size: 14px;
+      font-weight: 700; cursor: pointer; transition: all .15s;
+      white-space: nowrap; flex-shrink: 0;
+    }
+    .btn-add:hover { border-color: var(--blue); color: var(--blue); background: var(--blue-light); }
+    .btn-del {
+      background: none; border: none; color: #ef4444;
+      cursor: pointer; font-size: 18px; line-height: 1;
+      padding: 3px 6px; border-radius: 5px; flex-shrink: 0;
+    }
+    .btn-del:hover { background: #fee2e2; }
+    .btn-reset {
+      background: none; border: none; color: var(--text-3);
+      cursor: pointer; font-size: 12px; font-family: inherit;
+      font-weight: 600; text-decoration: underline; padding: 0;
+    }
+    .btn-reset:hover { color: #ef4444; }
+
+    /* ── Pieces list ── */
+    .pieces-list {
+      border: 1px solid var(--border); border-radius: 9px;
+      overflow: hidden; margin: 10px 0 14px;
+      max-height: 260px; overflow-y: auto;
+    }
+    .piece-row {
+      display: flex; align-items: center; padding: 10px 14px;
+      border-bottom: 1px solid var(--border); gap: 10px;
+    }
+    .piece-row:last-child { border-bottom: none; }
+    .piece-row:hover { background: var(--bg); }
+    .piece-color-dot { width: 14px; height: 14px; border-radius: 4px; flex-shrink: 0; }
+    .piece-dims { font-weight: 700; flex: 1; font-size: 14px; color: var(--text); }
+    .piece-qty { color: var(--text-3); font-size: 12px; white-space: nowrap; }
+    .pieces-empty { padding: 24px; text-align: center; color: var(--text-3); font-size: 13px; }
+
+    /* ── Info hint ── */
+    .hint {
+      font-size: 11px; color: var(--text-3); margin-top: 6px;
+      line-height: 1.5;
+    }
+
+    /* ── Result panel ── */
+    .result-panel { display: none; }
+    .result-panel.visible { display: block; }
+
+    .result-summary {
+      background: var(--blue-light); border: 1px solid #93c5fd;
+      border-radius: 12px; padding: 18px 20px; margin-bottom: 20px;
+    }
+    .result-headline {
+      font-size: 22px; font-weight: 900; color: var(--text);
+      margin-bottom: 10px; line-height: 1.2;
+    }
+    .result-headline em { color: var(--blue); font-style: normal; }
+    .result-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+    .result-pill {
+      background: #fff; border: 1px solid #93c5fd;
+      border-radius: 20px; padding: 5px 14px;
+      font-size: 12px; font-weight: 600; color: var(--text-2);
+    }
+    .result-pill strong { color: var(--blue-dark); }
+
+    /* ── Plates grid ── */
+    .plates-title {
+      font-size: 13px; font-weight: 700; color: var(--text-3);
+      text-transform: uppercase; letter-spacing: 0.6px;
+      margin-bottom: 12px;
+    }
+    .plates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .plate-card {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 10px; padding: 10px; text-align: center;
+      transition: border-color .15s;
+    }
+    .plate-card:hover { border-color: var(--blue); }
+    .plate-card-label {
+      font-size: 11px; font-weight: 700; color: var(--text-3);
+      margin-bottom: 6px;
+    }
+    .plate-canvas { border-radius: 5px; display: block; margin: 0 auto; }
+    .plate-card-sub {
+      font-size: 10px; color: var(--text-3);
+      margin-top: 5px;
+    }
+
+    /* ── Legend ── */
+    .legend { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-2); }
+    .legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+
+    /* ── Export buttons ── */
+    .export-bar {
+      display: flex; gap: 8px; margin-top: 14px; padding-top: 12px;
+      border-top: 1px solid #bfdbfe;
+    }
+    .btn-export {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 9px 16px; border-radius: 8px; border: none;
+      font-family: inherit; font-size: 13px; font-weight: 700;
+      cursor: pointer; transition: all .15s; text-decoration: none;
+    }
+    .btn-export.png {
+      background: #0f172a; color: #fff;
+    }
+    .btn-export.png:hover { background: #1e293b; transform: translateY(-1px); }
+    .btn-export.pdf {
+      background: #dc2626; color: #fff;
+    }
+    .btn-export.pdf:hover { background: #b91c1c; transform: translateY(-1px); }
+
+    /* ── Print / PDF styles ── */
+    @media print {
+      header, .page-wrap > div:first-child, #dp-empty-state { display: none !important; }
+      body { background: #fff; }
+      .page-wrap {
+        display: block !important;
+        max-width: 100%; padding: 0; margin: 0;
+      }
+      .result-panel { display: block !important; }
+      .plates-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 10px !important;
+      }
+      .plate-card { break-inside: avoid; }
+      .export-bar { display: none !important; }
+      .result-summary { background: #e0f2fe !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .plate-card { border: 1px solid #ccc !important; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="back-btn">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+      Volver al Hub
+    </a>
+    <div class="header-title">
+      📐 Despiece de <span>Placas</span>
+    </div>
+    <span class="header-sub">Digital Market — Herramienta de optimización de corte</span>
+  </div>
+</header>
+
+<div class="page-wrap">
+
+  <!-- ── LEFT: Config panel ── -->
+  <div>
+
+    <!-- Plate config -->
+    <div class="card" style="margin-bottom:16px">
+      <div class="card-title">🔲 Medidas de la placa</div>
+
+      <div class="fm-block">
+        <label class="fm-label">Dimensiones (mm)</label>
+        <div class="fm-row">
+          <div class="fm-group">
+            <input type="number" id="dp-plate-w" class="fm-input" value="2050" min="1" placeholder="Ancho">
+          </div>
+          <span class="fm-sep">×</span>
+          <div class="fm-group">
+            <input type="number" id="dp-plate-h" class="fm-input" value="3050" min="1" placeholder="Alto">
+          </div>
+          <span class="fm-unit">mm</span>
+        </div>
+        <p class="hint">Medida estándar PVC/Metacrilato: 2050 × 3050 mm</p>
+      </div>
+
+      <div class="fm-block" style="margin-bottom:0">
+        <label class="fm-label">Margen de sierra (kerf)</label>
+        <div class="fm-row">
+          <div class="fm-group" style="max-width:110px">
+            <input type="number" id="dp-kerf" class="fm-input" value="10" min="0" max="50">
+          </div>
+          <span class="fm-unit">mm por corte</span>
+        </div>
+        <p class="hint">Material perdido por el grosor de la hoja de sierra en cada corte.</p>
+      </div>
+    </div>
+
+    <!-- Add pieces -->
+    <div class="card" style="margin-bottom:16px">
+      <div class="card-title">✂️ Piezas necesarias</div>
+
+      <label class="fm-label">Añadir pieza</label>
+      <div class="fm-row" style="margin-bottom:8px">
+        <div class="fm-group">
+          <label class="fm-label" style="margin-bottom:3px">Ancho</label>
+          <input type="number" id="dp-pw" class="fm-input" placeholder="mm" min="1"
+            onkeydown="if(event.key==='Enter')document.getElementById('dp-ph').focus()">
+        </div>
+        <span class="fm-sep" style="padding-top:22px">×</span>
+        <div class="fm-group">
+          <label class="fm-label" style="margin-bottom:3px">Alto</label>
+          <input type="number" id="dp-ph" class="fm-input" placeholder="mm" min="1"
+            onkeydown="if(event.key==='Enter')document.getElementById('dp-qty').focus()">
+        </div>
+        <div class="fm-group" style="flex:.7">
+          <label class="fm-label" style="margin-bottom:3px">Cantidad</label>
+          <input type="number" id="dp-qty" class="fm-input" placeholder="uds" min="1"
+            onkeydown="if(event.key==='Enter')dpAddPiece()">
+        </div>
+      </div>
+      <button class="btn-add" style="width:100%;justify-content:center;margin-bottom:10px" onclick="dpAddPiece()">+ Añadir pieza</button>
+
+      <div class="pieces-list" id="dp-pieces-list">
+        <div class="pieces-empty">No hay piezas — añade una arriba</div>
+      </div>
+
+      <div style="display:flex;justify-content:flex-end;margin-bottom:14px">
+        <button class="btn-reset" onclick="dpReset()">Limpiar todo</button>
+      </div>
+
+      <button class="btn-primary" onclick="dpCalculate()">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <polygon points="5 3 19 12 5 21 5 3"/>
+        </svg>
+        Calcular despiece óptimo
+      </button>
+      <p class="hint" style="margin-top:8px;text-align:center">
+        Prueba 0° y 90° · Kerf aplicado en cada corte · Algoritmo guillotina BSSF
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ── RIGHT: Results panel ── -->
+  <div>
+    <div id="dp-result-panel" class="result-panel">
+
+      <div class="result-summary">
+        <div class="result-headline" id="dp-headline"></div>
+        <div class="result-pills" id="dp-pills"></div>
+        <div class="export-bar">
+          <button class="btn-export png" onclick="exportPNG()">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Exportar PNG
+          </button>
+          <button class="btn-export pdf" onclick="exportPDF()">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            Exportar PDF
+          </button>
+        </div>
+      </div>
+
+      <div class="plates-title" id="dp-plates-title"></div>
+      <div class="plates-grid" id="dp-plates-grid"></div>
+      <div class="legend" id="dp-legend"></div>
+
+    </div>
+
+    <!-- Empty state -->
+    <div id="dp-empty-state" class="card" style="text-align:center;padding:60px 30px">
+      <div style="font-size:56px;margin-bottom:16px">📐</div>
+      <h2 style="font-size:20px;font-weight:800;color:var(--text);margin-bottom:8px">Configura tu despiece</h2>
+      <p style="font-size:14px;color:var(--text-3);max-width:340px;margin:0 auto;line-height:1.6">
+        Introduce las medidas de la placa, añade las piezas que necesitas y pulsa <strong>Calcular</strong>.
+        El algoritmo encontrará el anidado óptimo minimizando el número de placas.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ── State ──────────────────────────────────────────────
+
+const DP_COLORS = [
+  '#3b82f6','#10b981','#f59e0b','#ef4444','#8b5cf6',
+  '#06b6d4','#f97316','#84cc16','#ec4899','#14b8a6',
+  '#6366f1','#b45309','#0e7490','#be123c','#7c3aed'
+];
+
+const dpState = { pieces: [], nextId: 1 };
+let lastResult = null; // stored after each calculation for export
+
+// ── UI helpers ─────────────────────────────────────────
+
+function dpFlash(id) {
+  const el = document.getElementById(id);
+  el.classList.add('error');
+  el.focus();
+  setTimeout(() => el.classList.remove('error'), 1200);
+}
+
+function dpAddPiece() {
+  const pw  = parseInt(document.getElementById('dp-pw').value);
+  const ph  = parseInt(document.getElementById('dp-ph').value);
+  const qty = parseInt(document.getElementById('dp-qty').value);
+  const plateW = parseInt(document.getElementById('dp-plate-w').value) || 2050;
+  const plateH = parseInt(document.getElementById('dp-plate-h').value) || 3050;
+
+  if (!pw || !ph || !qty || pw <= 0 || ph <= 0 || qty <= 0) {
+    dpFlash('dp-pw'); return;
+  }
+  const fitsNormal  = pw <= plateW && ph <= plateH;
+  const fitsRotated = ph <= plateW && pw <= plateH;
+  if (!fitsNormal && !fitsRotated) {
+    alert(`La pieza ${pw}×${ph} mm no cabe en la placa ${plateW}×${plateH} mm en ninguna orientación.`);
+    return;
+  }
+
+  // Merge if same dimensions already exist
+  const existing = dpState.pieces.find(p =>
+    (p.w === pw && p.h === ph) || (p.w === ph && p.h === pw)
+  );
+  if (existing) {
+    existing.qty += qty;
+  } else {
+    const color = DP_COLORS[dpState.pieces.length % DP_COLORS.length];
+    dpState.pieces.push({ id: dpState.nextId++, w: pw, h: ph, qty, color });
+  }
+
+  dpRenderList();
+  document.getElementById('dp-pw').value  = '';
+  document.getElementById('dp-ph').value  = '';
+  document.getElementById('dp-qty').value = '';
+  document.getElementById('dp-pw').focus();
+}
+
+function dpDeletePiece(id) {
+  dpState.pieces = dpState.pieces.filter(p => p.id !== id);
+  dpRenderList();
+  dpShowEmpty();
+}
+
+function dpReset() {
+  dpState.pieces = [];
+  dpState.nextId = 1;
+  dpRenderList();
+  dpShowEmpty();
+}
+
+function dpRenderList() {
+  const list = document.getElementById('dp-pieces-list');
+  if (dpState.pieces.length === 0) {
+    list.innerHTML = '<div class="pieces-empty">No hay piezas — añade una arriba</div>';
+    return;
+  }
+  list.innerHTML = dpState.pieces.map(p => `
+    <div class="piece-row">
+      <span class="piece-color-dot" style="background:${p.color}"></span>
+      <span class="piece-dims">${p.w} × ${p.h} mm</span>
+      <span class="piece-qty">${p.qty} ud${p.qty !== 1 ? 's' : ''}</span>
+      <button class="btn-del" onclick="dpDeletePiece(${p.id})" title="Eliminar">×</button>
+    </div>
+  `).join('');
+}
+
+function dpShowEmpty() {
+  document.getElementById('dp-result-panel').classList.remove('visible');
+  document.getElementById('dp-empty-state').style.display = '';
+}
+
+// ── Guillotine bin-packing (Best Short Side Fit) ───────
+
+function dpPackPlates(plateW, plateH, pieces, kerf) {
+  const items = [];
+  pieces.forEach(p => {
+    for (let i = 0; i < p.qty; i++)
+      items.push({ w: p.w, h: p.h, color: p.color, label: `${p.w}×${p.h}` });
+  });
+
+  // Sort by longest side DESC (First Fit Decreasing)
+  items.sort((a, b) => Math.max(b.w, b.h) - Math.max(a.w, a.h));
+
+  const plates = [];
+
+  for (const item of items) {
+    let placed = false;
+    for (const plate of plates) {
+      if (dpPlaceItem(plate, item, kerf)) { placed = true; break; }
+    }
+    if (!placed) {
+      const plate = { freeRects: [{ x: 0, y: 0, w: plateW, h: plateH }], placed: [] };
+      plates.push(plate);
+      dpPlaceItem(plate, item, kerf);
+    }
+  }
+
+  return plates;
+}
+
+function dpPlaceItem(plate, item, kerf) {
+  let best = null, bestScore = Infinity;
+
+  for (const rect of plate.freeRects) {
+    for (const [iw, ih, rotated] of [
+      [item.w, item.h, false],
+      [item.h, item.w, true]
+    ]) {
+      if (iw <= rect.w && ih <= rect.h) {
+        const score = Math.min(rect.w - iw, rect.h - ih);
+        if (score < bestScore) {
+          bestScore = score;
+          best = { rect, iw, ih, rotated };
+        }
+      }
+    }
+  }
+
+  if (!best) return false;
+
+  const { rect, iw, ih, rotated } = best;
+  plate.placed.push({ x: rect.x, y: rect.y, w: iw, h: ih, rotated, color: item.color, label: item.label });
+  plate.freeRects = plate.freeRects.filter(r => r !== rect);
+
+  const rightW = rect.w - iw - kerf;
+  const botH   = rect.h - ih - kerf;
+
+  // Choose split direction maximising usable area
+  const areaA = (rightW > 0 ? rightW * ih : 0) + (botH > 0 ? rect.w * botH : 0);
+  const areaB = (botH > 0 ? iw * botH : 0)     + (rightW > 0 ? rightW * rect.h : 0);
+
+  if (areaA >= areaB) {
+    if (rightW > 0) plate.freeRects.push({ x: rect.x + iw + kerf, y: rect.y,            w: rightW, h: ih       });
+    if (botH   > 0) plate.freeRects.push({ x: rect.x,             y: rect.y + ih + kerf, w: rect.w, h: botH    });
+  } else {
+    if (botH   > 0) plate.freeRects.push({ x: rect.x,             y: rect.y + ih + kerf, w: iw,     h: botH    });
+    if (rightW > 0) plate.freeRects.push({ x: rect.x + iw + kerf, y: rect.y,             w: rightW, h: rect.h  });
+  }
+
+  return true;
+}
+
+// ── Canvas drawing ──────────────────────────────────────
+
+function dpDrawPlate(canvas, plate, plateW, plateH) {
+  const ctx = canvas.getContext('2d');
+  const cw = canvas.width, ch = canvas.height;
+  const margin = 4;
+  const scale = Math.min((cw - 2 * margin) / plateW, (ch - 2 * margin) / plateH);
+  const dW = plateW * scale, dH = plateH * scale;
+  const ox = margin + (cw - 2 * margin - dW) / 2;
+  const oy = margin + (ch - 2 * margin - dH) / 2;
+
+  ctx.fillStyle = '#f1f5f9';
+  ctx.fillRect(0, 0, cw, ch);
+
+  // Plate background
+  ctx.fillStyle = '#e2e8f0';
+  ctx.fillRect(ox, oy, dW, dH);
+
+  // Draw kerf grid lines (visual only - light gray)
+  ctx.strokeStyle = 'rgba(100,116,139,0.08)';
+  ctx.lineWidth = 0.5;
+
+  plate.placed.forEach(p => {
+    const px = ox + p.x * scale;
+    const py = oy + p.y * scale;
+    const pw = p.w * scale;
+    const ph = p.h * scale;
+
+    ctx.fillStyle = p.color + 'cc';
+    ctx.fillRect(px, py, pw, ph);
+    ctx.strokeStyle = p.color;
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(px, py, pw, ph);
+
+    // Label — clipped to piece bounds so text never bleeds into neighbours
+    if (pw > 18 && ph > 12) {
+      const fs = Math.max(6, Math.min(11, Math.floor(Math.min(pw, ph) / 4.5)));
+      ctx.save();
+      ctx.beginPath();
+      ctx.rect(px + 1, py + 1, pw - 2, ph - 2);
+      ctx.clip();
+      ctx.fillStyle = '#fff';
+      ctx.font = `bold ${fs}px sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(p.rotated ? `↻${p.label}` : p.label, px + pw / 2, py + ph / 2);
+      ctx.restore();
+    }
+  });
+
+  // Plate border
+  ctx.strokeStyle = '#475569';
+  ctx.lineWidth = 2;
+  ctx.strokeRect(ox, oy, dW, dH);
+}
+
+// ── Main calculate ──────────────────────────────────────
+
+function dpCalculate() {
+  if (dpState.pieces.length === 0) {
+    alert('Añade al menos una pieza antes de calcular.');
+    return;
+  }
+
+  const plateW = parseInt(document.getElementById('dp-plate-w').value) || 2050;
+  const plateH = parseInt(document.getElementById('dp-plate-h').value) || 3050;
+  const kerf   = parseInt(document.getElementById('dp-kerf').value)    || 10;
+
+  const plates = dpPackPlates(plateW, plateH, dpState.pieces, kerf);
+
+  const totalPieces    = dpState.pieces.reduce((s, p) => s + p.qty, 0);
+  const pieceArea      = dpState.pieces.reduce((s, p) => s + p.w * p.h * p.qty, 0);
+  const totalPlateArea = plates.length * plateW * plateH;
+  const efficiency     = ((pieceArea / totalPlateArea) * 100).toFixed(1);
+  const wastePct       = (100 - parseFloat(efficiency)).toFixed(1);
+
+  // Headline
+  document.getElementById('dp-headline').innerHTML =
+    `📦 Se necesitan <em>${plates.length} placa${plates.length !== 1 ? 's' : ''}</em> ` +
+    `para <em>${totalPieces} pieza${totalPieces !== 1 ? 's' : ''}</em>`;
+
+  // Pills
+  document.getElementById('dp-pills').innerHTML = [
+    `📐 Aprovechamiento: <strong>${efficiency}%</strong>`,
+    `🗑️ Desperdicio: <strong>${wastePct}%</strong>`,
+    `🔲 Placa: <strong>${plateW}×${plateH} mm</strong>`,
+    `✂️ Kerf: <strong>${kerf} mm</strong>`,
+  ].map(t => `<span class="result-pill">${t}</span>`).join('');
+
+  // Plates grid
+  document.getElementById('dp-plates-title').textContent =
+    `Distribución por placa (${plates.length} en total)`;
+
+  const grid = document.getElementById('dp-plates-grid');
+  grid.innerHTML = '';
+
+  const CW = 280;
+  const CH = Math.round(CW * plateH / plateW);
+
+  plates.forEach((plate, i) => {
+    const card = document.createElement('div');
+    card.className = 'plate-card';
+
+    const lbl = document.createElement('div');
+    lbl.className = 'plate-card-label';
+    lbl.textContent = `Placa ${i + 1}`;
+
+    const cvs = document.createElement('canvas');
+    cvs.width  = CW;
+    cvs.height = CH;
+    cvs.className = 'plate-canvas';
+
+    const sub = document.createElement('div');
+    sub.className = 'plate-card-sub';
+    sub.textContent = `${plate.placed.length} pzas`;
+
+    card.appendChild(lbl);
+    card.appendChild(cvs);
+    card.appendChild(sub);
+    grid.appendChild(card);
+
+    dpDrawPlate(cvs, plate, plateW, plateH);
+  });
+
+  // Legend
+  const legend = document.getElementById('dp-legend');
+  legend.innerHTML = dpState.pieces.map(p =>
+    `<div class="legend-item">
+      <span class="legend-dot" style="background:${p.color}"></span>
+      ${p.w}×${p.h} mm — ${p.qty} uds
+    </div>`
+  ).join('');
+
+  // Store for export
+  lastResult = { plates, plateW, plateH, kerf, pieces: dpState.pieces.map(p => ({...p})) };
+
+  // Show result panel
+  document.getElementById('dp-empty-state').style.display = 'none';
+  document.getElementById('dp-result-panel').classList.add('visible');
+}
+
+// ── Build high-res export canvas (shared by PNG & PDF) ─
+
+function buildExportCanvas() {
+  const { plates, plateW, plateH, kerf, pieces } = lastResult;
+
+  // Layout constants (logical px — will be 2x for hi-DPI)
+  const COLS     = Math.min(3, plates.length);
+  const PW       = 320;
+  const PH       = Math.round(PW * plateH / plateW);
+  const M        = 50;
+  const GAP      = 22;
+  const LABEL_H  = 26;
+  const SUB_H    = 20;
+  const HEADER_H = 100;
+  const ROWS     = Math.ceil(plates.length / COLS);
+
+  const totalPieces = pieces.reduce((s, p) => s + p.qty, 0);
+  const pieceArea   = pieces.reduce((s, p) => s + p.w * p.h * p.qty, 0);
+  const efficiency  = ((pieceArea / (plates.length * plateW * plateH)) * 100).toFixed(1);
+  const wastePct    = (100 - parseFloat(efficiency)).toFixed(1);
+
+  const ITEM_W     = 220;
+  const innerW     = COLS * PW + (COLS - 1) * GAP;
+  const legendCols = Math.max(1, Math.floor(innerW / ITEM_W));
+  const legendRows = Math.ceil(pieces.length / legendCols);
+  const LEGEND_H   = 40 + legendRows * 26 + 20;
+
+  const logW = innerW + 2 * M;
+  const logH = HEADER_H + ROWS * (LABEL_H + PH + SUB_H + GAP) + LEGEND_H + M;
+
+  // 2× pixel ratio → sharp print/export
+  const RATIO = 2;
+  const cvs   = document.createElement('canvas');
+  cvs.width   = logW  * RATIO;
+  cvs.height  = logH  * RATIO;
+  const ctx   = cvs.getContext('2d');
+  ctx.scale(RATIO, RATIO);
+
+  // White background
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(0, 0, logW, logH);
+
+  // Blue header bar
+  ctx.fillStyle = '#0088cc';
+  ctx.fillRect(0, 0, logW, 8);
+
+  // Title
+  ctx.fillStyle = '#0f172a';
+  ctx.font = 'bold 22px sans-serif';
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'top';
+  ctx.fillText('Despiece de Placas — Digital Market', M, 20);
+
+  // Summary bar
+  ctx.fillStyle = '#dbeafe';
+  ctx.fillRect(M, 54, logW - 2 * M, 38);
+  ctx.fillStyle = '#1e40af';
+  ctx.font = 'bold 13px sans-serif';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(
+    `${plates.length} placa${plates.length !== 1 ? 's' : ''} · ${totalPieces} piezas · Aprovechamiento: ${efficiency}% · Desperdicio: ${wastePct}% · Placa: ${plateW}×${plateH} mm · Kerf: ${kerf} mm`,
+    M + 14, 73
+  );
+
+  // Plates
+  plates.forEach((plate, i) => {
+    const col = i % COLS;
+    const row = Math.floor(i / COLS);
+    const x   = M + col * (PW + GAP);
+    const y   = HEADER_H + row * (LABEL_H + PH + SUB_H + GAP);
+
+    ctx.fillStyle = '#475569';
+    ctx.font = 'bold 13px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(`Placa ${i + 1}`, x + PW / 2, y + LABEL_H / 2);
+
+    // Draw plate at full PW resolution (no scaling artefacts)
+    const tmp = document.createElement('canvas');
+    tmp.width = PW; tmp.height = PH;
+    dpDrawPlate(tmp, plate, plateW, plateH);
+    ctx.drawImage(tmp, x, y + LABEL_H);
+
+    ctx.fillStyle = '#94a3b8';
+    ctx.font = '12px sans-serif';
+    ctx.fillText(`${plate.placed.length} pzas`, x + PW / 2, y + LABEL_H + PH + SUB_H / 2 + 2);
+  });
+
+  // Legend
+  const ly0 = HEADER_H + ROWS * (LABEL_H + PH + SUB_H + GAP) + 16;
+  ctx.fillStyle = '#64748b';
+  ctx.font = 'bold 12px sans-serif';
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'top';
+  ctx.fillText('LEYENDA', M, ly0);
+
+  let lx = M, ly = ly0 + 20;
+  const DOT = 15;
+  pieces.forEach(p => {
+    if (lx + ITEM_W > logW - M) { lx = M; ly += 26; }
+    ctx.fillStyle = p.color;
+    ctx.fillRect(lx, ly, DOT, DOT);
+    ctx.fillStyle = '#334155';
+    ctx.font = '14px sans-serif';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(`${p.w}×${p.h} mm — ${p.qty} uds`, lx + DOT + 8, ly + DOT / 2);
+    lx += ITEM_W;
+  });
+
+  // Footer
+  ctx.fillStyle = '#94a3b8';
+  ctx.font = '11px sans-serif';
+  ctx.textAlign = 'right';
+  ctx.textBaseline = 'bottom';
+  ctx.fillText(`Digital Market · ${new Date().toLocaleDateString('es-ES')}`, logW - M, logH - 10);
+
+  return cvs;
+}
+
+// ── Export PNG ──────────────────────────────────────────
+
+function exportPNG() {
+  if (!lastResult) return;
+  const cvs = buildExportCanvas();
+  const a   = document.createElement('a');
+  a.download = `despiece-${new Date().toISOString().slice(0, 10)}.png`;
+  a.href     = cvs.toDataURL('image/png');
+  a.click();
+}
+
+// ── Export PDF — high-res canvas in a print window ──────
+
+function exportPDF() {
+  if (!lastResult) return;
+  const cvs    = buildExportCanvas();
+  const dataUrl = cvs.toDataURL('image/png');
+  const win    = window.open('', '_blank');
+  win.document.write(`<!DOCTYPE html>
+<html><head>
+  <title>Despiece de Placas — Digital Market</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:#fff; }
+    img  { width:100%; display:block; }
+    @page { margin:8mm; }
+    @media print { body { -webkit-print-color-adjust:exact; print-color-adjust:exact; } }
+  </style>
+</head><body>
+  <img src="${dataUrl}">
+  <script>window.onload = function(){ window.print(); }<\/script>
+</body></html>`);
+  win.document.close();
+}
+</script>
+</body>
+</html>
